@@ -1,44 +1,45 @@
+---
+import Recurso from "./Tarjetas/TarjetaRecursos.astro";
+---
 
 <section class="relative bg-white py-16 px-4 sm:px-6 lg:px-8">
   <div class="container mx-auto text-center">
-    <h2 class="text-4xl font-bold text-gray-800">Recursos Disponibles</h2>
+    <h2 class="text-4xl font-serif font-bold text-gray-800">Recursos Disponibles</h2>
     <div class="bg-yellow-500 w-24 h-1.5 mx-auto mt-4 mb-12 rounded-full"></div>
     <p class="text-xl text-gray-700 max-w-3xl mx-auto mb-16 leading-relaxed">
       Herramientas y materiales para apoyar el trabajo de traducción bíblica y el crecimiento de la iglesia.
     </p>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-20 max-w-6xl mx-auto">
-        <div class="bg-gray-50 w-96 h-75 rounded-2xl px-8 py-4 transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
-            `<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-            </svg>`
-            <h1 class="font-bold text-blue-950 text-xl justify-self-start">Guías de Estudio Bíblico </h1>
-            <h2 class="mt-4 text-start text-gray-700">Materiales de estudio bíblico adaptados para diferentes contextos culturales y niveles de alfabetización.</h2>
-            <h3 class="text-blue-900 cursor-pointer hover:text-black mt-4 justify-self-start">Explorar &rangle;</h3>
-        </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-8 max-w-6xl mx-auto">
+      <Recurso titulo="Guías de Estudio Bíblico"
+        descripcion="Materiales de estudio bíblico adaptados para diferentes contextos culturales y niveles de alfabetización."
+        explorar="Explorar"
+        ><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+    </svg></Recurso>
 
-        <div class="bg-gray-50 w-96 h-75 rounded-2xl px-8 py-4 transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
-            `<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
-             </svg>`
-            <h1 class="font-bold text-blue-950 text-xl justify-self-start">Herramientas de Traducción</h1>
-            <h2 class="mt-4 text-start text-gray-700">Recursos y software especializado para apoyar el proceso de traducción bíblica en diferentes idiomas.</h2>
-            <h3 class="text-blue-900 cursor-pointer hover:text-black mt-4 justify-self-start">Explorar &rangle;</h3>
-        </div>
+      <Recurso titulo="Herramientas de Traducción"
+        descripcion="Recursos y software especializado para apoyar el proceso de traducción bíblica en diferentes idiomas."
+        explorar="Explorar"
+        ><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+    </svg></Recurso>
 
-        <div class="bg-gray-50 w-96 h-75 rounded-2xl px-8 py-4 transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
-            `<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-             </svg>`
-            <h1 class="font-bold text-blue-950 text-xl justify-self-start">Capacitación en Liderazgo</h1>
-            <h2 class="mt-4 text-start text-gray-700">Programas de formación para líderes de iglesias locales, enfocados en el discipulado y la plantación de iglesias.</h2>
-            <h3 class="text-blue-900 cursor-pointer hover:text-black mt-4 justify-self-start">Explorar &rangle;</h3>
-        </div>
+      <Recurso titulo="Capacitación en Liderazgo"
+        descripcion="Programas de formación para líderes de iglesias locales, enfocados en el discipulado y la plantación de iglesias."
+        explorar="Explorar"
+        ><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+    </svg></Recurso>
+    
     </div>
 
     <div class="mt-20 text-center">
         <a href="/impacto" class="inline-flex bg-blue-800 hover:bg-blue-900 items-center justify-center text-white font-semibold py-4 px-8 rounded-xl transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
-            Ver todos los Recursos &rarr;
+            Ver todos los Recursos 
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
         </a>
     </div>
 

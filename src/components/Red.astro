@@ -1,45 +1,41 @@
+---
+import Redes from "./Tarjetas/TarjetaRed.astro";
+---
 
-<section class="relative bg-blue-50 py-16 px-4 sm:px-6 lg:px-8">
+
+<section class="relative bg-blue-50 py-16 px-4">
   <div class="container mx-auto text-center">
-    <h2 class="text-4xl font-bold text-gray-800">Red de Oración</h2>
+    <h2 class="text-4xl font-serif font-bold text-gray-800">Red de Oración</h2>
     <div class="bg-yellow-500 w-24 h-1.5 mx-auto mt-4 mb-12 rounded-full"></div>
     <p class="text-xl text-gray-600 mx-auto mb-16 leading-relaxed">
       Únete a nuestra red global de intercesión y sé parte del avance del Reino de Dios a través de la oración.
     </p>
     
-  <div class="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
-    <div class="bg-white w-90 h-50 rounded-md px-6  shadow-lg">
-      `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-8 max-w-6xl mx-auto">
+    <Redes titulo="Oración por Traductores"
+      descripcion="Ora por sabiduría y protección para nuestros equipos de traducción trabajando en áreas remotas."
+      ><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>`
-        <h1 class="font-bold text-xl text-blue-950 justify-self-start">Oración por Traductores </h1>
-        <h2 class="mt-2 text-start text-gray-600">Ora por sabiduría y protección para nuestros equipos de traducción trabajando en áreas remotas.</h2>
-        
-    </div>
+    </svg></Redes>
 
-    <div class="bg-white w-90 h-50 rounded-md px-6 shadow-lg">
-       `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-        </svg>`
-        <h1 class="font-bold text-xl text-blue-950 justify-self-start">Oración por Comunidades</h1>
-        <h2 class="mt-2 text-start text-gray-600">Intercede por las comunidades que están recibiendo la Palabra de Dios en su idioma por primera vez.</h2>
-        
-    </div>
+    <Redes titulo="Oración por Comunidades"
+      descripcion="Intercede por las comunidades que están recibiendo la Palabra de Dios en su idioma por primera vez."
+      ><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+    </svg></Redes>
 
-   <div class="bg-white w-90 h-50 rounded-md px-6 shadow-lg">
-       `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-       </svg>`
-        <h1 class="font-bold text-xl text-blue-950 justify-self-start">Oración por Recursos</h1>
-        <h2 class="mt-2 text-start text-gray-600">Pide por provisión de recursos y financiamiento para continuar con los proyectos de traducción.</h2>
-        
-    </div>
+    <Redes titulo="Oración por Recursos"
+      descripcion="Pide por provisión de recursos y financiamiento para continuar con los proyectos de traducción."
+      ><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg></Redes>
 
-    <div class="bg-white shadow-lg w-170 h-60 rounded-xl mt-10 justify-self-center items-center px-4 py-6">
+  </div>
+    <div class="bg-white shadow-lg rounded-xl mt-15 justify-self-center items-center px-4 py-6 my-4 max-w-170">
       <h1 class="font-bold text-2xl ">Recibe Nuestras Guías de Oración</h1>
       <h2 class="mt-4 text-gray-600">Suscríbete para recibir actualizaciones semanales de oración y guías específicas para interceder por nuestros proyectos. </h2>
-      <div class="flex justify-center gap-4 mt-4">
-        <input type="email" placeholder="Correo electrónico" class="mt-4 w-120 p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+      <div class="flex justify-center gap-4 mt-4 px-4">
+        <input type="email" placeholder="Correo electrónico" class="mt-4 p-3 flex-1 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"/>
         <div class="text-center">
             <a href="/impacto" class="inline-flex bg-blue-900 hover:bg-blue-950 mt-4 items-center justify-center text-white font-semibold py-3 px-8 rounded-md transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
                 Suscribirse
@@ -47,5 +43,4 @@
         </div>
       </div>
     </div>  
-  </div>
 </section>

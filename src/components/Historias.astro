@@ -1,50 +1,46 @@
+---
+import Historia from "./Tarjetas/TarjetaHistorias.astro";
+---
 
 <section class="relative bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
   <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-bold text-gray-800">Historias de Impacto</h2>
+    <h2 class="text-3xl font-serif font-bold text-gray-800">Historias de Impacto</h2>
     <div class="bg-yellow-500 w-24 h-1.5 mx-auto mt-4 mb-12 rounded-full"></div>
     <p class="text-lg text-gray-700 mx-auto mb-16 leading-relaxed">
       Descubre cómo la Palabra de Dios está transformando vidas y comunidades alrededor del mundo.
     </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-10 max-w-6xl mx-auto">
+        <Historia nombre="María González" 
+        descripcion="Después de recibir la Biblia en mi idioma materno, mi comunidad ha experimentado un profundo cambio espiritual y social."
+         pais="Guatemala" 
+         imagen="https://images.pexels.com/photos/5905498/pexels-photo-5905498.jpeg" 
+         boton="Leer Historia Completa"/>
+         
+        
+        <Historia nombre="Juan Pérez" 
+        descripcion="La capacitación recibida nos ha equipado para servir mejor a nuestra comunidad y compartir el mensaje de esperanza."
+         pais="Perú"
+         imagen="https://images.pexels.com/photos/5905498/pexels-photo-5905498.jpeg" 
+         boton="Leer Historia Completa"/>
+        
 
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-12 max-w-6xl mx-auto">
-    <div class="bg-white w-95 h-110 rounded-md shadow-lg">
-        <div class="w-full h-60 relative overflow-hidden rounded-t-md">
-            <img src="https://images.pexels.com/photos/5905498/pexels-photo-5905498.jpeg" alt="Traducción del Nuevo Testamento" class="w-full h-full object-cover">
-        </div>
-        <h1 class="mt-6 text-gray-700 text-start px-6">"Después de recibir la Biblia en mi idioma materno, mi comunidad ha experimentado un profundo cambio espiritual y social."</h1>
-        <h2 class="mt-8 text-blue-950 font-bold justify-self-start px-6">María González</h2>
-        <h3 class="text-gray-500 justify-self-start px-6">Guatemala</h3>
+        <Historia nombre="Ana Silva" 
+        descripcion="El programa de alfabetización bíblica ha transformado vidas, permitiendo a las personas leer y estudiar la Palabra de Dios."
+         pais="Brasil"
+         imagen="https://images.pexels.com/photos/5905498/pexels-photo-5905498.jpeg" 
+         boton="Leer Historia Completa"/>
+       
     </div>
 
-   <div class="bg-white w-95 h-110 rounded-md shadow-lg">
-        <div class="w-full h-60 relative overflow-hidden rounded-t-md">
-            <img src="https://images.pexels.com/photos/5905498/pexels-photo-5905498.jpeg" alt="Traducción del Nuevo Testamento" class="w-full h-full object-cover">
-        </div>
-        <h1 class="mt-6 text-gray-700 text-start px-6">"La capacitación recibida nos ha equipado para servir mejor a nuestra comunidad y compartir el mensaje de esperanza."</h1>
-        <h2 class="mt-8 text-blue-950 font-bold justify-self-start px-6">Juan Pérez</h2>
-        <h3 class="text-gray-500 justify-self-start px-6">Perú</h3>
-    </div>
-
-<div class="bg-white w-95 h-110 rounded-md shadow-lg">
-        <div class="w-full h-60 relative overflow-hidden rounded-t-md">
-            <img src="https://images.pexels.com/photos/5905498/pexels-photo-5905498.jpeg" alt="Traducción del Nuevo Testamento" class="w-full h-full object-cover">
-        </div>
-        <h1 class="mt-6 text-gray-700 text-start px-6">"El programa de alfabetización bíblica ha transformado vidas, permitiendo a las personas leer y estudiar la Palabra de Dios."</h1>
-        <h2 class="mt-8 text-blue-950 font-bold justify-self-start px-6">Ana Silva</h2>
-        <h3 class="text-gray-500 justify-self-start px-6">Brasil</h3>
-    </div>
-    </div>
-
-<div class="bg-blue-50 w-160 h-60 rounded-xl mt-15 justify-self-center items-center px-4 py-6">
+   <div class="bg-blue-50 max-w-160 rounded-xl mt-15 justify-self-center items-center px-4 py-8">
      <h1 class="font-bold text-2xl">Comparte Tu Historia</h1>
      <h2 class="mt-4 text-gray-700">¿La traducción bíblica o nuestro ministerio ha impactado tu comunidad? Nos encantaría escuchar y compartir tu historia de transformación.</h2>
 
-<div class="mt-10 text-center animate-fade-in">
-        <a href="/impacto" class="inline-flex bg-blue-900 hover:bg-blue-950 items-center justify-center text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
-            Envía tu Historia
-        </a>
-    </div>
+        <div class="mt-6 text-center animate-fade-in">
+            <a href="/impacto" class="inline-flex bg-blue-900 hover:bg-blue-950 items-center justify-center text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
+                Envía tu Historia
+            </a>
+        </div>
     </div>
 
 </section>

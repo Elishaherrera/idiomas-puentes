@@ -1,43 +1,41 @@
+---
+import Involucrense from "./Tarjetas/TarjetaInvolucrate.astro";
+---
 
 <section class="relative bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
   <div class="container mx-auto text-center">
-    <h2 class="text-4xl font-bold text-gray-800">Involúcrate</h2>
+    <h2 class="text-4xl font-serif font-bold text-gray-800">Involúcrate</h2>
     <div class="bg-yellow-500 w-24 h-1.5 mx-auto mt-4 mb-12 rounded-full"></div>
     <p class="text-xl max-w-3xl mx-auto mb-16 text-gray-700">
     Hay muchas maneras de ser parte de esta misión transformadora. Descubre cómo puedes contribuir.
     </p>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-15 max-w-6xl mx-auto">
-        <div class="bg-white w-95 h-80 rounded-2xl transition-all duration-200 transform hover:scale-105 hover:shadow-lg px-10 py-4">
-        `<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-        </svg>`
-            <h1 class="font-bold text-xl text-blue-950 justify-self-start">Únete al Equipo</h1>
-            <h2 class="mt-4 text-start">Explora oportunidades para servir como traductor, capacitador o en otros roles clave.</h2>
-            <h3 class="text-blue-900 cursor-pointer hover:text-black mt-4 justify-self-start">Saber más &rangle;</h3>
-        </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-8 max-w-6xl mx-auto">
+        <Involucrense titulo="Únete al Equipo"
+            descripcion="Explora oportunidades para servir como traductor, capacitador o en otros roles clave."
+            saber="Saber más"
+            ><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg></Involucrense>
 
-        <div class="bg-white w-95 h-80 rounded-2xl transition-all duration-200 transform hover:scale-105 hover:shadow-lg px-10 py-4">
-            `<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>`
-            <h1 class="font-bold text-xl text-blue-950 justify-self-start">Apoya Financieramente</h1>
-            <h2 class="mt-4 text-start">Tu donación hace posible la traducción bíblica y el crecimiento de la iglesia en comunidades necesitadas.</h2>
-             <h3 class="text-blue-900 cursor-pointer hover:text-black mt-4 justify-self-start">Saber más &rangle;</h3>
-        </div>
+        <Involucrense titulo="Apoya Financieramente"
+            descripcion="Tu donación hace posible la traducción bíblica y el crecimiento de la iglesia en comunidades necesitadas."
+            saber="Saber más"
+            ><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg></Involucrense>
+            
+        <Involucrense titulo="Ora con Nosotros"
+            descripcion="Únete a nuestra red de oración y apoya el trabajo de traducción bíblica a través de la intercesión."
+            saber="Saber más"
+            ><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+            </svg></Involucrense>
 
-        <div class="bg-white w-95 h-80 rounded-2xl transition-all duration-200 transform hover:scale-105 hover:shadow-lg px-10 py-4">
-            `<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-             </svg>`
-            <h1 class="font-bold text-xl text-blue-950 justify-self-start">Ora con Nosotros</h1>
-            <h2 class="mt-4 text-start">Únete a nuestra red de oración y apoya el trabajo de traducción bíblica a través de la intercesión.</h2>
-            <h3 class="text-blue-900 cursor-pointer hover:text-black mt-4 justify-self-start">Saber más &rangle;</h3>
-        </div>
     </div>
-        <div class="bg-blue-950 w-300 h-70 rounded-2xl mt-20 justify-self-center items-center px-4 py-6">
+        <div class="bg-blue-950 rounded-2xl mt-20 justify-self-center items-center px-4 py-6">
             <h1 class="text-white font-bold text-2xl mt-4">¿Listo para Hacer la Diferencia?</h1>
-            <h2 class="text-white mt-4 max-w-2xl text-center justify-self-center">Tu participación puede transformar vidas y comunidades. Únete a nosotros en esta misión de llevar la Palabra de Dios a todos los idiomas.</h2>
+            <h2 class="text-white mt-4 px-4 max-w-2xl text-center justify-self-center">Tu participación puede transformar vidas y comunidades. Únete a nosotros en esta misión de llevar la Palabra de Dios a todos los idiomas.</h2>
 
             <div class="flex justify-center gap-4">
                 <div class="mt-10 text-center">

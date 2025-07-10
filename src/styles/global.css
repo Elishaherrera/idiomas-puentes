@@ -1,1 +1,7 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Math&display=swap');
+
+@theme {
+    --font-elisha: 'Libertinus Math', sans;
+    --color-yasnela-100:#c5ac3b;
+}

@@ -1,79 +1,47 @@
+---
+import Proyecto from "./Tarjetas/TarjetaProyectos.astro";
+---
 
-<section class="bg-gray-200 text-center py-6 pt-20">
-    <h2 class="text-4xl font-bold">Nuestros Proyectos</h2>
-    <div class="bg-yellow-400 w-24 h-1.5 mx-auto mb-8 mt-6 rounded-full"></div>
-    <p class="text-lg mb-16">Trabajando en comunidades alrededor del mundo para traducir las Escrituras y fortalecer la iglesia local.</p>
+<section class="relative bg-white py-16 px-4 sm:px-6 lg:px-8">
+  <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-serif font-bold text-gray-800 mt-8">Nuestros Proyectos</h2>
+      <div class="bg-yellow-500 w-24 h-1.5 mx-auto mt-4 mb-12 rounded-full"></div>
+      <p class="text-lg mx-auto mb-16 text-gray-800 max-w-3xl">
+        Trabajando en comunidades alrededor del mundo para traducir las Escrituras y fortalecer la iglesia local.
+      </p>
 
- <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full h-auto justify-center items-center min-h-screen p-4">
-    <div class="bg-white rounded-2xl shadow-lg flex flex-col text-center overflow-hidden">
-        <div class="w-full h-48 relative overflow-hidden">
-            <img src="https://images.pexels.com/photos/5905498/pexels-photo-5905498.jpeg" alt="Traducción del Nuevo Testamento" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-        </div>
-         <div class="container absolute inline-block z-20 px-4"> <h1 class="text-2xl md:text-1xl font-bold text-white leading-tight"> Traducción del Nuevo Testamento
-            <span class="text-white block sm:not-first: ">Idioma Maya K'iche'</span> </h1>
-        </div>
-        <div class="p-6 flex flex-col items-center justify-between flex-grow">
-            <h3 class="text-xl font-bold text-blue-950 mb-4">Progreso de Traducción</h3>
-            <p class="text-base text-gray-800 mb-6 flex-grow">
-                Proyecto de traducción del Nuevo Testamento al idioma Maya K'iche', beneficiando a más de 1 millón de hablantes.
-            </p>
-            <a
-                href="/projects"
-                class="inline-flex items-center text-blue-900 hover:text-black font-medium transition-colors duration-200"
-            >
-                Conoce más sobre este proyecto &rarr;
-            </a>
-        </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-8 max-w-6xl mx-auto">
+      <Proyecto titulo="Traducción del Nuevo Testamento"
+        subtitulo="Idioma Maya K'iche'"
+        progreso="Progreso de traducción"
+        porcentaje="75%"
+        descripcion="Proyecto de traducción del Nuevo Testamento al idioma Maya K'iche', beneficiando a más de 1 millón de hablantes."
+        conoce="Conoce más sobre este proyecto"
+        imagen="https://images.pexels.com/photos/5905498/pexels-photo-5905498.jpeg"/>
+        
+      <Proyecto titulo="Capacitación de Líderes"
+        subtitulo="Región Andina"
+        progreso="Progreso de traducción"
+        porcentaje="60%"
+        descripcion="Programa de formación para líderes de iglesias locales, enfocado en el discipulado y la plantación de iglesias."
+        conoce="Conoce más sobre este proyecto"
+        imagen="https://images.pexels.com/photos/5905498/pexels-photo-5905498.jpeg"/> 
+    
+      <Proyecto titulo="Alfabetización Bíblica"
+        subtitulo="Amazonía"
+        progreso="Progreso de traducción"
+        porcentaje="45%"
+        descripcion="Iniciativa de alfabetización que combina la enseñanza de lectura y escritura con el estudio bíblico."
+        conoce="Conoce más sobre este proyecto"
+        imagen="https://images.pexels.com/photos/5905498/pexels-photo-5905498.jpeg"/> 
     </div>
 
-    <div class="bg-white rounded-2xl shadow-lg flex flex-col text-center overflow-hidden">
-        <div class=" h-48 relative overflow-hidden">
-            <img src="https://images.pexels.com/photos/5905498/pexels-photo-5905498.jpeg" alt="Traducción del Nuevo Testamento" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-        </div>
-        <div class="container absolute z-10 px-2"> <h1 class="text-2xl md:text-1xl font-bold text-white leading-tight"> Capacitación de Líderes
-            <span class="text-white block sm:not-first: ">Región Andina</span> </h1>
-        </div>
-        <div class="p-6 flex flex-col items-center justify-between flex-grow">
-            <h3 class="text-xl font-bold text-blue-950 mb-4">Progreso de Traducción</h3>
-            <p class="text-base text-gray-800 mb-6 flex-grow">
-                Programa de formación para líderes de iglesias locales, enfocado en el discipulado y la plantación de iglesias.
-            </p>
-            <a
-                href="/projects"
-                class="inline-flex items-center text-blue-900 hover:text-black font-medium transition-colors duration-200"
-            >
-                Conoce más sobre este proyecto &rarr;
-            </a>
-        </div>
-    </div>
-
-    <div class="bg-white rounded-2xl shadow-lg flex flex-col text-center overflow-hidden md:col-span-1">
-        <div class=" h-48 relative overflow-hidden">
-            <img src="https://images.pexels.com/photos/5905498/pexels-photo-5905498.jpeg" alt="Traducción del Nuevo Testamento" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-        </div>
-        <div class="container absolute z-10 px-2"> <h1 class="text-2xl md:text-1xl font-bold text-white leading-tight"> Alfabetización Bíblica
-            <span class="text-white block sm:not-first: ">Amazonía</span> </h1>
-        </div>
-        <div class="p-6 flex flex-col items-center justify-between flex-grow">
-            <h3 class="text-xl font-bold text-blue-950 mb-4">Progreso de Traducción</h3>
-            <p class="text-base text-gray-800 mb-6 flex-grow">
-                Iniciativa de alfabetización que combina la enseñanza de lectura y escritura con el estudio bíblico.
-            </p>
-            <a
-                href="/projects"
-                class="inline-flex items-center text-blue-900 hover:text-black font-medium transition-colors duration-200"
-            >
-                Conoce más sobre este proyecto &rarr;
-            </a>
-        </div>
-    </div>
-</div>
-
-
-
-    <div class="mt-20 text-center animate-fade-in">
-        <a href="/projects" class="inline-flex bg-blue-900 items-center justify-center text-white font-semibold py-3 px-8 rounded-md transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
-            Ver Todos los Proyectos &rarr;
+    <div class="mt-20 text-center">
+        <a href="/necesidad" class="inline-flex bg-blue-900 hover:bg-blue-950 items-center justify-center text-white font-semibold py-3 px-7 rounded-md transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
+            Ver Todos los Proyectos
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
         </a>
     </div>
-<section/>
+</section>

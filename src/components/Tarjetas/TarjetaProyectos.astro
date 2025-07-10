@@ -1,0 +1,29 @@
+---
+const {titulo, subtitulo, progreso, porcentaje, descripcion, conoce, imagen} = Astro.props;
+---
+
+    <div class="bg-gray-100 rounded-lg shadow-lg">
+        <div class="w-full h-56 relative overflow-hidden rounded-t-lg">
+            <img src={imagen} alt="Traducción"
+             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 inset-shadow-amber-900 inset-shadow-lg">
+             <div class="absolute bg-linear-to-t from-black/80 to-black/15 bottom-0 max-h-fit w-full justify-items-start place-content-around px-4 py-4">
+              <p class="text-white text-xl font-bold">{titulo}</p>
+              <p class="text-gray-200">{subtitulo}</p>  
+              </div>
+        </div>
+        <div class="flex justify-between mt-4 px-6 text-gray-800 text-sm">
+            <p>{progreso}</p>
+            <p>{porcentaje}</p>
+        </div>
+        <div class="mx-6">
+          <div class="w-full h-2 bg-gray-200 rounded-full mt-2">
+            <div class="bg-blue-800 h-full rounded-full" style={`width: ${porcentaje};`}></div>
+          </div>
+        </div>
+        <h1 class="mt-4 text-gray-700 text-start px-6">{descripcion}</h1>
+            <h3 class="text-blue-900 cursor-pointer hover:text-black mt-2 px-6 py-2 my-4 flex justify-self-start"> {conoce}
+               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 mt-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+               </svg>
+            </h3>
+    </div>        
