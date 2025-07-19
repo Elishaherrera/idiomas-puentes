@@ -1,0 +1,48 @@
+---
+import Container from '../components/Container.astro';
+import TituloSeccion from  '../components/TituloSeccion.astro';
+import {Eye} from '@lucide/astro';
+import {BookOpen} from '@lucide/astro';
+import {Target} from '@lucide/astro';
+import {GraduationCap} from '@lucide/astro';
+import {Users} from '@lucide/astro';
+import Layout from  '../layouts/Layout.astro';
+---
+
+<section>
+    <Container>
+        <div class="flex gap-8">
+            <div class=" bg-blue-700 shadow-lg rounded-2xl text-white space-y-4 w-2xl py-8 px-8">
+                    <div class="inline-flex items-center justify-center pb-2">
+                        <Eye size="30" class="text-white"/>
+                        <TituloSeccion class="ml-4">Nuestra Visión</TituloSeccion>
+                    </div>
+                
+                <p class="max-w-xl font-normal text-gray-200 text-lg">Que etnias bilingües de Latinoamérica y de la comunidad de países de lengua portuguesa tengan a su alcance la Biblia en el idioma de su corazón y así avancen hacia la madurez en Cristo.</p>
+                <div class="inline-flex items-center justify-center py-4">
+                    <BookOpen size="35" class="bg-blue-600 px-2 py-2 rounded-lg"/>
+                    <span class="ml-4">Biblia en idioma del corazón</span>
+                </div>
+            </div>
+
+            <div class=" bg-white shadow-lg rounded-2xl space-y-4 w-2xl py-8 px-8">
+                    <div class="inline-flex items-center justify-center font-semibold pb-2">
+                        <Target size="30" class="text-blue-600"/>
+                        <TituloSeccion class="px-3">Nuestra Misión</TituloSeccion>
+                    </div>
+                    <div class="inline-flex justify-center">
+                        <BookOpen size="25" class="bg-blue-200 text-blue-700 px-1 py-1 rounded-full flex-none"/>
+                        <p class="px-4 text-gray-700">Facilitar y proveer recursos bíblicos lingüísticos gratuitos en español y portugués.</p>
+                    </div>
+                    <div class="inline-flex justify-center">
+                        <GraduationCap size="25" class="bg-blue-200 text-blue-700 px-1 py-1 rounded-full"/>
+                        <p class="px-4 text-gray-700">Ofrecer asesoría y entrenamiento.</p>
+                    </div>
+                    <div class="inline-flex justify-center">
+                        <Users size="25" class="bg-blue-200 text-blue-700 px-1 py-1 rounded-full"/>
+                        <p class="px-4 text-gray-700">Acompañar a las iglesias nativas de Latinoamérica.</p>
+                    </div>
+            </div>
+        </div>
+    </Container>
+</section>

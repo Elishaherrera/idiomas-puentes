@@ -1,0 +1,67 @@
+---
+import Container from '../components/Container.astro';
+import {Star} from '@lucide/astro';
+import {Sparkles} from '@lucide/astro';
+import {Mountain} from '@lucide/astro';
+import {Lightbulb} from '@lucide/astro';
+import {Link} from '@lucide/astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+
+<section class=" flex flex-col items-center justify-center text-center space-y-4">
+    <Container>
+        <div class="flex-1 flex flex-col justify items-center">
+          <div class="bg-amber-100 text-amber-600 px-3 py-3 rounded-full mb-8">
+            <Star size="25" />
+          </div>
+          <span class="text-3xl font-bold">Nuestros Valores</span>
+          <span class="py-4 text-xl text-gray-600">Los principios que guían nuestro ministerio y trabajo diario</span>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mt-8">
+            <div class="flex-1 flex flex-col justify-center items-center bg-white shadow-lg rounded-xl p-6 space-y-3 hover:shadow-xl transition-all duration-200">
+              <div class="text-green-600 bg-green-100 rounded-full p-3 hover:bg-green-200">
+                <Sparkles size="25"/>
+              </div>
+              <span class="font-bold">Alegría</span>
+              <span class="text-gray-600 text-sm text-center">Volviendo a la alegría lo más rápido posible</span>  
+            </div>
+            
+            <div class="flex-1 flex flex-col justify-center items-center bg-white shadow-lg rounded-xl p-6 space-y-3 hover:shadow-xl transition-all duration-200">
+              <div class="text-purple-600 bg-purple-100 rounded-full p-3 hover:bg-purple-200">
+                <Mountain size="25"/>
+              </div>
+              <span class="font-bold">Humildad</span>
+              <span class="text-gray-600 text-sm text-center">Caminando en humildad</span>
+            </div>
+            
+            <div class="flex-1 flex flex-col justify-center items-center bg-white shadow-lg rounded-xl p-6 space-y-3 hover:shadow-xl transition-all duration-200">
+              <div class="text-blue-600 bg-blue-100 rounded-full p-3 hover:bg-blue-200">
+                <Lightbulb size="25"/>
+              </div>
+              <span class="font-bold">Aprendizaje</span>
+              <span class="text-gray-600 text-sm text-center">Siempre aprendiendo</span>
+            </div>
+            
+            <div class="flex-1 flex flex-col justify-center items-center bg-white shadow-lg rounded-xl p-6 space-y-3 hover:shadow-xl transition-all duration-200">
+              <div class="text-orange-600 bg-orange-100 rounded-full p-3 hover:bg-orange-200">
+                <Link size="25"/>
+              </div>
+              <span class="font-bold">Interdependencia</span>
+              <span class="text-gray-600 text-sm text-center">Trabajando de manera interdependiente</span>
+            </div>
+            
+            <div class="flex-1 flex flex-col justify-center items-center bg-white shadow-lg rounded-xl p-6 space-y-3 hover:shadow-xl transition-all duration-200">
+                <div class="text-red-600 bg-red-100 rounded-full p-3 hover:bg-red-200">
+                  <Star size="25"/>
+                </div>
+              <span class="font-bold">Excelencia</span>
+              <span class="text-gray-600 text-sm text-center">Sirviendo a Dios con excelencia</span>
+            </div>
+          </div>
+        </div>
+    </Container>
+</section>
+
+  
+   

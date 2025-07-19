@@ -1,0 +1,47 @@
+---
+import Container from '../components/Container.astro';
+import { BookOpen } from '@lucide/astro';
+import { Users } from '@lucide/astro';
+import { Heart } from '@lucide/astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<section>
+  <Container>
+    <div class="bg-blue-950 rounded-2xl flex-1 flex flex-col space-y-6 px-16 py-12 text-center justify-center">
+      <div class="flex text-center justify-center">
+        <div class="text-white bg-blue-600 rounded-full w-fit px-4 py-4">
+          <BookOpen size="30"/>
+        </div>
+      </div>
+      <span class="text-white text-3xl font-bold">¿Cómo lo Hacemos?</span>
+      <span class="text-gray-200 text-lg max-w-6xl ">Facilitamos diversos recursos bíblicos en formato digital de licencia abierta a etnias que manejan también el español y el portugués con miembros bilingües y un llamado a traducir la Biblia.</span>
+    
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-10 gap-4">
+            <div class=" bg-gray-700 justify-center items-center rounded-xl flex-1 flex flex-col w-fit px-6 py-8 space-y-2">
+                <div class="text-blue-300">
+                <BookOpen size="28"/>
+                </div>
+                <span class="text-white font-bold">Recursos Digitales</span>
+                <span class="text-white">Formato digital de licencia abierta</span>
+            </div>
+        
+            <div class="bg-gray-700 justify-center items-center rounded-xl flex-1 flex flex-col w-fit px-18 py-8 space-y-2">
+                <div class="text-blue-300 text-center">
+                <Users size="28"/>
+                </div>
+                <span class="text-white font-bold">Etnias Bilingües</span>
+                <span class="text-white">Español y portugués</span>
+            </div>
+        
+            <div class="bg-gray-700  justify-center items-center rounded-xl flex-1 flex flex-col w-fit px-12 py-8 space-y-2">
+                <div class="text-blue-300">
+                <Heart size="28"/>
+                </div>
+                <span class="text-white font-bold">Traducción Bíblica</span>
+                <span class="text-white">Llamado a traducir la Biblia</span>
+            </div>
+        </div>
+    </div>
+  </Container>
+</section>
