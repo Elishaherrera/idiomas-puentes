@@ -1,15 +1,21 @@
- 
+---
+ import { Image } from 'astro:assets';
+import imagenPrincipal from '../assets/imagenPrincipal2.png';
+---
 
 <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <div class="absolute inset-0 bg-black opacity-40 z-10"></div> 
-    <div class="absolute inset-0">
-        <img src="https://observatorio.tec.mx/wp-content/uploads/2022/05/iStock-1141509628.jpeg" alt="imagen-menu" class="object-cover w-full h-full" />
+    <div class="absolute inset-0 bg-blue-600 opacity-40 z-10"></div> 
+    <div class="absolute inset-0 flex-shrink-0">
+        <Image src={imagenPrincipal} alt="imagen principal" class="object-cover h-full w-full"/>
     </div>
+    
 
-    <div class="container relative text-center z-20 px-4">
-            <h1 class="text-4xl md:text-6xl font-serif font-bold text-white leading-tight"> Traduciendo las escrituras
-            <span class="text-yellow-300 block sm:inline">Transformando Vidas</span> </h1>
-        <p class="mt-6 text-lg md:text-2xl text-white text-center max-w-6xl mx-auto"> Empoderando comunidades alrededor del mundo con la Palabra de Dios en su idioma materno, construyendo iglesias maduras que transforman comunidades.
+    <div class="w-[60%] pt-20 relative text-center z-20 px-4">
+            <h1 class="text-3xl md:text-5xl mb-6 font-serif font-bold text-white leading-tight"> La Iglesia Equipando a la Iglesia</h1>
+            <p class="text-yellow-200 block sm:inline text-xl font-bold">Respondiendo al Llamado de Dios de Amar y Servir
+                 a Través de la Traducción Bíblica Centrada en la Iglesia</p>
+        <p class="mt-6 text-lg md:text-xl text-white text-center max-w-6xl mx-auto">Trabajamos juntos como un solo cuerpo para equipar
+             a las iglesias tribales con todo lo necesario para traducir, entender y crecer a través de las Escrituras en su propio idioma.
         </p>
         <div class="mt-10 flex flex-col sm:flex-row justify-center gap-6"> <a href="/projects" class="inline-flex items-center justify-center bg-white hover:bg-gray-200 text-blue-950 font-semibold py-4 px-10 rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg">
                 Nuestros Proyectos
