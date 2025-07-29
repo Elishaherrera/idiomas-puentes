@@ -1,0 +1,24 @@
+---
+import Container from '../components/Container.astro';
+import { MessageSquare } from '@lucide/astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<section>
+  <Container>
+    <div class="bg-blue-700 rounded-2xl flex-1 flex flex-col space-y-6 px-16 py-16 text-center justify-center">
+      <div class="flex text-center justify-center">
+        <div class="text-gray-200">
+          <MessageSquare size="60"/>
+        </div>
+      </div>
+      <span class="text-white text-3xl font-bold">¿Listo para comenzar tu proyecto de traducción?</span>
+      <span class="text-gray-200 text-xl max-w-6xl">Estos recursos están diseñados para apoyarte en cada paso del proceso de traducción bíblica</span>
+        <div class=" pt-6">
+            <a href="/Explorar" class="text-xl items-center justify-center bg-white hover:bg-gray-200 text-blue-600 font-semibold py-4 px-8 rounded-full transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
+                Explorar Recursos
+            </a>
+        </div>
+    </div>
+  </Container>
+</section>

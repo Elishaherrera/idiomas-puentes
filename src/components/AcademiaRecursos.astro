@@ -1,0 +1,27 @@
+---
+import { GraduationCap } from '@lucide/astro';
+import Container from './Container.astro';
+---
+
+<section class="min-h-screen">
+    <Container>
+        <div class="bg-white rounded-3xl shadow-[0_0_6px_0_rgba(0,0,0,0.15)] px-12 py-12">
+            <div class="flex gap-8">
+                <div class="flex gap-6">
+                    <div class="inline-flex gap-2 text-center items-start">
+                        <div class="text-indigo-600 bg-indigo-100 rounded-full p-3">
+                            <GraduationCap size="30"/>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-3xl font-bold pb-4">Academia de Traducción - "Un consultor justo a tiempo"</span>
+                        <p class="text-lg text-gray-700 font-normal max-w-3xl py-6">Proporciona los conocimientos básicos necesarios
+                            para que cualquier persona, en cualquier lugar, pueda aprender a traducir la Biblia a su propio idioma,
+                            comprobar su exactitud y utilizar las herramientas con confianza. Es como tener un consultor justo a tiempo.
+                        </p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Container>
+</section>
