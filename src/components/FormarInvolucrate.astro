@@ -2,10 +2,12 @@
 import { Heart } from '@lucide/astro';
 import { SprayCan } from '@lucide/astro';
 import TituloSeccion from './TituloSeccion.astro';
-import { DollarSign } from '@lucide/astro';
+import { HandHelping } from '@lucide/astro';
 import { Users2 } from '@lucide/astro';
 import { Lightbulb } from '@lucide/astro';
 import { Shield } from '@lucide/astro';
+import {Image} from 'astro:assets';
+import PrayIcon from '../assets/PrayIcon.png';
 import Container from './Container.astro';
 ---
 
@@ -16,82 +18,85 @@ import Container from './Container.astro';
                 <div class="bg-blue-600 p-6 text-center rounded-t-3xl">
                     <div class="inline-flex  text-center items-start pl-2">
                             <div class="text-white">
-                                <Heart size="35"/>
+                                <Image src={PrayIcon} alt="Pray Icon" class="h-12 w-auto"/>
                             </div>
                     </div>
                     <h3 class="text-2xl font-bold text-white">Orando</h3>
                 </div>
             </div>
-            <div class=" gap-6 mt-6 flex justify-center items-center">
-                <div class="bg-blue-50 max-w-3xl justify-center items-center rounded-xl p-6 space-y-2 border-1 border-blue-100">
-                    <p class=" font-normal">"Finalmente, amados hermanos, les pedimos que oren por nosotros. Oren para que el mensaje del
+            <div class=" mt-6 flex justify-center items-center w-full p-3">
+                <div class="bg-blue-50 max-w-5xl justify-center items-center rounded-xl p-6 space-y-2 border-1 border-blue-100">
+                    <p class=" font-serif text-blue-800 text-sm">"Finalmente, amados hermanos, les pedimos que oren por nosotros. Oren para que el mensaje del
                         Señor se difunda rápidamente y sea honrado en todo lugar adonde llegue, así como cuando les llegó a ustedes."
-                        - 2 Tesalonicenses 3:1
                     </p>
+                    <span class="flex justify-end font-medium text-blue-800">- 2 Tesalonicenses 3:1</span>
                 </div>
             </div> 
-            <div class="inline-flex items-center justify-center pb-2 p-6">
-                <SprayCan size="25" class="text-blue-600"/>
-                <TituloSeccion class="ml-4">¡Acompáñanos en oración!</TituloSeccion>
-            </div>
-            <p class=" text-gray-700 text-lg p-6">La voluntad de Dios es que su mensaje llegue a todo pueblo. 
-                Mientras trabajamos para que su propósito se cumpla, te pedimos que te unas a nosotros.
-            </p>
-
-            <span class="font-bold p-6">Orar por:</span>
-
-            <div class="flex flex-col justify-items-start items-start p-6">
-                <div class="inline-flex items-center justify-center p-6">
-                    <div class="bg-blue-600 w-2 h-2 rounded-full"></div>
-                    <p class="ml-4">Sabiduría para traducir la palabra de Dios fielmente.</p>
+            <div class="p-12 space-y-4">
+                <div class="inline-flex items-center justify-center">
+                    <SprayCan size="22" class="text-blue-600"/>
+                    <span class="ml-4 font-medium text-xl">¡Acompáñanos en oración!</span>
                 </div>
-                <div class="inline-flex items-center justify-center p-6">
-                    <div class="bg-blue-600 w-2 h-2 rounded-full"></div>
-                    <p class="ml-4">Los hermanos indígenas que están empezando a estudiar las historias bíblicas en su idioma de corazón.</p>
-                </div>
-                <div class="inline-flex items-center justify-center p-6">
-                    <div class="bg-blue-600 w-2 h-2 rounded-full"></div>
-                    <p class="ml-4">Nuevos traductores, teólogos, comunicadores, educadores, ingenieros en sistemas o en computación
-                        para que formen parte de este proyecto.</p>
-                </div>
-                <div class="inline-flex items-center justify-center p-6">
-                    <div class="bg-blue-600 w-2 h-2 rounded-full"></div>
-                    <p class="ml-4">Provisión de todas las necesidades de cada uno de los miembros de Idiomas Puentes.</p>
-                </div>
-                <div class="inline-flex items-center justify-center p-6">
-                    <div class="bg-blue-600 w-2 h-2 rounded-full"></div>
-                    <p class="ml-4">Dirección de Dios para el equipo que coordina el proyecto.</p>
+                <p class=" text-gray-600 text-md max-w-5xl">La voluntad de Dios es que su mensaje llegue a todo pueblo. 
+                    Mientras trabajamos para que su propósito se cumpla, te pedimos que te unas a nosotros.
+                </p>
+                <div class="flex flex-col justify-items-start items-start space-y-4">
+                    <span class="font-bold">Ora por:</span>
+                    <div class="inline-flex items-center justify-center">
+                        <div class="bg-blue-600 w-2 h-2 rounded-full"></div>
+                        <p class="ml-4 text-gray-600">Sabiduría para traducir la palabra de Dios fielmente.</p>
+                    </div>
+                    <div class="inline-flex items-center justify-center">
+                        <div class="bg-blue-600 w-2 h-2 rounded-full"></div>
+                        <p class="ml-4 text-gray-600">Los hermanos indígenas que están empezando a estudiar las historias bíblicas en su idioma de corazón.</p>
+                    </div>
+                    <div class="inline-flex items-center justify-center">
+                        <div class="bg-blue-600 w-2 h-2 rounded-full"></div>
+                        <p class="ml-4 max-w-3xl text-gray-600">Nuevos traductores, teólogos, comunicadores, educadores, ingenieros en sistemas o en computación
+                            para que formen parte de este proyecto.</p>
+                    </div>
+                    <div class="inline-flex items-center justify-center">
+                        <div class="bg-blue-600 w-2 h-2 rounded-full"></div>
+                        <p class="ml-4 text-gray-600">Provisión de todas las necesidades de cada uno de los miembros de Idiomas Puentes.</p>
+                    </div>
+                    <div class="inline-flex items-center justify-center">
+                        <div class="bg-blue-600 w-2 h-2 rounded-full"></div>
+                        <p class="ml-4 text-gray-600">Dirección de Dios para el equipo que coordina el proyecto.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </Container>
-
     <Container>
         <div class="bg-white rounded-3xl shadow-[0_0_6px_0_rgba(0,0,0,0.15)]">
             <div>
                 <div class="bg-orange-600 p-6 text-center rounded-t-3xl">
                     <div class="inline-flex  text-center items-start pl-2">
                         <div class="text-white">
-                            <DollarSign size="35"/>
+                            <HandHelping size="40"/>
                         </div>
                     </div>
                     <h3 class="text-2xl font-bold text-white">Donando</h3>
                 </div>
             </div>
-            <span class="text-2xl font-medium p-6">Gracias por apoyarnos</span>
-            <p class="text-gray-700 text-lg p-6 max-w-4xl">Tu contribución nos ayudará a proporcionar a las etnias de Latinoamérica los recursos que necesitan para hacer
-                sus traducciones de la Biblia.
-            </p>
-            <div class=" gap-6 mt-6 flex flex-col justify-center items-center">
-                <div class="bg-orange-50 max-w-3xl justify-center items-center rounded-xl p-6 space-y-2 border-1 border-orange-100">
-                    <div class="text-orange-600 flex justify-center text-center">
-                        <DollarSign size="35"/>
-                    </div>
-                    <p class=" font-normal">Cada donación hace posible que más pueblos tengan acceso a la Palabra
-                        de Dios en su propio idioma
-                    </p>
-                </div>  
-                <div class="p-6 mt-6 w-full">
+            <div class="py-8 px-4">
+                <span class="text-xl font-medium p-6">Gracias por apoyarnos</span>
+                <p class="text-gray-600 text-xl p-6 max-w-6xl">Tu contribución nos ayudará a proporcionar a las etnias de Latinoamérica los recursos que necesitan para hacer
+                    sus traducciones de la Biblia.
+                </p>
+            </div>
+            <div class="flex flex-col justify-center items-center w-full">
+                <div class="w-full px-8">
+                    <div class="bg-orange-50 rounded-xl w-full py-6 space-y-2 border-1 border-orange-100">
+                        <div class="text-orange-600 flex justify-center text-center">
+                            <Heart size="35"/>
+                        </div>
+                        <p class="font-medium text-orange-800 text-center">Cada donación hace posible que más pueblos tengan acceso a la Palabra
+                            de Dios en su propio idioma
+                        </p>
+                    </div> 
+                </div>    
+                <div class="p-8 mt-2 mb-2 w-full">
                     <button class="text-xl items-center justify-center bg-orange-600 hover:bg-orange-800 text-white font-semibold py-3 px-6 w-full rounded-lg transition-all duration-200">
                         Donar Ahora
                     </button>
@@ -113,55 +118,57 @@ import Container from './Container.astro';
                     <h3 class="text-2xl font-bold text-white">Sirviendo</h3>
                 </div>
             </div>
-            <div class="inline-flex items-center justify-center pb-2 p-6">
-                <Lightbulb size="25" class="text-green-600"/>
-                <TituloSeccion class="ml-4">¿Qué necesitamos?</TituloSeccion>
-            </div>
-            <p class=" text-gray-700 text-lg p-6">Un ejército de hombres y mujeres seguidores de Cristo que pongan sus dones,
-                recursos y experiencia al servicio del reino de Dios, para así proveer lo necesario para el discipulado y la
-                plantación de iglesias maduras.
-            </p>
+            <div class="py-8 px-8 space-y-4">
+                <div class="inline-flex items-center justify-center">
+                    <Lightbulb size="22" class="text-green-600"/>
+                    <span class="ml-2 text-xl font-medium">¿Qué necesitamos?</span>
+                </div>
+                <p class=" text-gray-600 text-md max-w-5xl">Un ejército de hombres y mujeres seguidores de Cristo que pongan sus dones,
+                    recursos y experiencia al servicio del reino de Dios, para así proveer lo necesario para el discipulado y la
+                    plantación de iglesias maduras.
+                </p>
 
-            <div class="inline-flex items-center justify-center pb-2 p-6">
-                <Users2 size="25" class="text-green-600"/>
-                <TituloSeccion class="ml-4">¿Qué tipo de personas buscamos?</TituloSeccion>
-            </div>
+                <div class="inline-flex items-center justify-center pb-2 ">
+                    <Users2 size="22" class="text-green-600"/>
+                    <span class="ml-2 text-xl font-medium">¿Qué tipo de personas buscamos?</span>
+                </div>
 
-            <div class="flex flex-col justify-items-start items-start p-6">
-                <div class="inline-flex items-center justify-center p-6">
-                    <div class="inline-flex items-center justify-center pb-2 p-2">
-                        <Shield size="20" class="text-green-600"/>
+                <div class="flex flex-col justify-items-start items-start space-y-3">
+                    <div class="inline-flex items-center justify-center">
+                        <div class="inline-flex items-center justify-center pb-2">
+                            <Shield size="20" class="text-green-600"/>
+                        </div>
+                        <p class="ml-2 max-w-3xl">Personas dispuestas a servir a Cristo incondicionalmente y disponibles para un compromiso
+                            de largo plazo con los pueblos no alcanzados.
+                        </p>
                     </div>
-                    <p class="ml-4 max-w-3xl">Personas dispuestas a servir a Cristo incondicionalmente y disponibles para un compromiso
-                        de largo plazo con los pueblos no alcanzados.
-                    </p>
-                </div>
-                <div class="inline-flex items-center justify-center p-6">
-                    <div class="inline-flex items-center justify-center pb-2 p-2">
-                        <Shield size="20" class="text-green-600"/>
+                    <div class="inline-flex items-center justify-center">
+                        <div class="inline-flex items-center justify-center pb-2">
+                            <Shield size="20" class="text-green-600"/>
+                        </div>
+                        <p class="ml-2">Personas que tengan como enfoque supremo la gloria de Dios.</p>
                     </div>
-                    <p class="ml-4">Personas que tengan como enfoque supremo la gloria de Dios.</p>
-                </div>
-                <div class="inline-flex items-center justify-center p-6">
-                    <div class="inline-flex items-center justify-center pb-2 p-2">
-                        <Shield size="20" class="text-green-600"/>
+                    <div class="inline-flex items-center justify-center">
+                        <div class="inline-flex items-center justify-center pb-2">
+                            <Shield size="20" class="text-green-600"/>
+                        </div>
+                        <p class="ml-2">Discípulos que muestren en su vida los valores de Cristo.</p>
                     </div>
-                    <p class="ml-4">Discípulos que muestren en su vida los valores de Cristo.</p>
-                </div>
-                <div class="inline-flex items-center justify-center p-6">
-                    <div class="inline-flex items-center justify-center pb-2 p-2">
-                        <Shield size="20" class="text-green-600"/>
+                    <div class="inline-flex items-center justify-center">
+                        <div class="inline-flex items-center justify-center pb-2">
+                            <Shield size="20" class="text-green-600"/>
+                        </div>
+                        <p class="ml-2">Profesionales, bilingües y sobre todo con capacidad para trabajar en equipo.</p>
                     </div>
-                    <p class="ml-4">Profesionales, bilingües y sobre todo con capacidad para trabajar en equipo.</p>
-                </div>
-                <div class="inline-flex items-center justify-center p-6">
-                    <div class="inline-flex items-center justify-center pb-2 p-2">
-                        <Shield size="20" class="text-green-600"/>
+                    <div class="inline-flex items-center justify-center">
+                        <div class="inline-flex items-center justify-center pb-2">
+                            <Shield size="20" class="text-green-600"/>
+                        </div>
+                        <p class="ml-2">Expertos en los idiomas originales de la Biblia con espíritu de siervo.</p>
                     </div>
-                    <p class="ml-4">Expertos en los idiomas originales de la Biblia con espíritu de siervo.</p>
                 </div>
-            </div>
-            <div class="p-6 mt-6 w-full">
+            </div>    
+            <div class="p-6 mt-2 mb-2 w-full">
                     <button class="text-xl items-center justify-center bg-green-600 hover:bg-green-800 text-white font-semibold py-3 px-6 w-full rounded-lg transition-all duration-200">
                         Únete al Equipo
                     </button>
