@@ -1,10 +1,295 @@
 ---
+import TestamentoProyectos from '../components/TestamentoProyectos.astro';
+import GeneralProyectos from '../components/GeneralProyectos.astro';
+import HeroProyectos from '../components/HeroProyectos.astro';
 import Menu from '../components/Menu.astro';
 import Layout from '../layouts/Layout.astro';
 import "../styles/global.css";
+import TodosProyectos from '../components/TodosProyectos.astro';
+
+const proyectos = {
+    antiguoTestamento: [
+        {
+            nombre:"Génesis",
+            progreso: 0,
+        },
+        {
+            nombre:"Éxodo",
+            progreso: 0,
+        },
+        {
+            nombre:"Levítico",
+            progreso: 0,
+        },
+        {
+            nombre:"Números",
+            progreso: 0,
+        },
+        {
+            nombre:"Deuteronomio",
+            progreso: 0,
+        },
+        {
+            nombre:"Josué",
+            progreso: 0,
+        },
+        {
+            nombre:"Jueces",
+            progreso: 0,
+        },
+        {
+            nombre:"Rut",
+            progreso: 100,
+        },
+        {
+            nombre:"1 Samuel",
+            progreso: 0,
+        },
+        {
+            nombre:"2 Samuel",
+            progreso: 0,
+        },
+        {
+            nombre:"1 Reyes",
+            progreso: 0,
+        },
+        {
+            nombre:"2 Reyes",
+            progreso: 0,
+        },
+        {
+            nombre:"1 Crónicas",
+            progreso: 0,
+        },
+        {
+            nombre:"2 Crónicas",
+            progreso: 0,
+        },
+        {
+            nombre:"Esdras",
+            progreso: 51,
+        },
+        {
+            nombre:"Nehemías",
+            progreso: 0,
+        },
+        {
+            nombre:"Ester",
+            progreso: 67,
+        },
+        {
+            nombre:"Job",
+            progreso: 0,
+        },
+        {
+            nombre:"Salmos",
+            progreso: 0,
+        },
+        {
+            nombre:"Proverbios",
+            progreso: 0,
+        },
+        {
+            nombre:"Eclesiastés",
+            progreso: 0,
+        },
+        {
+            nombre:"Cantar de los Cantares",
+            progreso: 0,
+        },
+        {
+            nombre:"Isaías",
+            progreso: 0,
+        },
+        {
+            nombre:"Jeremías",
+            progreso: 0,
+        },
+        {
+            nombre:"Lamentaciones",
+            progreso: 0,
+        },
+        {
+            nombre:"Ezequiel",
+            progreso: 0,
+        },
+        {
+            nombre:"Daniel",
+            progreso: 0,
+        },
+        {
+            nombre:"Oseas",
+            progreso: 0,
+        },
+        {
+            nombre:"Joel",
+            progreso: 0,
+        },
+        {
+            nombre:"Amós",
+            progreso: 0,
+        },
+        {
+            nombre:"Abdías",
+            progreso: 0,
+        },
+        {
+            nombre:"Jonás",
+            progreso: 100,
+        },
+        {
+            nombre:"Miqueas",
+            progreso: 0,
+        },
+        {
+            nombre:"Nahúm",
+            progreso: 0,
+        },
+        {
+            nombre:"Habacuc",
+            progreso: 0,
+        },
+        {
+            nombre:"Sofonías",
+            progreso: 0,
+        },
+        {
+            nombre:"Hageo",
+            progreso: 0,
+        },
+        {
+            nombre:"Zacarías",
+            progreso: 0,
+        },
+        {
+            nombre:"Malaquías",
+            progreso: 0,
+        }
+    ],
+     nuevoTestamento: [
+        {
+            nombre: "Mateo",
+            progreso: 0,
+        },
+
+        {
+            nombre: "Marcos",
+            progreso: 0,
+        },
+        {
+            nombre: "Lucas",
+            progreso: 0,
+        },
+        {
+            nombre: "Juan",
+            progreso: 0,
+        },
+        {
+            nombre: "Hechos",
+            progreso: 0,
+        },
+        {
+            nombre: "Romanos",
+            progreso: 0,
+        },
+        {
+            nombre: "1 Corintios",
+            progreso: 0,
+        },
+        {
+            nombre: "2 Corintios",
+            progreso: 0,
+        },
+        {
+            nombre: "Gálatas",
+            progreso: 0,
+        },
+        {
+            nombre: "Efesios",
+            progreso: 37,
+        },
+        {
+            nombre: "Filipenses",
+            progreso: 0,
+        },
+        {
+            nombre: "Colosenses",
+            progreso: 0,
+        },
+        {
+            nombre: "1 Tesalonicenses",
+            progreso: 0,
+        },
+        {
+            nombre: "2 Tesalonicenses",
+            progreso: 0,
+        },
+        {
+            nombre: "1 Timoteo",
+            progreso: 0,
+        },
+        {
+            nombre: "2 Timoteo",
+            progreso: 0,
+        },
+        {
+            nombre: "Tito",
+            progreso: 100,
+        },
+        {
+            nombre: "Filemón",
+            progreso: 0,
+        },
+        {
+            nombre:"Hebreos",
+            progreso: 0,
+        },
+        {
+            nombre:"Santiago",
+            progreso: 0,
+        },
+        {
+            nombre:"1 Pedro",
+            progreso: 0,
+        },
+        {
+            nombre:"2 Pedro",
+            progreso: 0,
+        },
+        {
+            nombre:"1 Juan",
+            progreso: 0,
+        },
+        {
+            nombre:"2 Juan",
+            progreso: 0,
+        },
+        {
+            nombre:"3 Juan",
+            progreso: 100,
+        },
+        {
+            nombre:"Judas",
+            progreso: 0,
+        },
+        {
+            nombre:"Apocalipsis",
+            progreso: 0,
+        },
+     ]
+}
+    
+
 ---
 
 <Layout>
 <Menu/>
+<HeroProyectos/>
+<GeneralProyectos
+  proyectos={proyectos}
+/>
+<TodosProyectos
+  proyectos={proyectos}
+/>
 
 </Layout>
