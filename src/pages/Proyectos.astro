@@ -6,6 +6,8 @@ import Menu from '../components/Menu.astro';
 import Layout from '../layouts/Layout.astro';
 import "../styles/global.css";
 import TodosProyectos from '../components/TodosProyectos.astro';
+import ApoyarProyectos from '../components/ApoyarProyectos.astro';
+import PieDePagina from '../components/PieDePagina.astro';
 
 const proyectos = {
     antiguoTestamento: [
@@ -291,5 +293,8 @@ const proyectos = {
 <TodosProyectos
   proyectos={proyectos}
 />
-
+<ApoyarProyectos
+  proyectos={proyectos}
+  />
+<PieDePagina/>
 </Layout>

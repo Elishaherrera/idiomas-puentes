@@ -5,11 +5,13 @@ import TarjetaProyectoLibro from './TarjetaProyectoLibro.astro';
 const {proyectos, titulo} = Astro.props;
 ---
 
-<div class="inline-flex pt-8">
+<div class="inline-flex pt-8 pl-12">
     <div class="text-blue-700 pr-2 pt-1">
         <Book size="25"/>
     </div>
-    <span class="font-bold text-2xl">{titulo}<span class="text-gray-500 text-xl font-normal pl-2">({proyectos.length} libros)</span></span>
+    <div class="">
+      <span class="font-bold text-2xl">{titulo}<span class="text-gray-500 text-xl font-normal pl-2">({proyectos.length} libros)</span></span>
+    </div>
 </div>
 <div class="gap-6 mx-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-6">
     {proyectos.map((proyecto) => (

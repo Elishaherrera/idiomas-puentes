@@ -1,5 +1,8 @@
 ---
 import Historia from "./Tarjetas/TarjetaHistorias.astro";
+import  Alberto from "../assets/Alberto7.png";
+import  Oscar from "../assets/oscar5.png";
+import  Ruth from "../assets/Ruth6.png";
 ---
 
 <section class="relative bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
@@ -10,25 +13,28 @@ import Historia from "./Tarjetas/TarjetaHistorias.astro";
       Descubre cómo la Palabra de Dios está transformando vidas y comunidades alrededor del mundo.
     </p>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-10 max-w-6xl mx-auto">
-        <Historia nombre="María González" 
-        descripcion="Después de recibir la Biblia en mi idioma materno, mi comunidad ha experimentado un profundo cambio espiritual y social."
-         pais="Guatemala" 
-         imagen="https://images.pexels.com/photos/5905498/pexels-photo-5905498.jpeg" 
-         boton="Leer Historia Completa"/>
+        <Historia nombre="Alberto A." 
+        descripcion="Para Alberto, un traductor indígena, la traducción puede ser desafiante, algunas veces se encuentra con palabras o frases que son muy difíciles de traducir a su propia lengua."
+         pais="Piaroa" 
+         imagen={Alberto} 
+         boton="Leer Historia Completa"
+         link="/Historias#Alberto"/>
          
         
-        <Historia nombre="Juan Pérez" 
-        descripcion="La capacitación recibida nos ha equipado para servir mejor a nuestra comunidad y compartir el mensaje de esperanza."
-         pais="Perú"
-         imagen="https://images.pexels.com/photos/5905498/pexels-photo-5905498.jpeg" 
-         boton="Leer Historia Completa"/>
+        <Historia nombre="Oscar" 
+        descripcion="Por su parte, Óscar, traductor de otra etnia indígena, cuenta que las herramientas de traducción le han aclarado sus dudas y lo han ayudado a entender las palabras o frases del texto original y su contexto."
+         pais="Sanöma"
+         imagen={Oscar} 
+         boton="Leer Historia Completa"
+         link="/Historias#Oscar"/>
         
 
-        <Historia nombre="Ana Silva" 
-        descripcion="El programa de alfabetización bíblica ha transformado vidas, permitiendo a las personas leer y estudiar la Palabra de Dios."
-         pais="Brasil"
-         imagen="https://images.pexels.com/photos/5905498/pexels-photo-5905498.jpeg" 
-         boton="Leer Historia Completa"/>
+        <Historia nombre="Ruth M." 
+        descripcion="Ruth coincide con Óscar, en que las herramientas les permiten aclarar muchas dudas a los traductores, y ha sido testigo de cómo él está creciendo como traductor."
+         pais="Venezuela"
+         imagen={Ruth}
+         boton="Leer Historia Completa"
+         link="/Historias#Ruth"/>
        
     </div>
 
@@ -37,7 +43,7 @@ import Historia from "./Tarjetas/TarjetaHistorias.astro";
      <h2 class="mt-4 text-gray-700">¿La traducción bíblica o nuestro ministerio ha impactado tu comunidad? Nos encantaría escuchar y compartir tu historia de transformación.</h2>
 
         <div class="mt-6 text-center animate-fade-in">
-            <a href="/impacto" class="inline-flex bg-blue-900 hover:bg-blue-950 items-center justify-center text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
+            <a href="/Contacto" class="inline-flex bg-blue-900 hover:bg-blue-950 items-center justify-center text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
                 Envía tu Historia
             </a>
         </div>

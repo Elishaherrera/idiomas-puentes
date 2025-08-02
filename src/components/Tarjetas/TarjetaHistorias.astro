@@ -1,19 +1,25 @@
 ---
-const {nombre, descripcion, pais, imagen, boton} = Astro.props;
+const {nombre, descripcion, pais, imagen, boton, link} = Astro.props;
+import { Image } from 'astro:assets';
+
 ---
 
 
-<div class="bg-white rounded-md shadow-lg">
-    <div class="w-full h-50 relative overflow-hidden rounded-t-md">
-        <img src={imagen}>   
+<div class="bg-white rounded-md shadow-lg flex flex-col">
+    <div class="grow">
+        <div class="w-full h-50 relative overflow-hidden rounded-t-md">
+            <Image src={imagen} alt={nombre}/>   
+        </div>
+        <h1 class="mt-6 text-gray-700 text-start px-6">{descripcion}</h1>
     </div>
-    <h1 class="mt-6 text-gray-700 text-start px-6">{descripcion}</h1>
-    <h2 class="mt-6 text-blue-950 font-serif font-bold justify-self-start px-6">{nombre}</h2>
-    <h3 class="text-gray-500 justify-self-start px-6">{pais}</h3>
-        <div class="text-blue-900 cursor-pointer hover:text-black px-6 py-6 flex justify-self-start">
-                {boton}
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-        </div> 
+    <div>
+        <h2 class="mt-6 text-blue-950 font-serif font-bold justify-self-start px-6">{nombre}</h2>
+        <h3 class="text-gray-500 justify-self-start px-6">{pais}</h3>
+        <a href={link} class="text-blue-900 cursor-pointer hover:text-black px-6 py-6 flex justify-self-start">
+            {boton}
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </a> 
+    </div>
 </div>

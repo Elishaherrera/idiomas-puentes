@@ -2,8 +2,8 @@
 const {numero, titulo} = Astro.props;
 ---
 
-<div class=" bg-gray-50 p-4 rounded-xl">
-    <p class="text-2xl font-bold text-blue-950">{numero}</p>
+<div class=" bg-gray-50 p-6 rounded-xl shadow-lg space-y-4">
+    <p class="font-bold text-3xl text-blue-900">{numero}</p>
     <p class="text-gray-700"><slot/></p>
 </div>
 

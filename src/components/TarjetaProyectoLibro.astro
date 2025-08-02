@@ -23,7 +23,7 @@ const color = progreso === 100 ? colores.completado : progreso > 0 ? colores.pro
 
 
 
- <div class={`flex flex-col bg-${color.claro} px-4 py-4 rounded-lg shadow-md text-center space-y-2 border-2 border-${color.medio}`}>
+ <div class={`flex flex-col bg-${color.claro} px-4 py-4 rounded-lg shadow-md text-center space-y-2 transition-all duration-200 transform hover:scale-105 hover:shadow-lg border-2 border-${color.medio}`}>
     <div class="inline-flex">
         <div class={`text-${color.oscuro} pr-2 pt-1`}>
             <Book size="18"/>
@@ -34,6 +34,6 @@ const color = progreso === 100 ? colores.completado : progreso > 0 ? colores.pro
             <span class={`text-${color.oscuro} text-sm font-medium`}>Progreso</span>
             <span class={`text-${color.oscuro} text-sm font-medium`}>{progreso}%</span> 
         </div>
-        <div class="w-full bg-gray-200 rounded-full h-2"><div class={`h-2 bg-${color.medio} rounded-full transition-all duration-1000`} style={`width: ${progreso}%;`}></div>
+        <div class="w-full bg-gray-200 rounded-full h-2"><div class={`h-2 bg-${color.oscuro} rounded-full transition-all duration-1000`} style={`width: ${progreso}%;`}></div>
     </div>
 </div>
