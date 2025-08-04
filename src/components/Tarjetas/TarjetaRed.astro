@@ -1,12 +1,11 @@
 ---
-const {titulo, descripcion} = Astro.props;
+const { titulo, descripcion } = Astro.props;
 ---
 
-<div class="bg-white rounded-lg px-6 shadow-lg py-6">
-    <div class="text-blue-700 mb-4">
-     <slot/>
-    </div>
-        <h1 class="font-bold text-xl text-blue-950 justify-self-start">{titulo}</h1>
-        <h2 class="mt-2 text-start text-gray-600">{descripcion}</h2>
+<div class="bg-white rounded-lg p-8 shadow-lg h-full">
+  <div class="text-blue-700 mb-4">
+    <slot />
+  </div>
+  <h1 class="font-bold text-xl text-blue-950 justify-self-start">{titulo}</h1>
+  <h2 class="mt-2 text-start text-gray-600">{descripcion}</h2>
 </div>
-

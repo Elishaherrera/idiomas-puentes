@@ -1,65 +1,82 @@
 ---
-import Container from './Container.astro';
-import TituloSeccion from './TituloSeccion.astro';
-import { Users } from '@lucide/astro';
-import { Heart } from '@lucide/astro';
-import { Globe } from '@lucide/astro';
-import { BookOpen } from '@lucide/astro';
+import Container from "./Container.astro";
+import TituloSeccion from "./TituloSeccion.astro";
+import { Users } from "@lucide/astro";
+import { Heart } from "@lucide/astro";
+import { Globe } from "@lucide/astro";
+import { BookOpen } from "@lucide/astro";
 ---
 
-
 <Container>
-<section class="flex items-center justify-center bg-blue-50">
-    <div class=" bg-white shadow-lg rounded-xl px-8 py-8">
-        <div class="flex justify-start items-start">
-            <div class="flex gap-4 items-center py-8">
-                <div class="text-blue-700 bg-blue-100 rounded-full px-3 py-3">
-                <Users size="30"/>
-            </div>
-            <h1 class="text-3xl font-bold">¿Quiénes Somos?</h1> 
-            </div>
-        </div>   
-        <div class="grid md:grid-cols-2 gap-4"> 
-            <div class="">
-                <p class="max-w-5xl text-lg text-gray-700">Somos <span class="text-blue-700 font-bold">discípulos de Jesucristo</span> comprometidos desde nuestras Iglesias locales a facilitar los medios para alcanzar con el evangelio a los grupos étnicos en Latinoamérica y de la comunidad de países de lengua portuguesa.</p>
-               <div class="py-8">
-                    <div class="inline-flex justify-center items-center text-gray-600">
-                        <Globe size="15"/>
-                    <span class="ml-2">Latinoamérica</span>
-                    </div>
-                    <div class="inline-flex justify-center items-center text-gray-600 px-4">
-                        <BookOpen size="15"/>
-                        <span class="ml-2">Países lusófonos</span>
-                    </div>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 bg-blue-50 text-center justify-center rounded-lg px-12 py-4 gap-6">
-                <div class="flex-1 flex flex-col items-center justify-center">
-                    <div class="bg-white px-3 py-3 rounded-full text-blue-600 mb-2 w-fit">
-                      <Heart size="28"/>
-                    </div>
-                    <span class="font-medium text-gray-700">Discípulos</span>
-                </div>
-                <div class="flex-1 flex flex-col items-center justify-center">
-                    <div class="bg-white px-3 py-3 rounded-full text-blue-600 mb-2 w-fit">
-                        <Users size="28"/>
-                    </div>
-                    <span class="font-medium text-gray-700">Iglesias</span>
-                </div>
-                <div class="flex-1 flex flex-col items-center justify-center">
-                    <div class="bg-white px-3 py-3 rounded-full text-blue-600 mb-2 w-fit">
-                        <Globe size="28"/>
-                    </div>
-                <span class="font-medium text-gray-700">Etnias</span>
-                </div>
-                <div class="flex-1 flex flex-col items-center justify-center">
-                    <div class="bg-white px-3 py-3 rounded-full text-blue-600 mb-2 w-fit">
-                        <BookOpen size="28"/>
-                    </div>
-                <span class="font-medium text-gray-700">Evangelio</span>
-                </div>
-            </div>
+  <section class="flex items-center justify-center bg-blue-50">
+    <div class="bg-white shadow-lg rounded-xl p-12 flex w-full gap-6">
+      <div class="flex justify-start items-start flex-col h-full">
+        <div class="flex gap-4 items-center pb-6">
+          <div class="text-blue-700 bg-blue-100 rounded-full px-3 py-3">
+            <Users size="30" />
+          </div>
+          <h1 class="text-3xl font-bold">¿Quiénes Somos?</h1>
         </div>
+        <div class="flex flex-col h-full">
+          <p class="max-w-5xl text-lg text-gray-700 grow">
+            Somos <span class="text-blue-700 font-bold"
+              >discípulos de Jesucristo</span
+            > comprometidos desde nuestras Iglesias locales a facilitar los medios
+            para alcanzar con el evangelio a los grupos étnicos en Latinoamérica
+            y de la comunidad de países de lengua portuguesa.
+          </p>
+          <div class="py-8">
+            <div class="inline-flex justify-center items-center text-gray-600">
+              <Globe size="15" />
+              <span class="ml-2">Latinoamérica</span>
+            </div>
+            <div
+              class="inline-flex justify-center items-center text-gray-600 px-4"
+            >
+              <BookOpen size="15" />
+              <span class="ml-2">Países lusófonos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-4 w-full">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 bg-blue-50 w-full text-center justify-center rounded-lg px-12 py-4 gap-6"
+        >
+          <div class="flex-1 flex flex-col items-center justify-center">
+            <div
+              class="bg-white px-3 py-3 rounded-full text-blue-600 mb-2 w-fit"
+            >
+              <Heart size="28" />
+            </div>
+            <span class="font-medium text-gray-700">Discípulos</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center justify-center">
+            <div
+              class="bg-white px-3 py-3 rounded-full text-blue-600 mb-2 w-fit"
+            >
+              <Users size="28" />
+            </div>
+            <span class="font-medium text-gray-700">Iglesias</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center justify-center">
+            <div
+              class="bg-white px-3 py-3 rounded-full text-blue-600 mb-2 w-fit"
+            >
+              <Globe size="28" />
+            </div>
+            <span class="font-medium text-gray-700">Etnias</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center justify-center">
+            <div
+              class="bg-white px-3 py-3 rounded-full text-blue-600 mb-2 w-fit"
+            >
+              <BookOpen size="28" />
+            </div>
+            <span class="font-medium text-gray-700">Evangelio</span>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 </Container>

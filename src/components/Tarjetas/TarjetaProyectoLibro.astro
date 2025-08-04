@@ -1,0 +1,11 @@
+---
+import { Book } from '@lucide/astro';
+const {nombre, progreso} = Astro.props;
+import SinIniciar from "./ProyectoLibro/SinIniciar.astro"
+import EnProgreso from "./ProyectoLibro/EnProgreso.astro"
+import Completado from "./ProyectoLibro/Completado.astro"
+---
+
+{ (progreso==0) && <SinIniciar nombre={nombre} progreso={progreso}/> }
+{ (progreso > 0 && progreso < 100 ) && <EnProgreso nombre={nombre} progreso={progreso}/> }
+{ (progreso==100) && <Completado nombre={nombre} progreso={progreso}/> }

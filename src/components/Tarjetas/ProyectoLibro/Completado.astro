@@ -1,0 +1,21 @@
+---
+import { Book } from '@lucide/astro';
+const {nombre, progreso} = Astro.props;
+---
+
+
+
+ <div class={`flex flex-col bg-green-50 px-4 py-4 rounded-lg shadow-md text-center space-y-2 transition-all duration-200 transform hover:scale-105 hover:shadow-lg border-2 border-green-500`}>
+    <div class="inline-flex">
+        <div class={`text-green-600 pr-2 pt-1`}>
+            <Book size="18"/>
+        </div>
+        <span class={`text-md font-medium text-green-600`}>{nombre}</span>
+        </div>
+        <div class="flex justify-between items-center">
+            <span class={`text-green-600 text-sm font-medium`}>Progreso</span>
+            <span class={`text-green-600 text-sm font-medium`}>{progreso}%</span> 
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2"><div class={`h-2 bg-green-600 rounded-full transition-all duration-1000`} style={`width: ${progreso}%;`}></div>
+    </div>
+</div>
