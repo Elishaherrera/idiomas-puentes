@@ -1,60 +1,82 @@
 ---
-import { Globe } from '@lucide/astro';
-import { Languages } from '@lucide/astro';
-import { BookOpen } from '@lucide/astro';
-import { Users } from '@lucide/astro';
-import Container from './Container.astro';
+import { Globe } from "@lucide/astro";
+import { Languages } from "@lucide/astro";
+import { BookOpen } from "@lucide/astro";
+import { Users } from "@lucide/astro";
+import Container from "./Container.astro";
 ---
 
-<section class="min-h-screen">
-    <Container>
-        <div class="bg-white rounded-3xl shadow-[0_0_6px_0_rgba(0,0,0,0.15)] px-12 py-16">
-                <div class="flex gap-8">
-                    <div class="flex gap-6">
-                        <div class="inline-flex gap-2 text-center items-start">
-                            <div class="text-white bg-purple-600 rounded-2xl p-4">
-                                <Globe size="30"/>
-                            </div>
-                        </div>
-                        <div>
-                            <span class="text-4xl font-bold pb-4">Impacto del paquete de recursos de traducción en las etnias indígenas venezolanas</span>
-                            <p class="text-lg text-gray-600 font-normal max-w-4xl py-6">En el año <span class="text-purple-700 font-medium">2020</span>
-                                , miembros de dos etnias indígenas de Venezuela iniciaron un trabajo de traducción Bíblica en sus idiomas nativos,
-                                usando el paquete de recursos de traducción proporcionados por <span class="text-gray-700 font-medium">unfoldingWord</span>
-                                y traducidos al español por <span class="text-gray-700 font-medium">Idiomas Puentes.</span>
-                            </p>
-                            <p class="text-lg text-gray-600 font-normal pt-4 max-w-4xl">
-                                Hasta ahora ya se han traducido a estos dos idiomas, las <span class="text-purple-700 font-medium">Historias Bíblicas Abiertas</span>,
-                                y están en proceso
-                                de traducción y comprobación los libros de <span class="text-gray-700 font-medium">Tito</span>
-                                y <span class="text-gray-700 font-medium">3.ª de Juan.</span>
-                            </p>   
-                        </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-                    <div class="bg-gray-50  justify-center items-center rounded-xl flex-1 flex flex-col p-4 space-y-2">
-                        <div class="text-blue-700 bg-blue-100 rounded-2xl p-3">
-                        <Languages size="28"/>
-                        </div>
-                        <span class=" font-medium">2 Etnias</span>
-                        <span class="text-gray-700 text-sm">Comunidades indígenas participantes</span>
-                    </div>
-                    <div class="bg-gray-50  justify-center items-center rounded-xl flex-1 flex flex-col p-4 space-y-2">
-                        <div class="text-purple-700 bg-purple-100 rounded-2xl p-3">
-                        <BookOpen size="28"/>
-                        </div>
-                        <span class=" font-medium">3 Libros</span>
-                        <span class="text-gray-700 text-sm">En proceso de traducción</span>
-                    </div>
-                    <div class="bg-gray-50  justify-center items-center rounded-xl flex-1 flex flex-col p-4 space-y-2">
-                        <div class="text-green-700 bg-green-100 rounded-2xl p-3">
-                        <Users size="28"/>
-                        </div>
-                        <span class="font-medium">Desde 2020</span>
-                        <span class="text-gray-700 text-sm">Años de trabajo continuo</span>
-                    </div>
-                </div>
+<section class="">
+  <Container>
+    <div
+      class="bg-white rounded-3xl shadow-[0_0_6px_0_rgba(0,0,0,0.15)] px-12 py-16"
+    >
+      <div class="flex gap-8">
+        <div class="flex gap-6">
+          <div class="inline-flex gap-2 text-center items-start">
+            <div class="text-white bg-purple-600 rounded-2xl p-4">
+              <Globe size="30" />
+            </div>
+          </div>
+          <div>
+            <span class="text-4xl font-bold pb-4"
+              >Impacto del paquete de recursos de traducción en las etnias
+              indígenas venezolanas</span
+            >
+            <p class="text-lg text-gray-600 font-normal max-w-4xl py-6">
+              En el año <span class="text-purple-700 font-medium">2020</span>
+              , miembros de dos etnias indígenas de Venezuela iniciaron un trabajo
+              de traducción Bíblica en sus idiomas nativos, usando el paquete de
+              recursos de traducción proporcionados por <span
+                class="text-gray-700 font-medium">unfoldingWord</span
+              >
+              y traducidos al español por <span
+                class="text-gray-700 font-medium">Idiomas Puentes.</span
+              >
+            </p>
+            <p class="text-lg text-gray-600 font-normal pt-4 max-w-4xl">
+              Hasta ahora ya se han traducido a estos dos idiomas, las <span
+                class="text-purple-700 font-medium"
+                >Historias Bíblicas Abiertas</span
+              >, y están en proceso de traducción y comprobación los libros de <span
+                class="text-gray-700 font-medium">Tito, 3.ª de Juan, Rut</span
+              >
+              y <span class="text-gray-700 font-medium">Jonás.</span>
+            </p>
+          </div>
         </div>
-    </Container>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+        <div
+          class="bg-gray-50 justify-center items-center rounded-xl flex-1 flex flex-col p-4 space-y-2"
+        >
+          <div class="text-blue-700 bg-blue-100 rounded-2xl p-3">
+            <Languages size="28" />
+          </div>
+          <span class="font-medium">2 Etnias</span>
+          <span class="text-gray-700 text-sm"
+            >Comunidades indígenas participantes</span
+          >
+        </div>
+        <div
+          class="bg-gray-50 justify-center items-center rounded-xl flex-1 flex flex-col p-4 space-y-2"
+        >
+          <div class="text-purple-700 bg-purple-100 rounded-2xl p-3">
+            <BookOpen size="28" />
+          </div>
+          <span class="font-medium">3 Libros</span>
+          <span class="text-gray-700 text-sm">En proceso de traducción</span>
+        </div>
+        <div
+          class="bg-gray-50 justify-center items-center rounded-xl flex-1 flex flex-col p-4 space-y-2"
+        >
+          <div class="text-green-700 bg-green-100 rounded-2xl p-3">
+            <Users size="28" />
+          </div>
+          <span class="font-medium">Desde 2020</span>
+          <span class="text-gray-700 text-sm">Años de trabajo continuo</span>
+        </div>
+      </div>
+    </div>
+  </Container>
 </section>

@@ -1,116 +1,167 @@
 ---
-import Container from './Container.astro';
-import TituloSeccion from './TituloSeccion.astro';
-import { BookOpen } from '@lucide/astro';
-import { Target } from '@lucide/astro';
-import { ArrowRight } from '@lucide/astro';
-import { FileText } from  '@lucide/astro';
-import { HelpCircle } from '@lucide/astro';
-import { GraduationCap } from '@lucide/astro';
-import { Languages } from '@lucide/astro';
+import Container from "./Container.astro";
+import TituloSeccion from "./TituloSeccion.astro";
+import { BookOpen } from "@lucide/astro";
+import { Target } from "@lucide/astro";
+import { ArrowRight } from "@lucide/astro";
+import { FileText } from "@lucide/astro";
+import { HelpCircle } from "@lucide/astro";
+import { GraduationCap } from "@lucide/astro";
+import { Languages } from "@lucide/astro";
 ---
 
-<section class="min-h-screen">
-    <Container>
-        <div class="text-center">
-            <span class="text-4xl font-bold">Recursos de unfoldingWord</span>
-            <p class="text-gray-600 text-2xl pt-6">Los siguientes recursos se traducen en este ciclo para apoyar el proceso de traducción bíblica</p>
+<section class="">
+  <Container>
+    <div class="text-center mb-8">
+      <span class="text-4xl font-bold">Recursos de unfoldingWord</span>
+      <p class="text-gray-600 text-2xl pt-6">
+        Los siguientes recursos se traducen en este ciclo para apoyar el proceso
+        de traducción bíblica
+      </p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-12 pt-12">
+      <div
+        class="bg-blue-50 rounded-2xl space-y-4 w-fit py-8 px-8 border-l-4 border-l-blue-200 transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
+      >
+        <div class="inline-flex items-center justify-center pb-2">
+          <BookOpen size="30" class="text-blue-600" />
+          <TituloSeccion class="ml-4">Texto Puente Literal (TPL)</TituloSeccion>
         </div>
-        <div class="grid md:grid-cols-2 gap-12 pt-12">
-            <div class=" bg-blue-50 rounded-2xl space-y-4 w-fit py-8 px-8 border-l-4 border-l-blue-200 transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
-                    <div class="inline-flex items-center justify-center pb-2">
-                        <BookOpen size="30" class="text-blue-600"/>
-                        <TituloSeccion class="ml-4">Texto Puente Literal (TPL)</TituloSeccion>
-                    </div>
-                <div class="justify-center">
-                    <p class=" text-gray-700 text-lg">Traducción que revela la forma del idioma original, diseñada 
-                        para apegarse a las formas y expresiones de los originales hebreo, arameo y griego. Permite a los traductores ver
-                        cómo estas lenguas expresaron los conceptos bíblicos. 
-                    </p>
-                        <a target="_blank" href="https://preview.door43.org/u/es-419_gl/es-419_glt?book=tit" class="inline-flex items-center justify-center py-4">
-                            <span class="text-gray-600 font-medium">Ver</span>
-                            <ArrowRight size="20" class="text-gray-600 ml-2"/>
-                        </a>
-                </div>
-            </div>
-            <div class=" bg-green-50 rounded-2xl space-y-4 w-fit py-8 px-8 border-l-4 border-l-green-200 transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
-                <div class="inline-flex items-center justify-center pb-2">
-                    <Target size="30" class="text-green-600"/>
-                    <TituloSeccion class="ml-4">Texto Puente Simple (TPS)</TituloSeccion>
-                </div>
-                <div class="justify-center">
-                    <p class="text-gray-700 text-lg">Presenta el significado con claridad utilizando frases cortas, evitando gramática
-                        compleja. Ayuda a los traductores a ver el significado detrás del lenguaje figurado para usar figuras de su
-                        lengua que transmitan ese significado.
-                    </p>
-                    <a target="_blank" href=" https://preview.door43.org/u/es-419_gl/es-419_gst?book=tit" class="inline-flex items-center justify-center py-4">
-                        <span class="text-gray-600 font-medium">Ver</span>
-                        <ArrowRight size="20" class="text-gray-600 ml-2"/>
-                    </a>
-                </div>
-            </div>
-            <div class=" bg-purple-50 rounded-2xl space-y-4 w-fit py-8 px-8 border-l-4 border-l-purple-200 transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
-                <div class="inline-flex items-center justify-center pb-2">
-                    <FileText size="30" class="text-purple-600"/>
-                    <TituloSeccion class="ml-4">Notas de Traducción</TituloSeccion>
-                </div>
-                <div class="justify-center">
-                    <p class=" text-gray-700 text-lg">Notas exegéticas que proporcionan información histórica, cultural 
-                        y lingüística sobre el texto bíblico. Ofrecen la ayuda que un traductor necesita precisamente en el contexto
-                        donde la necesita.
-                    </p>
-                        <a target="_blank" href=" https://preview.door43.org/u/es-419_gl/es-419_tn?book=tit" class="inline-flex items-center justify-center py-4">
-                            <span class="text-gray-600 font-medium">Ver</span>
-                            <ArrowRight size="20" class="text-gray-600 ml-2"/>
-                        </a>
-                </div>
-            </div>
-            <div class=" bg-orange-50 rounded-2xl space-y-4 w-fit py-8 px-8 border-l-4 border-l-orange-200 transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
-                <div class="inline-flex items-center justify-center pb-2">
-                    <HelpCircle size="30" class="text-orange-600"/>
-                    <TituloSeccion class="ml-4">Preguntas de Traducción</TituloSeccion>
-                </div>
-                <div class="justify-center">
-                    <p class=" text-gray-700 text-lg">Preguntas de comprensión y teológicas para cada capítulo de la Biblia.
-                        Permiten a traductores y revisores confirmar que el significado de sus traducciones se comunica claramente.
-                    </p>
-                        <a target="_blank" href=" https://preview.door43.org/u/es-419_gl/es-419_tq?book=tit" class="inline-flex items-center justify-center py-4">
-                            <span class="text-gray-600 font-medium">Ver</span>
-                            <ArrowRight size="20" class="text-gray-600 ml-2"/>
-                        </a>
-                </div>
-            </div>
-            <div class=" bg-indigo-50 rounded-2xl space-y-4 w-fit py-8 px-8 border-l-4 border-l-indigo-200 transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
-                <div class="inline-flex items-center justify-center pb-2">
-                    <GraduationCap size="30" class="text-indigo-600"/>
-                    <TituloSeccion class="ml-4">Academia de Traducción</TituloSeccion>
-                </div>
-                <div class="justify-center">
-                    <p class=" text-gray-700 text-lg">Conjunto de módulos de enseñanza concisos sobre traducción, 
-                        comprobación y uso de herramientas tecnológicas. Proporciona conocimientos básicos para que cualquier
-                        persona pueda aprender a traducir la Biblia.
-                    </p>
-                        <a target="_blank" href="https://preview.door43.org/u/es-419_gl/es-419_ta" class="inline-flex items-center justify-center py-4">
-                            <span class="text-gray-600 font-medium">Ver</span>
-                            <ArrowRight size="20" class="text-gray-600 ml-2"/>
-                        </a>
-                </div>
-            </div>
-            <div class=" bg-red-50 rounded-2xl space-y-4 w-fit py-8 px-8 border-l-4 border-l-red-200 transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
-                <div class="inline-flex items-center justify-center pb-2">
-                    <Languages size="30" class="text-red-600"/>
-                    <TituloSeccion class="ml-4">Palabras de Traducción</TituloSeccion>
-                </div>
-                <div class="justify-center">
-                    <p class=" text-gray-700 text-lg">Lista de términos del pasaje bíblico que pueden ser difíciles de entender
-                        o traducir. Incluye palabras clave fundamentales para explicar el evangelio como: Gracia, salvación, Dios...
-                    </p>
-                        <a target="_blank" href=" https://preview.door43.org/u/es-419_gl/es-419_tw" class="inline-flex items-center justify-center py-4">
-                            <span class="text-gray-600 font-medium">Ver</span>
-                            <ArrowRight size="20" class="text-gray-600 ml-2"/>
-                        </a>
-                </div>
-            </div>
+        <div class="justify-center">
+          <p class="text-gray-700 text-lg">
+            Traducción que revela la forma del idioma original, diseñada para
+            apegarse a las formas y expresiones de los textos originales hebreo, arameo
+            y griego. Permite a los traductores ver cómo estas lenguas
+            expresaron los conceptos bíblicos.
+          </p>
+          <a
+            target="_blank"
+            href="https://preview.door43.org/u/es-419_gl/es-419_glt?book=tit"
+            class="inline-flex items-center justify-center py-4"
+          >
+            <span class="text-gray-600 font-medium">Ver</span>
+            <ArrowRight size="20" class="text-gray-600 ml-2" />
+          </a>
         </div>
-    </Container>
+      </div>
+      <div
+        class="bg-green-50 rounded-2xl space-y-4 w-fit py-8 px-8 border-l-4 border-l-green-200 transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
+      >
+        <div class="inline-flex items-center justify-center pb-2">
+          <Target size="30" class="text-green-600" />
+          <TituloSeccion class="ml-4">Texto Puente Simple (TPS)</TituloSeccion>
+        </div>
+        <div class="justify-center">
+          <p class="text-gray-700 text-lg">
+            Presenta el significado con claridad utilizando frases cortas,
+            evitando gramática compleja. Ayuda a los traductores a ver el
+            significado detrás del lenguaje figurado para usar figuras de su
+            lengua que transmitan ese significado.
+          </p>
+          <a
+            target="_blank"
+            href=" https://preview.door43.org/u/es-419_gl/es-419_gst?book=tit"
+            class="inline-flex items-center justify-center py-4"
+          >
+            <span class="text-gray-600 font-medium">Ver</span>
+            <ArrowRight size="20" class="text-gray-600 ml-2" />
+          </a>
+        </div>
+      </div>
+      <div
+        class="bg-purple-50 rounded-2xl space-y-4 w-fit py-8 px-8 border-l-4 border-l-purple-200 transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
+      >
+        <div class="inline-flex items-center justify-center pb-2">
+          <FileText size="30" class="text-purple-600" />
+          <TituloSeccion class="ml-4">Notas de Traducción</TituloSeccion>
+        </div>
+        <div class="justify-center">
+          <p class="text-gray-700 text-lg">
+            Notas exegéticas que proporcionan información histórica, cultural y
+            lingüística sobre el texto bíblico. Ofrecen la ayuda que un
+            traductor necesita precisamente en el contexto donde la necesita.
+          </p>
+          <a
+            target="_blank"
+            href=" https://preview.door43.org/u/es-419_gl/es-419_tn?book=tit"
+            class="inline-flex items-center justify-center py-4"
+          >
+            <span class="text-gray-600 font-medium">Ver</span>
+            <ArrowRight size="20" class="text-gray-600 ml-2" />
+          </a>
+        </div>
+      </div>
+      <div
+        class="bg-orange-50 rounded-2xl space-y-4 w-fit py-8 px-8 border-l-4 border-l-orange-200 transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
+      >
+        <div class="inline-flex items-center justify-center pb-2">
+          <HelpCircle size="30" class="text-orange-600" />
+          <TituloSeccion class="ml-4">Preguntas de Traducción</TituloSeccion>
+        </div>
+        <div class="justify-center">
+          <p class="text-gray-700 text-lg">
+            Preguntas de comprensión y teológicas para cada capítulo de la
+            Biblia. Permiten a traductores y revisores confirmar que el
+            significado de sus traducciones se comunica claramente.
+          </p>
+          <a
+            target="_blank"
+            href=" https://preview.door43.org/u/es-419_gl/es-419_tq?book=tit"
+            class="inline-flex items-center justify-center py-4"
+          >
+            <span class="text-gray-600 font-medium">Ver</span>
+            <ArrowRight size="20" class="text-gray-600 ml-2" />
+          </a>
+        </div>
+      </div>
+      <div
+        class="bg-indigo-50 rounded-2xl space-y-4 w-fit py-8 px-8 border-l-4 border-l-indigo-200 transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
+      >
+        <div class="inline-flex items-center justify-center pb-2">
+          <GraduationCap size="30" class="text-indigo-600" />
+          <TituloSeccion class="ml-4">Academia de Traducción</TituloSeccion>
+        </div>
+        <div class="justify-center">
+          <p class="text-gray-700 text-lg">
+            Proporciona los conocimientos fundamentales necesarios para que
+              cualquier persona, en cualquier lugar, pueda aprender a traducir
+              la Biblia a su propio idioma, comprobar su exactitud y utilizar
+              las herramientas con confianza. Es como tener un consultor justo a
+              tiempo.
+          </p>
+          <a
+            target="_blank"
+            href="https://preview.door43.org/u/es-419_gl/es-419_ta"
+            class="inline-flex items-center justify-center py-4"
+          >
+            <span class="text-gray-600 font-medium">Ver</span>
+            <ArrowRight size="20" class="text-gray-600 ml-2" />
+          </a>
+        </div>
+      </div>
+      <div
+        class="bg-red-50 rounded-2xl space-y-4 w-fit py-8 px-8 border-l-4 border-l-red-200 transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
+      >
+        <div class="inline-flex items-center justify-center pb-2">
+          <Languages size="30" class="text-red-600" />
+          <TituloSeccion class="ml-4">Palabras de Traducción</TituloSeccion>
+        </div>
+        <div class="justify-center">
+          <p class="text-gray-700 text-lg">
+            Lista de términos del pasaje bíblico que pueden ser difíciles de
+            entender o traducir. Incluye palabras clave fundamentales para
+            explicar el evangelio como: Gracia, salvación, Dios...
+          </p>
+          <a
+            target="_blank"
+            href=" https://preview.door43.org/u/es-419_gl/es-419_tw"
+            class="inline-flex items-center justify-center py-4"
+          >
+            <span class="text-gray-600 font-medium">Ver</span>
+            <ArrowRight size="20" class="text-gray-600 ml-2" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </Container>
 </section>

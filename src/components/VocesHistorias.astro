@@ -1,166 +1,253 @@
 ---
-import { BookOpen } from '@lucide/astro';
-import { Star } from '@lucide/astro';
-import { Heart } from '@lucide/astro';
-import {Info} from '@lucide/astro';
-import Container from './Container.astro';
+import { BookOpen } from "@lucide/astro";
+import { Star } from "@lucide/astro";
+import { Heart } from "@lucide/astro";
+import { Info } from "@lucide/astro";
+import Container from "./Container.astro";
 ---
 
 <section class="min-h-screen">
-    <Container>
-        <div class="flex flex-col justify-center items-center text-center space-y-6 pb-12">
-        <span class="font-bold text-5xl">Tres Voces, Una Misión</span>  
-        <p class="text-xl max-w-2xl text-gray-600">Conoce las experiencias de quienes están transformando comunidades a través de la traducción</p>
-        </div>
-        <div class="bg-white rounded-3xl shadow-[0_0_6px_0_rgba(0,0,0,0.15)] mt-8 p-12">
-            <div class="flex gap-8">
-                <div class="flex flex-col flex-none gap-2">
-                    <div class="w-40 h-40 rounded-2xl bg-cover bg-center bg-[url('../assets/Alberto7.png')]"></div>
-                    <div class="w-40 group">
-                        <div class="text-blue-700 bg-blue-100 p-1 rounded-lg w-fit cursor-pointer">
-                            <Info size="15"/>
-                        </div>
-                        <span class="w-40 hidden group-hover:block text-sm text-gray-500 font-medium border-1 border-gray-300 rounded-xl p-2 shadow-lg">Por la seguridad de esta persona, esta foto fue creada por IA</span>
-                    </div>
-                </div>
-                <div>
-                    <h2 class="flex flex-col" id="Alberto">
-                        <span class="text-3xl font-bold pb-4">Alberto</span>
-                    </h2>
-                    <div class="inline-flex gap-2 text-center items-center">
-                        <div class="text-blue-600 bg-blue-100 rounded-lg p-1.5">
-                            <BookOpen size="15"/>
-                        </div>
-                            <span class="text-blue-600 font-medium">Traductor Indígena</span>
-                    </div>
-                    <div class="flex justify-center items-center flex-col text-start">
-                        <p class="text-gray-700 mt-8 max-w-4xl">
-                            Para Alberto, un traductor indígena, la traducción puede ser desafiante, algunas veces se encuentra con palabras o frases
-                            que son muy difíciles de traducir a su propia lengua.
-                        </p>
-                        <p class="text-gray-700 mt-4 max-w-4xl">
-                            Él dice que cada una de las <span class="text-blue-600 font-medium">herramientas de traducción</span>
-                            ha sido de mucha bendición, en esos momentos de dificultad,
-                            el consultar una nota de traducción, el diccionario de términos claves y la traducción simplificada, lo ayudan a despejar
-                            la mente y abordar la traducción con diferentes sugerencias y alternativas.
-                        </p>
-                        <p class="text-gray-700 mt-4 max-w-4xl">
-                            Por otro lado, el trabajo de revisión con sus compañeros de equipo lo ha ayudado a 
-                            <span class="text-blue-600 font-medium">crecer espiritualmente</span>
-                            y a compartir con otros lo que ha recibido de parte de Dios y a la vez también nutrirse con lo que sus
-                            hermanos están aprendiendo del texto bíblico.
-                        </p> 
-                    </div>        
-                        <p class="text-blue-900 font-medium bg-blue-50 mt-8 max-w-2xl rounded-r-2xl p-8  border-l-4 border-blue-400">
-                            "Gracias al uso de las herramientas en el proceso de traducción de las Historias Bíblicas Abiertas, 
-                            Alberto y su equipo de traducción, han adquirido conocimientos claves que les han ayudado a aclarar 
-                            las dudas de la comunidad en el proceso de comprobación. La comunidad, al entender el texto bíblico 
-                            traducido a su idioma, también ha crecido espiritualmente."
-                        </p>
-                </div>    
+  <Container>
+    <div
+      class="flex flex-col justify-center items-center text-center space-y-6 pb-12"
+    >
+      <span class="font-bold text-5xl">Tres Voces, Una Misión</span>
+      <p class="text-xl max-w-2xl text-gray-600">
+        Conoce las experiencias de quienes están transformando comunidades a
+        través de la traducción
+      </p>
+    </div>
+    <div
+      class="bg-white rounded-3xl shadow-[0_0_6px_0_rgba(0,0,0,0.15)] mt-8 p-12"
+    >
+      <div class="flex gap-12">
+        <div class="flex flex-col flex-none gap-2">
+          <div
+            class="w-50 h-auto rounded-2xl bg-cover bg-center aspect-6/8 relative bg-[url('../assets/Alberto7.png')]"
+          >
+          <div class="w-40 group absolute bottom-2 left-2">
+            <div
+              class="text-blue-700 bg-blue-100 p-1 rounded-lg w-fit cursor-pointer"
+            >
+              <Info size="15" />
             </div>
+            <span
+              class="absolute w-40 hidden group-hover:block text-sm text-gray-600 bg-white font-medium border-1 border-gray-300 rounded-xl p-2 shadow-lg"
+              >Por la seguridad de esta persona, esta foto fue creada por IA</span
+            >
+          </div>
+          </div>
+          
         </div>
-        <div class="bg-white rounded-3xl shadow-[0_0_6px_0_rgba(0,0,0,0.15)] mt-15 p-12">
-            <div class="flex gap-8">
-                <div class="flex flex-col flex-none gap-2">
-                   <div class="w-40 h-40 rounded-2xl bg-cover bg-center bg-[url('../assets/oscar5.png')]"></div> 
-                   <div class="w-40 group">
-                        <div class="text-blue-700 bg-blue-100 p-1 rounded-lg w-fit cursor-pointer">
-                            <Info size="15"/>
-                        </div>
-                        <span class="w-40 hidden group-hover:block text-sm text-gray-500 font-medium border-1 border-gray-300 rounded-xl p-2 shadow-lg">Por la seguridad de esta persona, esta foto fue creada por IA</span>
-                    </div>
-                </div>
-                <div>
-                    <h2 class="flex flex-col flex-none gap-2" id="Oscar">
-                        <span class="text-3xl font-bold pb-4">Óscar</span>
-                    </h2>
-                    <div class="inline-flex gap-2 text-center items-center">
-                        <div class="text-green-600 bg-green-100 rounded-lg p-1.5">
-                            <Star size="15"/>
-                        </div>
-                            <span class="text-green-600 font-medium">Traductor de Etnia Indígena</span>
-                    </div>
-                    <div class="flex justify-center items-center flex-col text-start">
-                        <p class="text-gray-700 mt-8">
-                            Por su parte, Óscar, traductor de otra etnia indígena, cuenta que las 
-                            <span class="text-green-600 font-medium">herramientas de traducción</span>
-                            le han aclarado sus dudas y lo han ayudado a entender las palabras o frases del texto original y su contexto,
-                            como resultado logra pensar más en su idioma y su cultura y expresar mejor las palabras en su idioma.
-                        </p>
-                    </div>    
-                        <p class="text-green-900 font-medium bg-green-50 mt-8 max-w-2xl rounded-r-2xl p-8  border-l-4 border-green-400">
-                            Ahora, como entiende mejor las palabras y su contexto, ha logrado traducir mucho más rápido
-                            y depende menos de Ruth, la facilitadora venezolana que lo apoya.
-                        </p>
-                </div>
-            </div>       
+        <div>
+          <h2 class="flex flex-col" id="Alberto">
+            <span class="text-3xl font-bold pb-4">Alberto</span>
+          </h2>
+          <div class="inline-flex gap-2 text-center items-center">
+            <div class="text-blue-600 bg-blue-100 rounded-lg p-1.5">
+              <BookOpen size="15" />
+            </div>
+            <span class="text-blue-600 font-medium">Traductor Indígena</span>
+          </div>
+          <div
+            class="flex justify-center items-center flex-col text-start text-lg"
+          >
+            <p class="text-gray-700 mt-8 max-w-4xl">
+              Para Alberto, un traductor indígena, la traducción puede ser
+              desafiante, algunas veces se encuentra con palabras o frases que
+              son muy difíciles de traducir a su propia lengua.
+            </p>
+            <p class="text-gray-700 mt-4 max-w-4xl">
+              Él dice que cada una de las <span
+                class="text-blue-600 font-medium"
+                >herramientas de traducción</span
+              >
+              ha sido de mucha bendición, en esos momentos de dificultad, el consultar
+              una nota de traducción, el diccionario de términos claves y la traducción
+              simplificada, lo ayudan a despejar la mente y abordar la traducción
+              con diferentes sugerencias y alternativas.
+            </p>
+            <p class="text-gray-700 mt-4 max-w-4xl">
+              Por otro lado, el trabajo de revisión con sus compañeros de equipo
+              lo ha ayudado a
+              <span class="text-blue-600 font-medium"
+                >crecer espiritualmente</span
+              >
+              y a compartir con otros lo que ha recibido de parte de Dios y a la
+              vez también nutrirse con lo que sus hermanos están aprendiendo del
+              texto bíblico.
+            </p>
+          </div>
+          <p
+            class="text-blue-950 font-normal bg-blue-50 mt-8 max-w-2xl rounded-r-2xl p-8 border-l-4 border-blue-400 text-lg"
+          >
+            "Gracias al uso de las herramientas en el proceso de traducción de
+            las Historias Bíblicas Abiertas, Alberto y su equipo de traducción,
+            han adquirido conocimientos claves que les han ayudado a aclarar las
+            dudas de la comunidad en el proceso de comprobación. La comunidad,
+            al entender el texto bíblico traducido a su idioma, también ha
+            crecido espiritualmente."
+          </p>
         </div>
-        <div class="bg-white rounded-3xl shadow-[0_0_6px_0_rgba(0,0,0,0.15)] mt-15 p-12">
-            <div class="flex gap-8">
-                <div class="flex flex-col flex-none gap-2">
-                   <div class="w-40 h-40 rounded-2xl bg-cover bg-center bg-[url('../assets/Ruth6.png')]"></div>
-                    <div class="w-40 group">
-                        <div class="text-blue-700 bg-blue-100 p-1 rounded-lg w-fit cursor-pointer">
-                            <Info size="15"/>
-                        </div>
-                        <span class="w-40 hidden group-hover:block text-sm text-gray-500 font-medium border-1 border-gray-300 rounded-xl p-2 shadow-lg">Por la seguridad de esta persona, esta foto fue creada por IA</span>
-                    </div>
-                </div>
-                <div>
-                    <h2 class="flex flex-col" id="Ruth">
-                        <span class="text-3xl font-bold pb-4">Ruth</span>
-                    </h2>
-                    <div class="inline-flex gap-2 text-center items-center">
-                        <div class="text-purple-600 bg-purple-100 rounded-lg p-1.5">
-                            <Heart size="15"/>
-                        </div>
-                            <span class="text-purple-600 font-medium">Facilitadora Venezolana</span>
-                    </div>
-                
-                    <p class="text-gray-700 mt-8 mb-4">
-                    Ruth coincide con Óscar, en que las herramientas les permiten
-                    <span class="text-purple-600 font-medium">aclarar muchas dudas</span>
-                    a los traductores, y ha sido testigo de cómo él está creciendo como traductor, está desarrollando
-                    nuevas habilidades y está haciendo consultas tomando en cuenta el texto literal y simplificado.
-                    </p>
-                    <div class="flex flex-col">
-                        <div class="bg-purple-50 rounded-xl border boder-1 border-purple-200 w-fit">
-                            <p class="text-purple-700 font-medium bg-white m-6 max-w-2xl rounded-2xl p-6  border-l-4 border-purple-400">
-                            <span class="text-purple-600 font-normal">Óscar le pregunta:</span> 
-                            "Aquí en la traducción sugerida dice esto y en la versión simplificada dice tal cosa,
-                            pero ¿será que yo puedo poner esto?"
-                            </p>
-                            <p class="text-purple-900 font-medium bg-white m-6 max-w-2xl rounded-2xl p-6  border-l-4 border-purple-400">
-                            <span class="text-purple-800">Ruth afirma:</span>
-                            <span class="text-purple-800 font-bold">"Hace preguntas mejor argumentadas porque está entendiendo,
-                            aunque a veces no sabe exactamente cómo decirlo en su lengua, él está entendiendo mejor el texto y eso
-                            me parece algo bellísimo".</span>
-                            </p>
-                        </div>
-                    </div>
-                    <p class="mt-4 text-gray-700">La facilitadora Ruth cuenta que los creyentes de la comunidad se están 
-                        <span class="text-purple-600 font-medium">apropiando cada vez más de su propio proyecto</span>
-                        y que, sobre todo Óscar y todas las personas que van participando de la traducción, están adquiriendo un mayor
-                        entendimiento sobre las Sagradas Escrituras.
-                    </p>
-                    <p class="text-gray-700 mt-4">
-                        Para ella ha sido realmente alentador ver que hay un equipo que permanentemente está trabajando tanto
-                        del lado de unfoldingWord como de Idiomas Puentes que se esfuerza en desarrollar, lo mejor posible,
-                        no solo el paquete de recursos, sino también aplicaciones para la lectura.
-                    </p>
-                    <p class="bg-purple-100/50 rounded-2xl w-fit p-8 mt-4 border-1 border-purple-200 text-purple-900 max-w-2xl font-medium">
-                        <span class="text-purple-900">Ruth culmina:</span> 
-                        <span class="text-purple-900 font-bold">"Al principio era bastante intimidante, tanto como para mí como para Óscar,
-                         ser parte del equipo
-                        de traducción, porque, bueno, es la palabra del Señor, nadie quiere equivocarse, es algo que nos da temor; 
-                        y ver cómo el Señor poco a poco nos ha ido brindando las herramientas para hacer lo que Él mismo ha puesto
-                        en nuestro corazón, para mí es experimentar ser miembro del cuerpo del Señor en un nivel más profundo,
-                        porque sin lugar a dudas, no habría forma en que nosotros pudiésemos hacer nada si no tuviésemos todo ese
-                        equipo que nos respalda".</span>
-                    </p>
-                </div> 
-            </div>       
+      </div>
+    </div>
+    <div
+      class="bg-white rounded-3xl shadow-[0_0_6px_0_rgba(0,0,0,0.15)] mt-15 p-12"
+    >
+      <div class="flex gap-12">
+        <div class="flex flex-col flex-none gap-2">
+          <div
+            class="w-50 h-auto rounded-2xl bg-cover bg-center aspect-6/8 relative bg-[url('../assets/oscar5.png')]"
+          >
+          <div class="w-40 group absolute bottom-2 left-2">
+            <div
+              class="text-blue-700 bg-blue-100 p-1 rounded-lg w-fit cursor-pointer"
+            >
+              <Info size="15" />
+            </div>
+            <span
+              class="absolute w-40 hidden group-hover:block text-sm text-gray-600 bg-white font-medium border-1 border-gray-300 rounded-xl p-2 shadow-lg"
+              >Por la seguridad de esta persona, esta foto fue creada por IA</span
+            >
+          </div>
+          </div>
+          
         </div>
-    </Container>
-</section> 
+        <div>
+          <h2 class="flex flex-col flex-none gap-2" id="Oscar">
+            <span class="text-3xl font-bold pb-4">Óscar</span>
+          </h2>
+          <div class="inline-flex gap-2 text-center items-center">
+            <div class="text-green-600 bg-green-100 rounded-lg p-1.5">
+              <Star size="15" />
+            </div>
+            <span class="text-green-600 font-medium"
+              >Traductor de Etnia Indígena</span
+            >
+          </div>
+          <div
+            class="flex justify-center items-center flex-col text-start text-lg"
+          >
+            <p class="text-gray-700 mt-8">
+              Por su parte, Óscar, traductor de otra etnia indígena, cuenta que
+              las
+              <span class="text-green-600 font-medium"
+                >herramientas de traducción</span
+              >
+              le han aclarado sus dudas y lo han ayudado a entender las palabras
+              o frases del texto original y su contexto, como resultado logra pensar
+              más en su idioma y su cultura y expresar mejor las palabras en su idioma.
+            </p>
+          </div>
+          <p
+            class="text-green-950 font-normal bg-green-50 mt-8 max-w-2xl rounded-r-2xl p-8 border-l-4 border-green-400 text-lg"
+          >
+            Ahora, como entiende mejor las palabras y su contexto, ha logrado
+            traducir mucho más rápido y depende menos de Ruth, la facilitadora
+            venezolana que lo apoya.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-white rounded-3xl shadow-[0_0_6px_0_rgba(0,0,0,0.15)] mt-15 p-12"
+    >
+      <div class="flex gap-12">
+        <div class="flex flex-col flex-none gap-2">
+          <div
+            class="w-50 h-auto rounded-2xl bg-cover bg-center aspect-6/8 relative bg-[url('../assets/Ruth6.png')]"
+          >
+          <div class="w-40 group absolute bottom-2 left-2">
+            <div
+              class="text-blue-700 bg-blue-100 p-1 rounded-lg w-fit cursor-pointer"
+            >
+              <Info size="15" />
+            </div>
+            <span
+              class="absolute w-40 hidden group-hover:block text-sm text-gray-600 bg-white font-medium border-1 border-gray-300 rounded-xl p-2 shadow-lg"
+              >Por la seguridad de esta persona, esta foto fue creada por IA</span
+            >
+          </div>
+          </div>
+          
+        </div>
+        <div>
+          <h2 class="flex flex-col" id="Ruth">
+            <span class="text-3xl font-bold pb-4">Ruth</span>
+          </h2>
+          <div class="inline-flex gap-2 text-center items-center">
+            <div class="text-purple-600 bg-purple-100 rounded-lg p-1.5">
+              <Heart size="15" />
+            </div>
+            <span class="text-purple-600 font-medium"
+              >Facilitadora Venezolana</span
+            >
+          </div>
+          <div class="text-lg">
+            <p class="text-gray-700 mt-8 mb-4">
+              Ruth coincide con Óscar, en que las herramientas les permiten
+              <span class="text-purple-600 font-medium"
+                >aclarar muchas dudas</span
+              >
+              a los traductores, y ha sido testigo de cómo él está creciendo como
+              traductor, está desarrollando nuevas habilidades y está haciendo consultas
+              tomando en cuenta el texto literal y simplificado.
+            </p>
+            <div class="flex flex-col">
+              <div
+                class="bg-gray-50 rounded-xl border boder-1 border-purple-200 w-fit"
+              >
+                <p
+                  class="text-purple-900 font-normal bg-white m-6 max-w-2xl rounded-r-2xl p-6 border-l-4 border-purple-400 shadow-sm"
+                >
+                  Óscar le pregunta: "Aquí en la traducción sugerida dice esto y
+                  en la versión simplificada dice tal cosa, pero ¿será que yo
+                  puedo poner esto?"
+                </p>
+                <p
+                  class="text-purple-900 font-normal bg-white m-6 max-w-2xl rounded-r-2xl p-6 border-l-4 border-purple-400 shadow-sm"
+                >
+                  Ruth afirma:"Hace preguntas mejor argumentadas porque está
+                  entendiendo, aunque a veces no sabe exactamente cómo decirlo
+                  en su lengua, él está entendiendo mejor el texto y eso me
+                  parece algo bellísimo".
+                </p>
+              </div>
+            </div>
+            <p class="mt-4 text-gray-700">
+              La facilitadora Ruth cuenta que los creyentes de la comunidad se
+              están
+              <span class="text-purple-600 font-medium"
+                >apropiando cada vez más de su propio proyecto</span
+              >
+              y que, sobre todo Óscar y todas las personas que van participando de
+              la traducción, están adquiriendo un mayor entendimiento sobre las Sagradas
+              Escrituras.
+            </p>
+            <p class="text-gray-700 mt-4">
+              Para ella ha sido realmente alentador ver que hay un equipo que
+              permanentemente está trabajando tanto del lado de unfoldingWord
+              como de Idiomas Puentes que se esfuerza en desarrollar, lo mejor
+              posible, no solo el paquete de recursos, sino también aplicaciones
+              para la lectura.
+            </p>
+            <p
+              class="bg-purple-100/50 rounded-r-2xl w-fit p-8 mt-4 border-l-4 border-purple-400 text-purple-900 max-w-2xl font-normal"
+            >
+              Ruth culmina:
+                "Al principio era bastante intimidante, tanto como para mí como
+                para Óscar, ser parte del equipo de traducción, porque, bueno,
+                es la palabra del Señor, nadie quiere equivocarse, es algo que
+                nos da temor; y ver cómo el Señor poco a poco nos ha ido
+                brindando las herramientas para hacer lo que Él mismo ha puesto
+                en nuestro corazón, para mí es experimentar ser miembro del
+                cuerpo del Señor en un nivel más profundo, porque sin lugar a
+                dudas, no habría forma en que nosotros pudiésemos hacer nada si
+                no tuviésemos todo ese equipo que nos respalda".
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</section>

@@ -1,58 +1,70 @@
 ---
 import { Heart } from "@lucide/astro";
-import { SprayCan } from "@lucide/astro";
 import TituloSeccion from "./TituloSeccion.astro";
 import { HandHelping } from "@lucide/astro";
 import { Users2 } from "@lucide/astro";
 import { Lightbulb } from "@lucide/astro";
 import { Shield } from "@lucide/astro";
 import { Image } from "astro:assets";
-import PrayIcon from "../assets/PrayIcon.png";
 import Container from "./Container.astro";
 ---
 
 <section class="min-h-screen">
   <Container>
     <div
-      class="bg-white rounded-3xl shadow-[0_0_6px_0_rgba(0,0,0,0.15)]"
+      class="bg-white"
       id="orando"
     >
       <div>
-        <div class="bg-blue-600 p-6 text-center rounded-t-3xl">
-          <div class="inline-flex text-center items-start pl-2">
-            <div class="text-white">
-              <Image src={PrayIcon} alt="Pray Icon" class="h-12 w-auto" />
+        <div class="text-center">
+          <div class="inline-flex text-center items-start pl-2 p-4">
+            <div class="text-blue-600 bg-blue-100 rounded-full p-3">
+              <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-10 w-10"
+            viewBox="0 0 24 24"
+            ><g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              color="currentColor"
+              ><path
+                d="M15.5 15L14 10.5c-1.657 0-2 1.343-2 3V15m-3.5 0l1.5-4.5c1.657 0 2 1.343 2 3V15"
+              ></path><path
+                d="M21.978 22c-1.15-.67-3.086-2.186-5.69-1.992c-.659.049-.989.074-1.29.05a3 3 0 0 1-.327-.029C13.139 19.674 12 18.336 12 16.74V3.196a1.197 1.197 0 0 1 2.304-.453l2.718 6.644c1.066 2.605 1.599 3.907 2.528 4.577c.057.042.163.113.223.15c.971.606 1.39.606 2.227.606M2.022 22c1.15-.67 3.086-2.186 5.69-1.992c.659.049.989.074 1.29.05s.31-.025.327-.029C10.861 19.675 12 18.336 12 16.74V3.196a1.197 1.197 0 0 0-2.304-.453L6.978 9.388c-1.066 2.605-1.599 3.908-2.528 4.577a5 5 0 0 1-.223.15c-.971.606-1.39.606-2.227.606"
+              ></path></g
+            ></svg
+          >
             </div>
           </div>
-          <h3 class="text-2xl font-bold text-white">Orando</h3>
+          <h3 class="text-3xl font-bold">Orando</h3>
         </div>
       </div>
       <div class="mt-6 flex justify-center items-center w-full p-3">
         <div
-          class="bg-blue-50 max-w-5xl justify-center items-center rounded-xl p-6 space-y-2 border-1 border-blue-100"
+          class="bg-white max-w-5xl justify-center items-center rounded-xl p-6 space-y-2 border-1 border-blue-200"
         >
-          <p class="font-serif text-blue-800 text-sm">
+          <p class="font-serif text-blue-800 text-md">
             "Finalmente, amados hermanos, les pedimos que oren por nosotros.
             Oren para que el mensaje del Señor se difunda rápidamente y sea
             honrado en todo lugar adonde llegue, así como cuando les llegó a
             ustedes."
           </p>
-          <span class="flex justify-end font-medium text-blue-800"
+          <span class="flex justify-end font-medium text-blue-800 text-md"
             >- 2 Tesalonicenses 3:1</span
           >
         </div>
       </div>
       <div class="p-12 space-y-4">
-        <div class="inline-flex items-center justify-center">
-          <SprayCan size="22" class="text-blue-600" />
-          <span class="ml-4 font-medium text-xl">¡Acompáñanos en oración!</span>
-        </div>
-        <p class="text-gray-600 text-md max-w-5xl">
+          <div class="mb-4 font-medium text-2xl">¡Acompáñanos en oración!</div>
+        <p class="text-gray-600 text-lg max-w-5xl">
           La voluntad de Dios es que su mensaje llegue a todo pueblo. Mientras
           trabajamos para que su propósito se cumpla, te pedimos que te unas a
           nosotros.
         </p>
-        <div class="flex flex-col justify-items-start items-start space-y-4">
+        <div class="flex flex-col justify-items-start items-start space-y-4 text-lg">
           <span class="font-bold">Ora por:</span>
           <div class="inline-flex items-center justify-center">
             <div class="bg-blue-600 w-2 h-2 rounded-full"></div>
@@ -94,17 +106,17 @@ import Container from "./Container.astro";
   </Container>
   <Container>
     <div
-      class="bg-white rounded-3xl shadow-[0_0_6px_0_rgba(0,0,0,0.15)]"
+      class="bg-white"
       id="donando"
     >
       <div>
-        <div class="bg-orange-600 p-6 text-center rounded-t-3xl">
+        <div class=" text-center p-4">
           <div class="inline-flex text-center items-start pl-2">
-            <div class="text-white">
-              <HandHelping size="40" />
+            <div class="text-teal-600 bg-teal-100 rounded-full p-3">
+              <HandHelping size="45" />
             </div>
           </div>
-          <h3 class="text-2xl font-bold text-white">Donando</h3>
+          <h3 class="text-3xl font-bold">Donando</h3>
         </div>
       </div>
       <div class="py-8 px-4">
@@ -118,20 +130,20 @@ import Container from "./Container.astro";
       <div class="flex flex-col justify-center items-center w-full">
         <div class="w-full px-8">
           <div
-            class="bg-orange-50 rounded-xl w-full py-6 space-y-2 border-1 border-orange-100"
+            class=" rounded-xl w-full py-6 space-y-2 border-1 border-teal-200"
           >
-            <div class="text-orange-600 flex justify-center text-center">
+            <div class="text-teal-600 flex justify-center text-center">
               <Heart size="35" />
             </div>
-            <p class="font-medium text-orange-800 text-center">
+            <p class="font-medium text-teal-800 text-center text-md">
               Cada donación hace posible que más pueblos tengan acceso a la
               Palabra de Dios en su propio idioma
             </p>
           </div>
         </div>
-        <div class="p-8 mt-2 mb-2 w-full">
+        <div class="p-8 mt-2 mb-2">
           <button
-            class="text-xl items-center justify-center bg-orange-600 hover:bg-orange-800 text-white font-semibold py-3 px-6 w-full rounded-lg transition-all duration-200"
+            class="text-xl items-center justify-center bg-teal-500 hover:bg-teal-700 text-white font-semibold py-3 px-6 w-full rounded-lg transition-all duration-200"
           >
             Donar Ahora
           </button>
@@ -142,17 +154,17 @@ import Container from "./Container.astro";
 
   <Container>
     <div
-      class="bg-white rounded-3xl shadow-[0_0_6px_0_rgba(0,0,0,0.15)]"
+      class="bg-white"
       id="sirviendo"
     >
       <div>
-        <div class="bg-green-600 p-6 text-center rounded-t-3xl">
+        <div class=" text-center p-4">
           <div class="inline-flex text-center items-start pl-2">
-            <div class="text-white">
-              <Users2 size="35" />
+            <div class="text-green-600 bg-green-100 rounded-full p-3">
+              <Users2 size="45" />
             </div>
           </div>
-          <h3 class="text-2xl font-bold text-white">Sirviendo</h3>
+          <h3 class="text-3xl font-bold">Sirviendo</h3>
         </div>
       </div>
       <div class="py-8 px-8 space-y-4">
@@ -160,7 +172,7 @@ import Container from "./Container.astro";
           <Lightbulb size="22" class="text-green-600" />
           <span class="ml-2 text-xl font-medium">¿Qué necesitamos?</span>
         </div>
-        <p class="text-gray-600 text-md max-w-5xl">
+        <p class="text-gray-600 text-lg max-w-5xl">
           Un ejército de hombres y mujeres seguidores de Cristo que pongan sus
           dones, recursos y experiencia al servicio del reino de Dios, para así
           proveer lo necesario para el discipulado y la plantación de iglesias
@@ -174,7 +186,7 @@ import Container from "./Container.astro";
           >
         </div>
 
-        <div class="flex flex-col justify-items-start items-start space-y-3">
+        <div class="flex flex-col justify-items-start items-start space-y-3 text-lg">
           <div class="inline-flex items-center justify-center">
             <div class="inline-flex items-center justify-center pb-2">
               <Shield size="20" class="text-green-600" />
@@ -221,9 +233,9 @@ import Container from "./Container.astro";
           </div>
         </div>
       </div>
-      <div class="p-6 mt-2 mb-2 w-full">
+      <div class="p-6 mt-2 mb-2 flex justify-center items-center">
         <button
-          class="text-xl items-center justify-center bg-green-600 hover:bg-green-800 text-white font-semibold py-3 px-6 w-full rounded-lg transition-all duration-200"
+          class="text-xl items-center justify-center bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200"
         >
           Únete al Equipo
         </button>

@@ -1,35 +1,46 @@
 ---
-import { Lightbulb } from '@lucide/astro';
-import Container from './Container.astro';
+import { Lightbulb } from "@lucide/astro";
+import Container from "./Container.astro";
 ---
 
-<section class="min-h-screen">
-    <Container>
-        <div class="bg-white rounded-3xl shadow-[0_0_6px_0_rgba(0,0,0,0.15)] px-12 py-16">
-            <div class="flex gap-8">
-                <div class="flex gap-15">
-                    <div class="inline-flex  text-center items-start pl-2">
-                        <div class="text-blue-600 bg-blue-100 rounded-full p-3">
-                            <Lightbulb size="30"/>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="text-4xl font-bold pb-4">Ciclo de Creación de Recursos</span>
-                        <p class="text-lg text-gray-600 font-normal max-w-3xl py-6">El Ciclo de Creación de Recursos comprende cada 
-                            uno de los ocho pasos del proceso de traducción y revisión de los recursos que necesitarán los traductores
-                            de otras lenguas para traducir un libro de la Biblia.
-                        </p> 
-                        <div class=" gap-6 mt-6">
-                            <div class="bg-blue-50 max-w-3xl justify-center items-center rounded-xl p-6 space-y-2 border-1 border-blue-100">
-                                <p class=" font-normal">Para hacer la traducción, los indígenas contarán con dos versiones de la Biblia en español
-                                que funcionarán como apoyo para producir una traducción completa, que sea fiel al significado bíblico, y de una
-                                manera clara y sencilla de entender en su idioma.
-                                </p>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
+<section class="">
+  <Container>
+    <div
+      class="bg-white rounded-3xl shadow-[0_0_6px_0_rgba(0,0,0,0.15)] px-12 py-16"
+    >
+      <div class="flex gap-8">
+        <div class="flex gap-15">
+          <div class="inline-flex text-center items-start pl-2">
+            <div class="text-blue-600 bg-blue-100 rounded-full p-3">
+              <Lightbulb size="30" />
             </div>
+          </div>
+          <div>
+            <span class="text-4xl font-bold pb-4"
+              >Ciclo de Creación de Recursos</span
+            >
+            <p class="text-lg text-gray-600 font-normal max-w-3xl py-6">
+              El Ciclo de Creación de Recursos comprende cada uno de los ocho
+              pasos del proceso de traducción y revisión de los recursos que
+              necesitarán los traductores de otras lenguas para traducir un
+              libro de la Biblia.
+            </p>
+            <div class="gap-6 mt-6">
+              <div
+                class="bg-blue-50 max-w-3xl justify-center items-center rounded-xl p-6 space-y-2 border-1 border-blue-100"
+              >
+                <p class="text-blue-900 text-lg">
+                  Para hacer la traducción, los indígenas contarán con dos
+                  versiones de la Biblia en español que funcionarán como apoyo
+                  para producir una traducción completa, que sea fiel al
+                  significado bíblico, y de una manera clara y sencilla de
+                  entender en su idioma.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </Container>
+      </div>
+    </div>
+  </Container>
 </section>

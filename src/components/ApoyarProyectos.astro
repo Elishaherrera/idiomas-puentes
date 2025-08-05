@@ -1,29 +1,43 @@
 ---
-import Container from '../components/Container.astro';
-import { Users } from '@lucide/astro';
-import { Heart } from '@lucide/astro';
-import Layout from '../layouts/Layout.astro';
+import Container from "../components/Container.astro";
+import { Users } from "@lucide/astro";
+import { Heart } from "@lucide/astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <section>
-    <Container>
-        <div class="bg-purple-700 rounded-2xl flex-1 flex flex-col space-y-6 px-16 py-16 text-center justify-center">
-            <div class="flex justify-center items-center text-white">
-              <Users size="50"/>
+  <Container>
+    <div
+      class="bg-gradient-to-br from-purple-400 to-violet-600 rounded-2xl flex-1 flex flex-col space-y-6 px-16 py-16 text-center justify-center"
+    >
+      <div class="flex justify-center items-center text-white">
+        <Users size="50" />
+      </div>
+      <span class="text-white text-4xl font-bold"
+        >El avance de este proyecto requiere de la participación de la iglesia
+        global</span
+      >
+      <span class="text-gray-200 text-xl max-w-6xl"
+        >Únete a miles de personas alrededor del mundo que están haciendo
+        posible que cada persona tenga acceso a la Palabra de Dios en su propio
+        idioma.</span
+      >
+      <div class="pt-6">
+        <div class="text-center">
+          <a
+            href="/Apoyar"
+            class="inline-flex bg-white hover:bg-gray-200 text-lg items-center justify-center text-purple-800 font-bold py-4 px-10 rounded-full transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
+          >
+            <div class="text-purple-800 mr-2">
+              <Heart size="25" />
             </div>
-            <span class="text-white text-4xl font-bold">El avance de este proyecto requiere de la participación de la iglesia global</span>
-            <span class="text-gray-200 text-xl max-w-6xl">Únete a miles de personas alrededor del mundo que están haciendo posible que cada persona tenga acceso a la Palabra de Dios en su propio idioma.</span>
-            <div class=" pt-6">
-                <div class=" text-center">
-                    <a href="/Apoyar" class="inline-flex bg-white hover:bg-gray-200  text-lg items-center justify-center text-purple-800 font-bold py-4 px-10 rounded-full transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
-                        <div class=" text-purple-800 mr-2">
-                          <Heart size="25"/>
-                        </div>
-                        Apoyar
-                    </a>
-                </div>
-            </div>
-            <span class="text-gray-200">Tu contribución puede cambiar vidas eternamente</span>
+            Apoyar
+          </a>
         </div>
-    </Container>
+      </div>
+      <span class="text-gray-200"
+        >Tu contribución puede cambiar vidas eternamente</span
+      >
+    </div>
+  </Container>
 </section>
