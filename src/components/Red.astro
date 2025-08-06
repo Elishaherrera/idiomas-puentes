@@ -47,22 +47,24 @@ import { BookType, HandCoins } from "@lucide/astro";
       </Redes>
     </div>
     <div
-      class="bg-white shadow-lg rounded-xl mt-15 justify-self-center items-center px-4 py-6 my-4 max-w-170"
+      class="bg-white shadow-lg rounded-xl mt-15 justify-self-center items-center py-6 px-6 my-4 flex flex-col max-w-170 w-full"
     >
       <h1 class="font-bold text-2xl">Recibe nuestro boletín</h1>
       <h2 class="mt-4 text-gray-600">
         Suscríbete para recibir actualizaciones semanales de oración y guías
         específicas para interceder por nuestros proyectos.
       </h2>
-      <div class="flex justify-center gap-4 mt-4 px-4">
+      <div
+        class="flex justify-center gap-4 mt-4 px-4 md:flex-row flex-col w-full"
+      >
         <input
           type="email"
           placeholder="Correo electrónico"
-          class="mt-4 p-3 flex-1 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="mt-4 p-3 flex-1 grow rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <div class="text-center">
           <a
-            href="/impacto"
+            href="/Contacto"
             class="inline-flex bg-blue-900 hover:bg-blue-950 mt-4 items-center justify-center text-white font-semibold py-3 px-8 rounded-md transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
           >
             Suscribirse
