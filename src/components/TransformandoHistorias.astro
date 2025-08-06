@@ -1,55 +1,72 @@
 ---
-import { Languages } from '@lucide/astro';
-import { Heart } from '@lucide/astro';
-import { Users } from '@lucide/astro';
-import { Globe } from '@lucide/astro';
-import Container from './Container.astro';
-
+import { Languages } from "@lucide/astro";
+import { Heart } from "@lucide/astro";
+import { Users } from "@lucide/astro";
+import { Globe } from "@lucide/astro";
+import Container from "./Container.astro";
 ---
 
 <section class="min-h-screen">
-    <Container>
-        <div class="bg-gray-900 rounded-3xl p-12 text-center">
-            <div class="flex flex-col items-center pb-4">
-                <div class="inline-flex bg-blue-500/20 rounded-4xl w-fit py-2 px-3 gap-2">
-                    <div class="text-blue-300">
-                        <Globe size="20"/>
-                    </div>
-                    <span class=" text-blue-300 font-medium text-sm">Impacto Global</span>
-                </div>
-            </div>
-            <span class="text-white text-4xl font-bold">Transformando Comunidades</span>
-            <p class="text-gray-300 text-xl max-w-3xl mx-auto pb-4 pt-4">Cada historia representa vidas transformadas y comunidades fortalecidas mediante el acceso a las Sagradas Escrituras en su lengua materna.</p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-10 gap-8 mt-6">
-                    <div class="bg-gray-800  justify-center items-center rounded-2xl flex-1 flex flex-col w-fit px-6 py-8 space-y-3
-                                   border-2 border-gray-700">
-                        <div class="text-blue-500 bg-blue-500/20 rounded-2xl p-3">
-                        <Users size="28"/>
-                        </div>
-                        <span class=" font-medium text-white">Crecimiento Espiritual</span>
-                        <p class="text-gray-400">Las comunidades experimentan un crecimiento espiritual profundo
-                            al acceder a las Escrituras en su idioma nativo.
-                        </p>
-                    </div>
-                    <div class="bg-gray-800  justify-center items-center rounded-2xl flex-1 flex flex-col w-fit px-12 py-8 space-y-3
-                                    border-2 border-gray-700">
-                        <div class="text-green-500 bg-green-500/20 rounded-2xl p-3">
-                        <Languages size="28"/>
-                        </div>
-                        <span class=" font-medium text-white">Preservación Cultural</span>
-                        <p class="text-gray-400">El trabajo de traducción fortalece y preserva las lenguas indígenas para las futuras generaciones.</p>
-                    </div>
-                    <div class="bg-gray-800  justify-center items-center rounded-2xl flex-1 flex flex-col w-fit px-12 py-8 space-y-3
-                                   border-2 border-gray-700">
-                        <div class="text-purple-500 bg-purple-500/20 rounded-2xl p-3">
-                        <Heart size="28"/>
-                        </div>
-                        <span class="font-medium text-white">Empoderamiento</span>
-                        <p class="text-gray-400">Los traductores desarrollan habilidades y confianza, apropiándose
-                            de su propio proyecto de traducción.
-                        </p>
-                    </div>
-            </div>
+  <Container>
+    <div class="bg-gray-900 rounded-3xl p-12 text-center">
+      <div class="flex flex-col items-center pb-4">
+        <div
+          class="inline-flex bg-blue-500/20 rounded-4xl w-fit py-2 px-3 gap-2"
+        >
+          <div class="text-blue-300">
+            <Globe size="20" />
+          </div>
+          <span class="text-blue-300 font-medium text-sm">Impacto Global</span>
         </div>
-    </Container>
+      </div>
+      <span class="text-white text-4xl font-bold"
+        >Transformando Comunidades</span
+      >
+      <p class="text-gray-300 text-xl max-w-3xl mx-auto pb-4 pt-4">
+        Cada historia representa vidas transformadas y comunidades fortalecidas
+        mediante el acceso a las Sagradas Escrituras en su lengua materna.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+        <div
+          class="bg-gray-800 justify-center items-center rounded-2xl flex-1 flex flex-col w-fit px-6 py-8 space-y-3
+                                   border-2 border-gray-700"
+        >
+          <div class="text-blue-500 bg-blue-500/20 rounded-2xl p-3">
+            <Users size="28" />
+          </div>
+          <span class="font-medium text-white">Crecimiento Espiritual</span>
+          <p class="text-gray-400">
+            Las comunidades experimentan un crecimiento espiritual profundo al
+            acceder a las Escrituras en su idioma nativo.
+          </p>
+        </div>
+        <div
+          class="bg-gray-800 justify-center items-center rounded-2xl flex-1 flex flex-col w-fit px-12 py-8 space-y-3
+                                    border-2 border-gray-700"
+        >
+          <div class="text-green-500 bg-green-500/20 rounded-2xl p-3">
+            <Languages size="28" />
+          </div>
+          <span class="font-medium text-white">Preservación Cultural</span>
+          <p class="text-gray-400">
+            El trabajo de traducción fortalece y preserva las lenguas indígenas
+            para las futuras generaciones.
+          </p>
+        </div>
+        <div
+          class="bg-gray-800 justify-center items-center rounded-2xl flex-1 flex flex-col w-fit px-12 py-8 space-y-3
+                                   border-2 border-gray-700"
+        >
+          <div class="text-purple-500 bg-purple-500/20 rounded-2xl p-3">
+            <Heart size="28" />
+          </div>
+          <span class="font-medium text-white">Empoderamiento</span>
+          <p class="text-gray-400">
+            Los traductores desarrollan habilidades y confianza, apropiándose de
+            su propio proyecto de traducción.
+          </p>
+        </div>
+      </div>
+    </div>
+  </Container>
 </section>

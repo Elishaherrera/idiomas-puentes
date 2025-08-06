@@ -17,7 +17,7 @@ import { PackageOpen } from "@lucide/astro";
         </div>
       </div>
       <div class="space-y-4">
-        <div class="inline-flex gap-2 items-center">
+        <div class="inline-flex gap-2 items-baseline">
           <div>
             <div
               class="mt-1 text-blue-800 bg-blue-200 h-9 w-9 rounded-full flex justify-center items-center"
@@ -72,7 +72,7 @@ import { PackageOpen } from "@lucide/astro";
             Progreso General del Proyecto
           </h2>
           <div
-            class="justify-center gap-6 mx-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
+            class="justify-center gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
           >
             <div
               class="flex flex-col bg-green-50 p-4 rounded-lg shadow-md text-center space-y-2 border border-green-200"
@@ -92,19 +92,22 @@ import { PackageOpen } from "@lucide/astro";
               <span class="text-3xl font-bold text-gray-600">59</span>
               <span class="text-gray-600">Paquetes sin iniciar</span>
             </div>
-            <div
-              class="flex flex-col bg-blue-50 p-4 rounded-lg shadow-md text-center space-y-2 border border-blue-200"
-            >
-              <span class="text-3xl font-bold text-blue-600">6%</span>
-              <span class="text-blue-600">Total completado</span>
-            </div>
           </div>
-          <div class="mt-10 p-2 px-10">
-            <div class="w-full bg-gray-200 rounded-full h-4">
-              <div
-                class="h-4 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transition-all duration-1000"
-                style="width: 6%;"
-              >
+          <div
+            class="bg-blue-50 p-4 rounded-lg shadow-md text- space-y-2 border border-blue-200 mt-10 py-6"
+          >
+            <div class="flex justify-between">
+              <span class="text-blue-600 text-lg">Total completado</span>
+              <span class="text-2xl font-bold text-blue-600">6%</span>
+            </div>
+
+            <div class="mt-2">
+              <div class="w-full bg-gray-200 rounded-full h-4">
+                <div
+                  class="h-4 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transition-all duration-1000"
+                  style="width: 6%;"
+                >
+                </div>
               </div>
             </div>
           </div>
