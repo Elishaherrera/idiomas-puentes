@@ -9,10 +9,10 @@ import { PackageOpen } from "@lucide/astro";
 
 <section>
   <Container>
-    <div class="flex gap-12">
-      <div class="flex w-100">
+    <div class="flex flex-col md:flex-row gap-12">
+      <div class="flex md:w-100">
         <div
-          class="w-full pt-100% grow rounded-2xl bg-cover bg-center bg-[url('../assets/traductores.png')]"
+          class="w-full pt-100% h-80 md:h-auto grow rounded-2xl bg-top bg-cover bg-[url('../assets/traductores.png')]"
         >
         </div>
       </div>
@@ -79,10 +79,10 @@ import { PackageOpen } from "@lucide/astro";
               <span class="text-green-600">Paquetes completados</span>
             </div>
             <div
-              class="flex flex-col bg-yellow-50 p-4 rounded-lg shadow-md text-center space-y-2 border border-yellow-200"
+              class="flex flex-col bg-teal-50 p-4 rounded-lg shadow-md text-center space-y-2 border border-teal-200"
             >
-              <span class="text-3xl font-bold text-yellow-600">3</span>
-              <span class="text-yellow-600">Paquetes en progreso</span>
+              <span class="text-3xl font-bold text-teal-600">3</span>
+              <span class="text-teal-600">Paquetes en progreso</span>
             </div>
             <div
               class="flex flex-col bg-gray-50 p-4 rounded-lg shadow-md text-center space-y-2 border border-gray-200"

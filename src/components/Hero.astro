@@ -1,35 +1,64 @@
 ---
- import { Image } from 'astro:assets';
-import imagenPrincipal from '../assets/imagenPrincipal2.png';
+import { Image } from "astro:assets";
+import imagenPrincipal from "../assets/imagenPrincipal2.png";
 ---
 
-<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <div class="absolute inset-0 bg-blue-900 opacity-60 z-10"></div> 
-    <div class="absolute inset-0 flex-shrink-0">
-        <Image src={imagenPrincipal} alt="imagen principal" class="object-cover h-full w-full"/>
-    </div>
-    
+<section
+  class="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-[url('../assets/imagenPrincipal2.png')] bg-fixed"
+>
+  <div class="absolute inset-0 bg-blue-900 opacity-60 z-10"></div>
 
-    <div class="w-[60%] pt-20 relative text-center z-20 px-4">
-            <h1 class="text-3xl md:text-5xl mb-6 font-serif font-bold text-white leading-tight text-shadow-sm"> La Iglesia equipando a la Iglesia</h1>
-            <p class="text-white block sm:inline text-xl text-shadow-sm">Trabajamos juntos como un solo cuerpo, respondiendo al llamado de Dios de amar y servir a la iglesia tribal, equipandolos con todo lo necesario para traducir, entender y crecer a través de las Escrituras en su propio idioma</p>
-        <div class="mt-10 flex flex-col sm:flex-row justify-center gap-6">
-            <a href="/Proyectos" class="inline-flex items-center justify-center bg-white hover:bg-gray-200 text-blue-950 font-semibold py-4 px-10 rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg">
-                Nuestros Proyectos
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-            </a>
-             <a href="/Involucrate" class="inline-flex items-center justify-center bg-secondary hover:bg-teal-600 text-white text-shadow-lg font-semibold py-4 px-10 rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg">
-                Involúcrate
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-            </a>
-        </div>
+  <div class="w-[60%] pt-20 relative text-center z-20 px-4">
+    <h1
+      class="text-3xl md:text-5xl mb-6 font-serif font-bold text-white leading-tight text-shadow-sm"
+    >
+      La Iglesia equipando a la Iglesia
+    </h1>
+    <p class="text-white block sm:inline text-xl text-shadow-sm">
+      Trabajamos juntos como un solo cuerpo, respondiendo al llamado de Dios de <span
+        class="text-teal-400 font-bold">amar y servir a la iglesia tribal,</span
+      > equipandolos con todo lo necesario para traducir, entender y crecer a través
+      de las Escrituras en su propio idioma
+    </p>
+    <div class="mt-10 flex flex-col sm:flex-row justify-center gap-6">
+      <a
+        href="/Proyectos"
+        class="inline-flex items-center justify-center bg-white hover:bg-gray-200 text-blue-950 font-semibold py-4 px-10 rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg"
+      >
+        Nuestros Proyectos
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 ml-2 mt-1"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+      <a
+        href="/Involucrate"
+        class="inline-flex items-center justify-center bg-secondary hover:bg-teal-600 text-white text-shadow-lg font-semibold py-4 px-10 rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg"
+      >
+        Involúcrate
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 ml-2 mt-1"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
     </div>
+  </div>
 </section>
-
-
-
-

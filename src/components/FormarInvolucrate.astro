@@ -9,34 +9,31 @@ import { Image } from "astro:assets";
 import Container from "./Container.astro";
 ---
 
-<section class="min-h-screen">
-  <Container>
-    <div
-      class="bg-white"
-      id="orando"
-    >
+<section class="">
+  <div class="bg-blue-50/60 flex" id="orando">
+    <Container>
       <div>
         <div class="text-center">
           <div class="inline-flex text-center items-start pl-2 p-4">
             <div class="text-blue-600 bg-blue-100 rounded-full p-3">
               <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-10 w-10"
-            viewBox="0 0 24 24"
-            ><g
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              color="currentColor"
-              ><path
-                d="M15.5 15L14 10.5c-1.657 0-2 1.343-2 3V15m-3.5 0l1.5-4.5c1.657 0 2 1.343 2 3V15"
-              ></path><path
-                d="M21.978 22c-1.15-.67-3.086-2.186-5.69-1.992c-.659.049-.989.074-1.29.05a3 3 0 0 1-.327-.029C13.139 19.674 12 18.336 12 16.74V3.196a1.197 1.197 0 0 1 2.304-.453l2.718 6.644c1.066 2.605 1.599 3.907 2.528 4.577c.057.042.163.113.223.15c.971.606 1.39.606 2.227.606M2.022 22c1.15-.67 3.086-2.186 5.69-1.992c.659.049.989.074 1.29.05s.31-.025.327-.029C10.861 19.675 12 18.336 12 16.74V3.196a1.197 1.197 0 0 0-2.304-.453L6.978 9.388c-1.066 2.605-1.599 3.908-2.528 4.577a5 5 0 0 1-.223.15c-.971.606-1.39.606-2.227.606"
-              ></path></g
-            ></svg
-          >
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10"
+                viewBox="0 0 24 24"
+                ><g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  color="currentColor"
+                  ><path
+                    d="M15.5 15L14 10.5c-1.657 0-2 1.343-2 3V15m-3.5 0l1.5-4.5c1.657 0 2 1.343 2 3V15"
+                  ></path><path
+                    d="M21.978 22c-1.15-.67-3.086-2.186-5.69-1.992c-.659.049-.989.074-1.29.05a3 3 0 0 1-.327-.029C13.139 19.674 12 18.336 12 16.74V3.196a1.197 1.197 0 0 1 2.304-.453l2.718 6.644c1.066 2.605 1.599 3.907 2.528 4.577c.057.042.163.113.223.15c.971.606 1.39.606 2.227.606M2.022 22c1.15-.67 3.086-2.186 5.69-1.992c.659.049.989.074 1.29.05s.31-.025.327-.029C10.861 19.675 12 18.336 12 16.74V3.196a1.197 1.197 0 0 0-2.304-.453L6.978 9.388c-1.066 2.605-1.599 3.908-2.528 4.577a5 5 0 0 1-.223.15c-.971.606-1.39.606-2.227.606"
+                  ></path></g
+                ></svg
+              >
             </div>
           </div>
           <h3 class="text-3xl font-bold">Orando</h3>
@@ -57,60 +54,70 @@ import Container from "./Container.astro";
           >
         </div>
       </div>
-      <div class="p-12 space-y-4">
-          <div class="mb-4 font-medium text-2xl">¡Acompáñanos en oración!</div>
+      <div class="p-12 space-y-4 flex justify-center items-center flex-col">
+        <div class="mb-8 font-medium text-2xl">¡Acompáñanos en oración!</div>
         <p class="text-gray-600 text-lg max-w-5xl">
           La voluntad de Dios es que su mensaje llegue a todo pueblo. Mientras
           trabajamos para que su propósito se cumpla, te pedimos que te unas a
           nosotros.
         </p>
-        <div class="flex flex-col justify-items-start items-start space-y-4 text-lg">
-          <span class="font-bold">Ora por:</span>
-          <div class="inline-flex items-center justify-center">
-            <div class="bg-blue-600 w-2 h-2 rounded-full"></div>
+        <div
+          class="flex flex-col justify-items-start items-start space-y-4 text-lg"
+        >
+          <span class="font-bold pt-4">Ora por:</span>
+          <div class="inline-flex items-baseline justify-center">
+            <div>
+              <div class="bg-blue-600 w-2 aspect-1/1 rounded-full"></div>
+            </div>
             <p class="ml-4 text-gray-600">
               Sabiduría para traducir la palabra de Dios fielmente.
             </p>
           </div>
-          <div class="inline-flex items-center justify-center">
-            <div class="bg-blue-600 w-2 h-2 rounded-full"></div>
+          <div class="inline-flex items-baseline justify-center">
+            <div>
+              <div class="bg-blue-600 w-2 aspect-1/1 rounded-full"></div>
+            </div>
             <p class="ml-4 text-gray-600">
               Los hermanos indígenas que están empezando a estudiar las
               historias bíblicas en su idioma de corazón.
             </p>
           </div>
-          <div class="inline-flex items-center justify-center">
-            <div class="bg-blue-600 w-2 h-2 rounded-full"></div>
+          <div class="inline-flex items-baseline justify-center">
+            <span>
+              <div class="bg-blue-600 w-2 aspect-1/1 rounded-full"></div>
+            </span>
             <p class="ml-4 max-w-3xl text-gray-600">
               Nuevos traductores, teólogos, comunicadores, educadores,
               ingenieros en sistemas o en computación para que formen parte de
               este proyecto.
             </p>
           </div>
-          <div class="inline-flex items-center justify-center">
-            <div class="bg-blue-600 w-2 h-2 rounded-full"></div>
+          <div class="inline-flex items-baseline justify-center">
+            <div>
+              <div class="bg-blue-600 w-2 aspect-1/1 rounded-full"></div>
+            </div>
             <p class="ml-4 text-gray-600">
               Provisión de todas las necesidades de cada uno de los miembros de
               Idiomas Puentes.
             </p>
           </div>
-          <div class="inline-flex items-center justify-center">
-            <div class="bg-blue-600 w-2 h-2 rounded-full"></div>
+          <div class="inline-flex items-baseline justify-center">
+            <div>
+              <div class="bg-blue-600 w-2 aspect-1/1 rounded-full"></div>
+            </div>
             <p class="ml-4 text-gray-600">
               Dirección de Dios para el equipo que coordina el proyecto.
             </p>
           </div>
         </div>
       </div>
-    </div>
-  </Container>
-  <Container>
-    <div
-      class="bg-white"
-      id="donando"
-    >
+    </Container>
+  </div>
+
+  <div class="bg-teal-50/60 flex" id="donando">
+    <Container>
       <div>
-        <div class=" text-center p-4">
+        <div class="text-center p-4">
           <div class="inline-flex text-center items-start pl-2">
             <div class="text-teal-600 bg-teal-100 rounded-full p-3">
               <HandHelping size="45" />
@@ -130,7 +137,7 @@ import Container from "./Container.astro";
       <div class="flex flex-col justify-center items-center w-full">
         <div class="w-full px-8">
           <div
-            class=" rounded-xl w-full py-6 space-y-2 border-1 border-teal-200"
+            class="rounded-xl w-full py-6 space-y-2 border-1 border-teal-200"
           >
             <div class="text-teal-600 flex justify-center text-center">
               <Heart size="35" />
@@ -149,25 +156,20 @@ import Container from "./Container.astro";
           </button>
         </div>
       </div>
-    </div>
-  </Container>
+    </Container>
+  </div>
 
-  <Container>
-    <div
-      class="bg-white"
-      id="sirviendo"
-    >
-      <div>
-        <div class=" text-center p-4">
-          <div class="inline-flex text-center items-start pl-2">
-            <div class="text-green-600 bg-green-100 rounded-full p-3">
-              <Users2 size="45" />
-            </div>
+  <div class="bg-green-50/60 flex" id="sirviendo">
+    <Container>
+      <div class="text-center p-4">
+        <div class="inline-flex text-center items-start pl-2">
+          <div class="text-green-600 bg-green-100 rounded-full p-3">
+            <Users2 size="45" />
           </div>
-          <h3 class="text-3xl font-bold">Sirviendo</h3>
         </div>
+        <h3 class="text-3xl font-bold">Sirviendo</h3>
       </div>
-      <div class="py-8 px-8 space-y-4">
+      <div class="py-8 px-8 space-y-8">
         <div class="inline-flex items-center justify-center">
           <Lightbulb size="22" class="text-green-600" />
           <span class="ml-2 text-xl font-medium">¿Qué necesitamos?</span>
@@ -186,7 +188,9 @@ import Container from "./Container.astro";
           >
         </div>
 
-        <div class="flex flex-col justify-items-start items-start space-y-3 text-lg">
+        <div
+          class="flex flex-col justify-items-start items-start space-y-3 text-lg"
+        >
           <div class="inline-flex items-center justify-center">
             <div class="inline-flex items-center justify-center pb-2">
               <Shield size="20" class="text-green-600" />
@@ -240,6 +244,6 @@ import Container from "./Container.astro";
           Únete al Equipo
         </button>
       </div>
-    </div>
-  </Container>
+    </Container>
+  </div>
 </section>
