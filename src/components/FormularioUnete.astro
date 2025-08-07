@@ -1,0 +1,192 @@
+---
+// Define tus datos de monedas y la función de manejo de eventos.
+// Esta sección se ejecuta en el servidor y no llega al navegador.
+const localCurrencies = [
+  {
+    country: 'Colombia',
+    currency: 'Pesos Colombianos (COP)',
+    flag: '🇨🇴',
+    transferMethods: [
+      {
+        bank: 'Bancolombia',
+        accountHolder: 'Unión Femenina para la Infancia',
+        accountNumber: '1234567890',
+        accountType: 'Cuenta de Ahorros',
+        idNumber: '890.301.123-4'
+      },
+      {
+        bank: 'Banco Davivienda',
+        accountHolder: 'Unión Femenina para la Infancia',
+        accountNumber: '0987654321',
+        accountType: 'Cuenta de Ahorros',
+        idNumber: null
+      }
+    ]
+  },
+  {
+    country: 'México',
+    currency: 'Pesos Mexicanos (MXN)',
+    flag: '🇲🇽',
+    transferMethods: [
+      {
+        bank: 'BBVA Bancomer',
+        accountHolder: 'Unión Femenina para la Infancia',
+        accountNumber: '9876543210',
+        accountType: 'Cuenta de Cheques',
+        idNumber: null
+      }
+    ]
+  }
+];
+
+const currentLang = 'es'; // o 'en'
+---
+
+<button
+  id="open-donate-modal"
+  class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90"
+  onclick="document.getElementById('donation-modal').showModal();"
+>
+  Donar
+</button>
+
+<dialog id="donation-modal" class="fixed inset-0 z-50 overflow-y-auto w-full p-4 md:p-0">
+  <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+    <div
+      class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+      aria-hidden="true"
+      onclick="document.getElementById('donation-modal').close()"
+    ></div>
+    <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+    <div class="relative inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+      <div class="absolute top-0 right-0 pt-4 pr-4">
+        <button
+          type="button"
+          class="bg-white rounded-md text-gray-400 hover:text-gray-500"
+          onclick="document.getElementById('donation-modal').close()"
+        >
+          <span class="sr-only">Close</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="sm:flex sm:items-start">
+        <div class="mt-3 text-center sm:mt-0 sm:text-left w-full">
+          <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+            {currentLang === 'en' ? 'Choose Your Donation Method' : 'Elige tu Método de Donación'}
+          </h3>
+          <div class="mt-8 space-y-6">
+            <a 
+              href="https://www.myclickandgive.com/login.php?id=26&r=eyJtIjoiVGhhbmsgeW91IGZvciB5b3VyIGdpZnQhIiwiYSI6IjEyNTMiLCJ0IjoiZ2l2ZS5waHAifQ== "
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-medium rounded-full text-white bg-primary hover:bg-primary/90 transition-colors duration-200 shadow-sm hover:shadow-md"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>{currentLang === 'en' ? 'Donate Internationally' : 'Donar Internacionalmente'}</span>
+            </a>
+            
+            <div class="relative">
+              <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                <div class="w-full border-t border-gray-200"></div>
+              </div>
+              <div class="relative flex justify-center">
+                <span class="px-3 bg-white text-sm text-gray-500">
+                  {currentLang === 'en' ? 'or donate from' : 'o dona desde'}
+                </span>
+              </div>
+            </div>
+
+            {/* Este script se encargará de mostrar el segundo modal */}
+            <script>
+              const localCurrencies = {JSON.stringify(localCurrencies)};
+
+              function handleLocalCurrencyClick(currencyCountry) {
+                const selected = localCurrencies.find(c => c.country === currencyCountry);
+                const detailsModal = document.getElementById('local-currency-modal');
+                const detailsContent = document.getElementById('details-content');
+
+                // Renderiza el contenido del modal de detalles
+                detailsContent.innerHTML = `
+                  <h3 class="text-lg leading-6 font-medium text-gray-900 flex items-center gap-2">
+                    <span class="text-xl">${selected.flag}</span>
+                    <span>
+                      ${'${currentLang}' === 'en' ? 'Donate in ' + selected.currency : 'Donar en ' + selected.currency}
+                    </span>
+                  </h3>
+                  <div class="mt-6 space-y-6">
+                    ${selected.transferMethods.map((method, index) => `
+                      <div class="bg-gray-50 rounded-lg p-4 space-y-3">
+                        <h4 class="font-medium text-gray-900">${method.bank}</h4>
+                        <div class="space-y-2 text-sm">
+                          <p class="text-gray-600">
+                            <span class="font-medium">${'${currentLang}' === 'en' ? 'Account Holder' : 'Titular'}:</span> ${method.accountHolder}
+                          </p>
+                          <p class="text-gray-600">
+                            <span class="font-medium">${'${currentLang}' === 'en' ? 'Number' : 'Número'}:</span> ${method.accountNumber}
+                          </p>
+                          <p class="text-gray-600">
+                            <span class="font-medium">${'${currentLang}' === 'en' ? 'Type' : 'Tipo'}:</span> ${method.accountType}
+                          </p>
+                          ${method.idNumber ? `
+                            <p class="text-gray-600">
+                              <span class="font-medium">ID:</span> ${method.idNumber}
+                            </p>
+                          ` : ''}
+                        </div>
+                      </div>
+                    `).join('')}
+                  </div>
+                `;
+                detailsModal.showModal();
+              }
+            </script>
+
+            {localCurrencies.map((currency) => (
+              <button 
+                onclick={`handleLocalCurrencyClick('${currency.country}')`}
+                class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-medium rounded-full text-primary border-2 border-primary hover:bg-primary hover:text-white transition-colors duration-200"
+              >
+                <span class="text-xl">{currency.flag}</span>
+                <span>{currency.country}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+
+<dialog id="local-currency-modal" class="fixed inset-0 z-50 overflow-y-auto w-full p-4 md:p-0">
+  <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+    <div
+      class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+      aria-hidden="true"
+      onclick="document.getElementById('local-currency-modal').close()"
+    ></div>
+    <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+    <div class="relative inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+      <div class="absolute top-0 right-0 pt-4 pr-4">
+        <button
+          type="button"
+          class="bg-white rounded-md text-gray-400 hover:text-gray-500"
+          onclick="document.getElementById('local-currency-modal').close()"
+        >
+          <span class="sr-only">Close</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="sm:flex sm:items-start">
+        <div id="details-content" class="mt-3 text-center sm:mt-0 sm:text-left w-full">
+          </div>
+      </div>
+    </div>
+  </div>
+</dialog>
