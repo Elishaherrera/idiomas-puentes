@@ -1,0 +1,168 @@
+<script>
+  // Modal functionality
+  const donateBtn = document.getElementById('donateBtn');
+  const partnerBtn = document.getElementById('partnerBtn');
+  const venezuelaBtn = document.getElementById('venezuelaBtn');
+  const backToTop = document.getElementById('backToTop');
+  
+  const donateModal = document.getElementById('donateModal');
+  const venezuelaModal = document.getElementById('venezuelaModal');
+  const partnerModal = document.getElementById('partnerModal');
+  
+  const donateCloseBtn = document.getElementById('donateCloseBtn');
+  const venezuelaCloseBtn = document.getElementById('venezuelaCloseBtn');
+  const partnerCloseBtn = document.getElementById('partnerCloseBtn');
+  
+  const donateOverlay = document.getElementById('donateOverlay');
+  const venezuelaOverlay = document.getElementById('venezuelaOverlay');
+  const partnerOverlay = document.getElementById('partnerOverlay');
+
+  // Open modals
+  donateBtn?.addEventListener('click', () => {
+    donateModal?.classList.remove('hidden');
+  });
+
+  partnerBtn?.addEventListener('click', () => {
+    partnerModal?.classList.remove('hidden');
+  });
+
+  venezuelaBtn?.addEventListener('click', () => {
+    donateModal?.classList.add('hidden');
+    venezuelaModal?.classList.remove('hidden');
+  });
+
+  // Close modals
+  donateCloseBtn?.addEventListener('click', () => {
+    donateModal?.classList.add('hidden');
+  });
+
+  venezuelaCloseBtn?.addEventListener('click', () => {
+    venezuelaModal?.classList.add('hidden');
+  });
+
+  partnerCloseBtn?.addEventListener('click', () => {
+    partnerModal?.classList.add('hidden');
+  });
+
+  donateOverlay?.addEventListener('click', () => {
+    donateModal?.classList.add('hidden');
+  });
+
+  venezuelaOverlay?.addEventListener('click', () => {
+    venezuelaModal?.classList.add('hidden');
+  });
+
+  partnerOverlay?.addEventListener('click', () => {
+    partnerModal?.classList.add('hidden');
+  });
+
+  // Back to top
+  backToTop?.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Form step management
+  let currentStep = 1;
+  const maxSteps = 3;
+
+  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn');
+  const submitBtn = document.getElementById('submitBtn');
+  const form = document.getElementById('partnershipForm') as HTMLFormElement;
+
+  function updateFormStep() {
+    // Hide all steps
+    for (let i = 1; i <= maxSteps; i++) {
+      const step = document.getElementById(`formStep${i}`);
+      step?.classList.add('hidden');
+    }
+
+    // Show current step
+    const currentStepEl = document.getElementById(`formStep${currentStep}`);
+    currentStepEl?.classList.remove('hidden');
+
+    // Update progress indicators
+    for (let i = 1; i <= maxSteps; i++) {
+      const stepIndicator = document.getElementById(`step${i}`);
+      const progressBar = document.getElementById(`progress${i}`);
+      
+      if (i <= currentStep) {
+        stepIndicator?.classList.remove('bg-gray-200');
+        stepIndicator?.classList.add('bg-blue-600', 'text-white');
+      } else {
+        stepIndicator?.classList.remove('bg-blue-600', 'text-white');
+        stepIndicator?.classList.add('bg-gray-200');
+      }
+
+      if (i < currentStep) {
+        progressBar?.classList.remove('bg-gray-200');
+        progressBar?.classList.add('bg-blue-600');
+      } else {
+        progressBar?.classList.remove('bg-blue-600');
+        progressBar?.classList.add('bg-gray-200');
+      }
+    }
+
+    // Update buttons
+    if (currentStep === 1) {
+      prevBtn?.classList.add('hidden');
+    } else {
+      prevBtn?.classList.remove('hidden');
+    }
+
+    if (currentStep === maxSteps) {
+      nextBtn?.classList.add('hidden');
+      submitBtn?.classList.remove('hidden');
+    } else {
+      nextBtn?.classList.remove('hidden');
+      submitBtn?.classList.add('hidden');
+    }
+  }
+
+  nextBtn?.addEventListener('click', () => {
+    if (currentStep < maxSteps) {
+      currentStep++;
+      updateFormStep();
+    }
+  });
+
+  prevBtn?.addEventListener('click', () => {
+    if (currentStep > 1) {
+      currentStep--;
+      updateFormStep();
+    }
+  });
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    try {
+      const formData = new FormData(form);
+      
+      // Submit to Netlify (if available) or handle as needed
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData as any).toString()
+      });
+
+      if (response.ok) {
+        alert('¡Gracias por su interés! Nos pondremos en contacto pronto.');
+        form?.reset();
+        currentStep = 1;
+        updateFormStep();
+        partnerModal?.classList.add('hidden');
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      alert('Hubo un error al enviar el formulario. Por favor, inténtelo de nuevo o contáctenos directamente.');
+      console.error('Form submission error:', error);
+    }
+  });
+
+  // Initialize form step
+  updateFormStep();
+</script>
+
+

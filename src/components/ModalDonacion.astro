@@ -1,0 +1,60 @@
+<!-- Donation Modal -->
+<div id="donateModal" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+  <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true" id="donateOverlay"></div>
+    <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+    <div class="relative inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+      <div class="absolute top-0 right-0 pt-4 pr-4">
+        <button
+          type="button"
+          class="bg-white rounded-md text-gray-400 hover:text-gray-500"
+          id="donateCloseBtn"
+        >
+          <span class="sr-only">Cerrar</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="sm:flex sm:items-start">
+        <div class="mt-3 text-center sm:mt-0 sm:text-left w-full">
+          <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+            Elige tu Método de Donación
+          </h3>
+          <div class="mt-8 space-y-4">
+            <a 
+              href="https://www.myclickandgive.com/login.php?id=26&r=eyJtIjoiVGhhbmsgeW91IGZvciB5b3VyIGdpZnQhIiwiYSI6IjEyNTMiLCJ0IjoiZ2l2ZS5waHAifQ== "
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-medium rounded-full text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200 shadow-sm hover:shadow-md"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>Donar Internacionalmente</span>
+            </a>
+            
+            <div class="relative">
+              <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                <div class="w-full border-t border-gray-200"></div>
+              </div>
+              <div class="relative flex justify-center">
+                <span class="px-3 bg-white text-sm text-gray-500">
+                  o dona desde
+                </span>
+              </div>
+            </div>
+
+            <button 
+              id="venezuelaBtn"
+              class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-medium rounded-full text-blue-600 border-2 border-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-200"
+            >
+              <span class="text-xl">🇻🇪</span>
+              <span>Venezuela</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

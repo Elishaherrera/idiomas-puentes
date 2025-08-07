@@ -1,5 +1,6 @@
 ---
 const { class: className } = Astro.props;
+import DonateCTA from '../components/DonateCTA.astro';
 ---
 
 <!doctype html>
@@ -13,6 +14,7 @@ const { class: className } = Astro.props;
   </head>
   <body class={className}>
     <slot />
+    <DonateCTA/>
   </body>
 </html>
 
