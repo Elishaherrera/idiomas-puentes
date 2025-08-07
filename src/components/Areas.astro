@@ -5,80 +5,81 @@ import { Image } from "astro:assets";
 ---
 
 <section class="relative bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-  <div class="container mx-auto text-center">
-    <h2 class="text-4xl font-serif font-bold text-gray-800 mt-8">
-      Áreas de Necesidad
-    </h2>
-    <div class="bg-secondary w-24 h-1.5 mx-auto mt-4 mb-12 rounded-full"></div>
-    <p class="text-lg mx-auto mb-16 text-gray-800 max-w-3xl">
-      Estas son las regiones de América Latina donde trabajamos para llevar la
-      Palabra de Dios a idiomas aún sin traducción bíblica.
-    </p>
-    <div
-      class="bg-white rounded-2xl mt-20 justify-self-center items-center px-10 py-10 shadow-lg"
-    >
-      <div class="bg-gradient-to-b from-gray-300 to-blue-100 rounded-2xl">
-        <Image
-          src={Mapa}
-          alt="Mapa Idiomas Puentes"
-          class="w-full h-auto object-cover"
-        />
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-serif font-bold text-gray-800 mt-8">
+        Áreas de Necesidad
+      </h2>
+      <div class="bg-secondary w-24 h-1.5 mx-auto mt-4 mb-12 rounded-full">
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center mt-8">
-        <Area numero="92,5%"
-          >de la población indígena en países hispanohablantes <span
-            class="text-gray-700 font-semibold">hablan español.</span
-          >
-          fuente: <a
-            href="https://cvc.cervantes.es/lengua/anuario/anuario_24/el_espanol_en_el_mundo_anuario_instituto_cervantes_2024.pdf"
-            class="text-blue-800">Anuario Instituto Cervantes</a
-          >, 2024.</Area
-        >
-        <Area numero="60%"
-          >de la población indígena <span class="text-gray-700 font-semibold"
-            >hablan español y su idioma nativo.</span
-          >
-          (Fuente: Sistema de Indicadores Sociodemográficos de Poblaciones y Pueblos
-          Indígenas [<a
-            href="https://redatam.org/redatam/pryesp/sisppi/Docs/Informacion_SISPPI.pdf"
-            class="text-blue-800">SISPPI</a
-          >], CELADE)."</Area
-        >
-        <Area numero="76,9%"
-          >de la población indígena de Brasil, mayores de cinco años, <span
-            class="text-gray-700 font-semibold">hablan portugués.</span
-          > Fuente: (<a href="" class="text-blue-800">IWGIA</a>, Grupo
-          Internacional de Trabajo sobre Asuntos Indígenas)."</Area
-        >
-        <Area numero="119"
-          ><span class="text-gray-700 font-semibold"
-            >lenguas indígenas vivas</span
-          > en la <span class="text-gray-700 font-semibold"
-            >Comunidad de países Africanos de lengua oficial portuguesa.</span
-          > (PALOP). (Fuente: Ethnologue)."</Area
-        >
-      </div>
-    </div>
-    <div class="mt-12 text-center">
-      <a
-        href="/Proyectos"
-        class="inline-flex bg-blue-800 hover:bg-blue-900 items-center justify-center text-white font-semibold py-4 px-8 rounded-xl transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
+      <p class="text-lg mx-auto mb-16 text-gray-800 max-w-3xl">
+        Estas son las regiones de América Latina donde trabajamos para llevar la
+        Palabra de Dios a idiomas aún sin traducción bíblica.
+      </p>
+      <div
+        class="bg-white rounded-2xl mt-20 justify-self-center items-center px-10 py-10 shadow-lg"
       >
-        Ver Todos los Proyectos
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5 ml-2 mt-1"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
+        <div class="bg-gradient-to-b from-gray-300 to-blue-100 rounded-2xl">
+          <Image
+            src={Mapa}
+            alt="Mapa Idiomas Puentes"
+            class="w-full h-auto object-cover"
+          />
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center mt-8">
+          <Area numero="92,5%"
+            >de la población indígena en países hispanohablantes <span
+              class="text-gray-700 font-semibold">hablan español.</span
+            >
+            fuente: <a
+              href="https://cvc.cervantes.es/lengua/anuario/anuario_24/el_espanol_en_el_mundo_anuario_instituto_cervantes_2024.pdf"
+              class="text-blue-800">Anuario Instituto Cervantes</a
+            >, 2024.</Area
+          >
+          <Area numero="60%"
+            >de la población indígena <span class="text-gray-700 font-semibold"
+              >hablan español y su idioma nativo.</span
+            >
+            (Fuente: Sistema de Indicadores Sociodemográficos de Poblaciones y Pueblos
+            Indígenas [<a
+              href="https://redatam.org/redatam/pryesp/sisppi/Docs/Informacion_SISPPI.pdf"
+              class="text-blue-800">SISPPI</a
+            >], CELADE)."</Area
+          >
+          <Area numero="76,9%"
+            >de la población indígena de Brasil, mayores de cinco años, <span
+              class="text-gray-700 font-semibold">hablan portugués.</span
+            > Fuente: (<a href="" class="text-blue-800">IWGIA</a>, Grupo
+            Internacional de Trabajo sobre Asuntos Indígenas)."</Area
+          >
+          <Area numero="119"
+            ><span class="text-gray-700 font-semibold"
+              >lenguas indígenas vivas</span
+            > en la <span class="text-gray-700 font-semibold"
+              >Comunidad de países Africanos de lengua oficial portuguesa.</span
+            > (PALOP). (Fuente: Ethnologue)."</Area
+          >
+        </div>
+      </div>
+      <div class="mt-12 text-center">
+        <a
+          href="/Proyectos"
+          class="inline-flex bg-blue-800 hover:bg-blue-900 items-center justify-center text-white font-semibold py-4 px-8 rounded-xl transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-        </svg>
-      </a>
+          Ver Todos los Proyectos
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 ml-2 mt-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+      </div>
     </div>
-  </div>
 </section>
