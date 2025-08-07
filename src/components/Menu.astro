@@ -1,14 +1,92 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../assets/LogoIp.png";
-import { HandHelping } from "@lucide/astro";
+import { HandHelping, Menu, X } from "@lucide/astro";
 ---
 
 <nav
-  class="fixed z-50 w-full bg-gray-100 py-6 px-10 flex items-center justify-between shadow-lg"
+  class="fixed z-50 w-full bg-gray-100 py-6 px-4 md:px-10 flex items-center justify-between shadow-lg"
 >
   <div class="flex-shrink-0">
     <Image src={logo} alt="logo Idiomas Puentes" class="md:h-10 h-7 w-auto" />
+  </div>
+  <div class="md:hidden text-blue-950">
+    <input type="checkbox" class="peer hidden" id="menu" />
+    <label class="cursor-pointer" for="menu">
+      <Menu size="30" />
+    </label>
+    <div
+      class="min-h-screen min-w-screen bg-white absolute top-0 left-0 hidden peer-checked:flex flex-col"
+    >
+      <div class="flex justify-end w-full p-4">
+        <label class="cursor-pointer" for="menu">
+          <X size="30" />
+        </label>
+      </div>
+      <div class="p-6">
+        <ul class="list-none p-0 m-0 items-center text-center md:flex">
+          <li class="p-2 text-2xl font-bold">
+            <a
+              href="/"
+              class="text-blue-950 text-md md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"
+              >Inicio</a
+            >
+          </li>
+          <li class="p-2 text-2xl font-bold">
+            <a
+              href="/Nosotros"
+              class="text-blue-950 text-md md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"
+              >Nosotros</a
+            >
+          </li>
+          <li class="p-2 text-2xl font-bold">
+            <a
+              href="/Proyectos"
+              class="text-blue-950 text-md md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"
+              >Proyectos</a
+            >
+          </li>
+          <li class="p-2 text-2xl font-bold">
+            <a
+              href="/Historias"
+              class="text-blue-950 text-md md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"
+              >Historias</a
+            >
+          </li>
+          <li class="p-2 text-2xl font-bold">
+            <a
+              href="/Recursos"
+              class="text-blue-950 text-md md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"
+              >Recursos</a
+            >
+          </li>
+          <li class="p-2 text-2xl font-bold">
+            <a
+              href="/Involucrate"
+              class="text-blue-950 text-md md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"
+              >Involúcrate</a
+            >
+          </li>
+          <li class="p-2 text-2xl font-bold">
+            <a
+              href="/Contacto"
+              class="text-blue-950 text-md md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"
+              >Contacto</a
+            >
+          </li>
+
+          <li class="flex justify-center items-center mt-4">
+            <a
+              href="/Donar"
+              class="bg-blue-700 text-white font-medium text-sm md:text-base py-3 px-8 rounded-xl transition duration-300 hover:bg-blue-900 transform hover:scale-105 inline-flex items-center justify-center"
+            >
+              Donar
+              <HandHelping class="ml-2" size="20" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <ul class="list-none p-0 m-0 items-center hidden md:flex">
