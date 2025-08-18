@@ -3,108 +3,89 @@
 ---
 
 <!-- Donation Modal -->
-<div id="donateModal" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-  <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-    <div class="fixed inset-0 bg-gray-950/70 bg-opacity-75 transition-opacity" aria-hidden="true" id="donateOverlay"></div>
-    <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-    <div class="relative inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+<div
+  id="donateModal"
+  class="fixed inset-0 z-50 overflow-y-auto hidden"
+  aria-labelledby="modal-title"
+  role="dialog"
+  aria-modal="true"
+>
+  <div
+    class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+  >
+    <div
+      class="fixed inset-0 bg-gray-950/70 bg-opacity-75 transition-opacity"
+      aria-hidden="true"
+      id="donateOverlay"
+    >
+    </div>
+    <span
+      class="hidden sm:inline-block sm:align-middle sm:h-screen"
+      aria-hidden="true">&#8203;</span
+    >
+    <div
+      class="relative inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6"
+    >
       <div class="absolute top-0 right-0 pt-4 pr-4">
         <button
           type="button"
-          class="bg-white rounded-md text-gray-400 hover:text-gray-500"
+          class="bg-white rounded-md text-gray-400 hover:text-gray-500 cursor-pointer"
           id="donateCloseBtn"
         >
           <span class="sr-only">Cerrar</span>
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
       </div>
       <div class="sm:flex sm:items-start">
         <div class="mt-3 text-center sm:mt-0 sm:text-left w-full">
-          <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
-            Elige tu Método de Donación
+          <h3
+            class="text-lg leading-6 font-medium text-gray-900"
+            id="modal-title"
+          >
+            Dona de forma segura
           </h3>
+          <h4 class="text-gray-700 mt-2">
+            Al hacer click al botón de donar serás redirigido a una página que
+            te permitirá donar a Idiomas Puentes de manera segura.
+          </h4>
+          <div class="relative mt-4 space-y-4">
+            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+              <div class="w-full border-t border-gray-200"></div>
+            </div>
+          </div>
           <div class="mt-8 space-y-4">
-            <a 
+            <a
               href="https://www.myclickandgive.com/login.php?id=26&r=eyJtIjoiVGhhbmsgeW91IGZvciB5b3VyIGdpZnQhIiwiYSI6IjEyNTMiLCJ0IjoiZ2l2ZS5waHAifQ== "
               target="_blank"
               rel="noopener noreferrer"
               class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-medium rounded-full text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200 shadow-sm hover:shadow-md"
             >
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
               </svg>
-              <span>Donar Internacionalmente</span>
+              <span>Donar</span>
             </a>
-            
-            <div class="relative">
-              <div class="absolute inset-0 flex items-center" aria-hidden="true">
-                <div class="w-full border-t border-gray-200"></div>
-              </div>
-              <div class="relative flex justify-center">
-                <span class="px-3 bg-white text-sm text-gray-500">
-                  o dona desde
-                </span>
-              </div>
-            </div>
-
-            <button 
-              id="venezuelaBtn"
-              class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-medium rounded-full text-blue-600 border-2 border-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-200"
-            >
-              <span class="text-xl">🇻🇪</span>
-              <span>Venezuela</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Venezuela Transfer Details Modal -->
-<div id="venezuelaModal" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-  <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-    <div class="fixed inset-0 bg-gray-950/70 bg-opacity-75 transition-opacity" aria-hidden="true" id="venezuelaOverlay"></div>
-    <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-    <div class="relative inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
-      <div class="absolute top-0 right-0 pt-4 pr-4">
-        <button
-          type="button"
-          class="bg-white rounded-md text-gray-400 hover:text-gray-500"
-          id="venezuelaCloseBtn"
-        >
-          <span class="sr-only">Cerrar</span>
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-      <div class="sm:flex sm:items-start">
-        <div class="mt-3 text-center sm:mt-0 sm:text-left w-full">
-          <h3 class="text-lg leading-6 font-medium text-gray-900 flex items-center gap-2">
-            <span class="text-xl">🇻🇪</span>
-            <span>Donar en Bolívares</span>
-          </h3>
-          <div class="mt-6 space-y-4">
-            <div class="bg-gray-50 rounded-lg p-4 space-y-3">
-              <h4 class="font-medium text-gray-900">0172 - Bancamiga</h4>
-              <div class="space-y-2 text-sm">
-                <p class="text-gray-600">
-                  <span class="font-medium">Titular:</span> Idiomas Puentes
-                </p>
-                <p class="text-gray-600">
-                  <span class="font-medium">Número:</span> 04144337456
-                </p>
-                <p class="text-gray-600">
-                  <span class="font-medium">Tipo:</span> Pago Móvil
-                </p>
-                <p class="text-gray-600">
-                  <span class="font-medium">ID:</span> V9829088
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -113,11 +94,29 @@
 </div>
 
 <!-- Partnership Modal -->
-<div id="partnerModal" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-  <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-    <div class="fixed inset-0 bg-gray-950/70 bg-opacity-75 transition-opacity" aria-hidden="true" id="partnerOverlay"></div>
-    <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-    <div class="relative inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+<div
+  id="partnerModal"
+  class="fixed inset-0 z-50 overflow-y-auto hidden"
+  aria-labelledby="modal-title"
+  role="dialog"
+  aria-modal="true"
+>
+  <div
+    class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+  >
+    <div
+      class="fixed inset-0 bg-gray-950/70 bg-opacity-75 transition-opacity"
+      aria-hidden="true"
+      id="partnerOverlay"
+    >
+    </div>
+    <span
+      class="hidden sm:inline-block sm:align-middle sm:h-screen"
+      aria-hidden="true">&#8203;</span
+    >
+    <div
+      class="relative inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6"
+    >
       <div class="absolute top-0 right-0 pt-4 pr-4">
         <button
           type="button"
@@ -125,8 +124,17 @@
           id="partnerCloseBtn"
         >
           <span class="sr-only">Cerrar</span>
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
       </div>
@@ -135,9 +143,11 @@
           Únete con Nosotros
         </h3>
         <p class="text-gray-600 mb-8">
-          Idiomas Puentes representa una convergencia de la Iglesia Global, trabajando juntos para cumplir la Gran Comisión. Únete a este esfuerzo colaborativo para llevar la Palabra de Dios a cada idioma.
+          Idiomas Puentes representa una convergencia de la Iglesia Global,
+          trabajando juntos para cumplir la Gran Comisión. Únete a este esfuerzo
+          colaborativo para llevar la Palabra de Dios a cada idioma.
         </p>
-        <form 
+        <form
           id="partnershipForm"
           name="church-partnership"
           method="POST"
@@ -149,22 +159,40 @@
           <div style="display: none;">
             <input name="bot-field" />
           </div>
-          
+
           <!-- Progress Steps -->
           <div class="flex items-center justify-between mb-8">
             <div class="flex items-center w-full">
-              <div id="step1" class="w-8 h-8 rounded-full flex items-center justify-center bg-blue-600 text-white">1</div>
+              <div
+                id="step1"
+                class="w-8 h-8 rounded-full flex items-center justify-center bg-blue-600 text-white"
+              >
+                1
+              </div>
               <div id="progress1" class="flex-1 h-1 mx-2 bg-gray-200"></div>
-              <div id="step2" class="w-8 h-8 rounded-full flex items-center justify-center bg-gray-200">2</div>
+              <div
+                id="step2"
+                class="w-8 h-8 rounded-full flex items-center justify-center bg-gray-200"
+              >
+                2
+              </div>
               <div id="progress2" class="flex-1 h-1 mx-2 bg-gray-200"></div>
-              <div id="step3" class="w-8 h-8 rounded-full flex items-center justify-center bg-gray-200">3</div>
+              <div
+                id="step3"
+                class="w-8 h-8 rounded-full flex items-center justify-center bg-gray-200"
+              >
+                3
+              </div>
             </div>
           </div>
 
           <!-- Step 1: Basic Contact -->
           <div id="formStep1" class="form-step">
             <div>
-              <label for="contactName" class="block text-sm font-medium text-gray-700">
+              <label
+                for="contactName"
+                class="block text-sm font-medium text-gray-700"
+              >
                 Persona de Contacto
               </label>
               <input
@@ -176,7 +204,10 @@
               />
             </div>
             <div>
-              <label for="email" class="block text-sm font-medium text-gray-700">
+              <label
+                for="email"
+                class="block text-sm font-medium text-gray-700"
+              >
                 Correo Electrónico
               </label>
               <input
@@ -192,7 +223,10 @@
           <!-- Step 2: Church Details -->
           <div id="formStep2" class="form-step hidden">
             <div>
-              <label for="churchName" class="block text-sm font-medium text-gray-700">
+              <label
+                for="churchName"
+                class="block text-sm font-medium text-gray-700"
+              >
                 Nombre de la Iglesia
               </label>
               <input
@@ -204,7 +238,10 @@
               />
             </div>
             <div>
-              <label for="country" class="block text-sm font-medium text-gray-700">
+              <label
+                for="country"
+                class="block text-sm font-medium text-gray-700"
+              >
                 País
               </label>
               <input
@@ -220,7 +257,10 @@
           <!-- Step 3: Additional Info -->
           <div id="formStep3" class="form-step hidden">
             <div>
-              <label for="phone" class="block text-sm font-medium text-gray-700">
+              <label
+                for="phone"
+                class="block text-sm font-medium text-gray-700"
+              >
                 Teléfono
               </label>
               <input
@@ -231,7 +271,10 @@
               />
             </div>
             <div>
-              <label for="message" class="block text-sm font-medium text-gray-700">
+              <label
+                for="message"
+                class="block text-sm font-medium text-gray-700"
+              >
                 Mensaje (Opcional)
               </label>
               <textarea
@@ -273,8 +316,11 @@
           </h4>
           <div class="mt-3 space-y-2 text-sm text-gray-600">
             <p>
-              <span class="font-medium">Email:</span>{' '}
-              <a href="mailto:idiomaspuentes@gmail.com" class="text-blue-600 hover:text-blue-700">
+              <span class="font-medium">Email:</span>{" "}
+              <a
+                href="mailto:idiomaspuentes@gmail.com"
+                class="text-blue-600 hover:text-blue-700"
+              >
                 idiomaspuentes@gmail.com
               </a>
             </p>
@@ -287,169 +333,173 @@
 
 <script>
   // Modal functionality
-  const donateBtn = document.querySelectorAll('.donateBtn');
-  const partnerBtn = document.querySelectorAll('.partnerBtn');
-  const venezuelaBtn = document.getElementById('venezuelaBtn');
-  const backToTop = document.getElementById('backToTop');
-  
-  const donateModal = document.getElementById('donateModal');
-  const venezuelaModal = document.getElementById('venezuelaModal');
-  const partnerModal = document.getElementById('partnerModal');
-  
-  const donateCloseBtn = document.getElementById('donateCloseBtn');
-  const venezuelaCloseBtn = document.getElementById('venezuelaCloseBtn');
-  const partnerCloseBtn = document.getElementById('partnerCloseBtn');
-  
-  const donateOverlay = document.getElementById('donateOverlay');
-  const venezuelaOverlay = document.getElementById('venezuelaOverlay');
-  const partnerOverlay = document.getElementById('partnerOverlay');
+  const donateBtn = document.querySelectorAll(".donateBtn");
+  const partnerBtn = document.querySelectorAll(".partnerBtn");
+  const venezuelaBtn = document.getElementById("venezuelaBtn");
+  const backToTop = document.getElementById("backToTop");
+
+  const donateModal = document.getElementById("donateModal");
+  const venezuelaModal = document.getElementById("venezuelaModal");
+  const partnerModal = document.getElementById("partnerModal");
+
+  const donateCloseBtn = document.getElementById("donateCloseBtn");
+  const venezuelaCloseBtn = document.getElementById("venezuelaCloseBtn");
+  const partnerCloseBtn = document.getElementById("partnerCloseBtn");
+
+  const donateOverlay = document.getElementById("donateOverlay");
+  const venezuelaOverlay = document.getElementById("venezuelaOverlay");
+  const partnerOverlay = document.getElementById("partnerOverlay");
 
   // Open modals
-  donateBtn?.forEach((boton)=>boton.addEventListener('click', () => {
-    donateModal?.classList.remove('hidden');
-  }));
+  donateBtn?.forEach((boton) =>
+    boton.addEventListener("click", () => {
+      donateModal?.classList.remove("hidden");
+    })
+  );
 
-  partnerBtn?.forEach((boton)=>boton.addEventListener('click', () => {
-    partnerModal?.classList.remove('hidden');
-  }));
+  partnerBtn?.forEach((boton) =>
+    boton.addEventListener("click", () => {
+      partnerModal?.classList.remove("hidden");
+    })
+  );
 
-  venezuelaBtn?.addEventListener('click', () => {
-    donateModal?.classList.add('hidden');
-    venezuelaModal?.classList.remove('hidden');
+  venezuelaBtn?.addEventListener("click", () => {
+    donateModal?.classList.add("hidden");
+    venezuelaModal?.classList.remove("hidden");
   });
 
   // Close modals
-  donateCloseBtn?.addEventListener('click', () => {
-    donateModal?.classList.add('hidden');
+  donateCloseBtn?.addEventListener("click", () => {
+    donateModal?.classList.add("hidden");
   });
 
-  venezuelaCloseBtn?.addEventListener('click', () => {
-    venezuelaModal?.classList.add('hidden');
+  venezuelaCloseBtn?.addEventListener("click", () => {
+    venezuelaModal?.classList.add("hidden");
   });
 
-  partnerCloseBtn?.addEventListener('click', () => {
-    partnerModal?.classList.add('hidden');
+  partnerCloseBtn?.addEventListener("click", () => {
+    partnerModal?.classList.add("hidden");
   });
 
-  donateOverlay?.addEventListener('click', () => {
-    donateModal?.classList.add('hidden');
+  donateOverlay?.addEventListener("click", () => {
+    donateModal?.classList.add("hidden");
   });
 
-  venezuelaOverlay?.addEventListener('click', () => {
-    venezuelaModal?.classList.add('hidden');
+  venezuelaOverlay?.addEventListener("click", () => {
+    venezuelaModal?.classList.add("hidden");
   });
 
-  partnerOverlay?.addEventListener('click', () => {
-    partnerModal?.classList.add('hidden');
+  partnerOverlay?.addEventListener("click", () => {
+    partnerModal?.classList.add("hidden");
   });
 
   // Back to top
-  backToTop?.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  backToTop?.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
   // Form step management
   let currentStep = 1;
   const maxSteps = 3;
 
-  const nextBtn = document.getElementById('nextBtn');
-  const prevBtn = document.getElementById('prevBtn');
-  const submitBtn = document.getElementById('submitBtn');
-  const form = document.getElementById('partnershipForm') as HTMLFormElement;
+  const nextBtn = document.getElementById("nextBtn");
+  const prevBtn = document.getElementById("prevBtn");
+  const submitBtn = document.getElementById("submitBtn");
+  const form = document.getElementById("partnershipForm") as HTMLFormElement;
 
   function updateFormStep() {
     // Hide all steps
     for (let i = 1; i <= maxSteps; i++) {
       const step = document.getElementById(`formStep${i}`);
-      step?.classList.add('hidden');
+      step?.classList.add("hidden");
     }
 
     // Show current step
     const currentStepEl = document.getElementById(`formStep${currentStep}`);
-    currentStepEl?.classList.remove('hidden');
+    currentStepEl?.classList.remove("hidden");
 
     // Update progress indicators
     for (let i = 1; i <= maxSteps; i++) {
       const stepIndicator = document.getElementById(`step${i}`);
       const progressBar = document.getElementById(`progress${i}`);
-      
+
       if (i <= currentStep) {
-        stepIndicator?.classList.remove('bg-gray-200');
-        stepIndicator?.classList.add('bg-blue-600', 'text-white');
+        stepIndicator?.classList.remove("bg-gray-200");
+        stepIndicator?.classList.add("bg-blue-600", "text-white");
       } else {
-        stepIndicator?.classList.remove('bg-blue-600', 'text-white');
-        stepIndicator?.classList.add('bg-gray-200');
+        stepIndicator?.classList.remove("bg-blue-600", "text-white");
+        stepIndicator?.classList.add("bg-gray-200");
       }
 
       if (i < currentStep) {
-        progressBar?.classList.remove('bg-gray-200');
-        progressBar?.classList.add('bg-blue-600');
+        progressBar?.classList.remove("bg-gray-200");
+        progressBar?.classList.add("bg-blue-600");
       } else {
-        progressBar?.classList.remove('bg-blue-600');
-        progressBar?.classList.add('bg-gray-200');
+        progressBar?.classList.remove("bg-blue-600");
+        progressBar?.classList.add("bg-gray-200");
       }
     }
 
     // Update buttons
     if (currentStep === 1) {
-      prevBtn?.classList.add('hidden');
+      prevBtn?.classList.add("hidden");
     } else {
-      prevBtn?.classList.remove('hidden');
+      prevBtn?.classList.remove("hidden");
     }
 
     if (currentStep === maxSteps) {
-      nextBtn?.classList.add('hidden');
-      submitBtn?.classList.remove('hidden');
+      nextBtn?.classList.add("hidden");
+      submitBtn?.classList.remove("hidden");
     } else {
-      nextBtn?.classList.remove('hidden');
-      submitBtn?.classList.add('hidden');
+      nextBtn?.classList.remove("hidden");
+      submitBtn?.classList.add("hidden");
     }
   }
 
-  nextBtn?.addEventListener('click', () => {
+  nextBtn?.addEventListener("click", () => {
     if (currentStep < maxSteps) {
       currentStep++;
       updateFormStep();
     }
   });
 
-  prevBtn?.addEventListener('click', () => {
+  prevBtn?.addEventListener("click", () => {
     if (currentStep > 1) {
       currentStep--;
       updateFormStep();
     }
   });
 
-  form?.addEventListener('submit', async (e) => {
+  form?.addEventListener("submit", async (e) => {
     e.preventDefault();
-    
+
     try {
       const formData = new FormData(form);
-      
+
       // Submit to Netlify (if available) or handle as needed
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData as any).toString()
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
       });
 
       if (response.ok) {
-        alert('¡Gracias por su interés! Nos pondremos en contacto pronto.');
+        alert("¡Gracias por su interés! Nos pondremos en contacto pronto.");
         form?.reset();
         currentStep = 1;
         updateFormStep();
-        partnerModal?.classList.add('hidden');
+        partnerModal?.classList.add("hidden");
       } else {
-        throw new Error('Form submission failed');
+        throw new Error("Form submission failed");
       }
     } catch (error) {
-      alert('Hubo un error al enviar el formulario. Por favor, inténtelo de nuevo o contáctenos directamente.');
-      console.error('Form submission error:', error);
+      alert(
+        "Hubo un error al enviar el formulario. Por favor, inténtelo de nuevo o contáctenos directamente."
+      );
+      console.error("Form submission error:", error);
     }
   });
 
   // Initialize form step
   updateFormStep();
 </script>
-
-
