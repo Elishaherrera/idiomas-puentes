@@ -1,5 +1,6 @@
 ---
 import { Eye } from "@lucide/astro";
+import Container from "../components/Container.astro";
 ---
 <section class="min-h-screen">
     <div class="p-6 mt-12">
@@ -16,12 +17,13 @@ import { Eye } from "@lucide/astro";
         amor de Dios unificando a Su pueblo en la misión de hacer Su palabra accesible para todos. </p>
     </div>
     </div>
-    <div class="flex gap-8 md:flex-row flex-col p-12">
+    <Container>
+    <div class="flex gap-8 md:flex-row flex-col">
       <div
-        class=" shadow-lg rounded-2xl space-y-4 w-full md:w-[50%] py-8 px-8"
+        class=" shadow-[0_0_6px_0_rgba(0,0,0,0.15)] rounded-2xl space-y-4 w-full md:w-[50%] py-8 px-8"
       >
         <div class="justify-center">
-        <p class="px-4 text-teal-600 text-md">
+        <p class="px-4 text-teal-700 text-md">
           "Ahora, hermanos, queremos que se enteren de la gracia que Dios ha dado a las iglesias de Macedonia.
            En medio de las pruebas más difíciles, su desbordante alegría y su extrema pobreza abundaron en rica generosidad." 
            ... "sino que en este tiempo, con igualdad, la abundancia vuestra supla la escasez de ellos, para que también 
@@ -29,25 +31,26 @@ import { Eye } from "@lucide/astro";
         </p>
     </div>
     <div class="flex justify-end p-6">
-        <span class="text-teal-600">- 2 corintios 8:1-2,14</span>
+        <span>- 2 corintios 8:1-2,14</span>
     </div>
       </div>
 
       <div
-        class="bg-white shadow-lg rounded-2xl space-y-4 w-full md:w-[50%] py-8 px-8"
+        class="bg-white shadow-[0_0_6px_0_rgba(0,0,0,0.15)] rounded-2xl space-y-4 w-full md:w-[50%] py-8 px-8"
       >
         <div class=" items-center justify-center font-semibold pb-2">
         </div>
         <div class=" justify-center">
-          <p class="px-4 text-teal-600 text-md">
+          <p class="px-4 text-teal-700 text-md">
             Así que los creyentes de Antioquía decidieron enviar una ayuda a los hermanos de Judea, y cada uno
             dio lo que podía. Así lo hicieron, y confiaron sus ofrendas a Bernabé y a Saulo para que las llevaran
             a los ancianos de la iglesia de Jerusalén.
           </p>
         </div>
         <div class="flex justify-end p-6">
-        <span class="text-teal-600">- Hechos 11:29</span>
+        <span>- Hechos 11:29</span>
         </div>
       </div>
     </div>
+</Container>
 </section>
