@@ -2,55 +2,49 @@
 import { Eye } from "@lucide/astro";
 import Container from "../components/Container.astro";
 ---
-<section class="min-h-screen">
-<Container>
-    <div class="p-6 mt-12">
-    <h2 class="text-3xl font-serif font-bold text-center">Siguiendo el Ejemplo de la Iglesia Primitiva</h2>
-    <div
-      style="background:#2bbbad"
-      class="bg-secondary w-24 h-1.5 mx-auto mt-4 mb-12 rounded-full"
-    >
-    </div>
-    <div class="flex justify-center items-center">
-    <p class="text-gray-600 max-w-2xl">Así como la iglesia primitiva fue movida por la gracia de Dios para apoyarse y fortalecerse mutuamente
-        a través de fronteras culturales y geográficas, la iglesia global de hoy continúa este patrón divino.
-        A través del ánimo mutuo, el compartir de recursos y el ministerio colaborativo, somos testigos del
-        amor de Dios unificando a Su pueblo en la misión de hacer Su palabra accesible para todos. </p>
-    </div>
-    </div>
-    <div class="flex gap-8 md:flex-row flex-col mt-8">
-      <div
-        class=" shadow-[0_0_6px_0_rgba(0,0,0,0.15)] rounded-2xl space-y-4 w-full md:w-[50%] py-8 px-8"
-      >
-        <div class="justify-center">
-        <p class="px-4 text-teal-700 text-md font-serif">
-          "Ahora, hermanos, queremos que se enteren de la gracia que Dios ha dado a las iglesias de Macedonia.
-           En medio de las pruebas más difíciles, su desbordante alegría y su extrema pobreza abundaron en rica generosidad." 
-           ... "sino que en este tiempo, con igualdad, la abundancia vuestra supla la escasez de ellos, para que también 
-           la abundancia de ellos supla la necesidad vuestra, para que haya igualdad." 
-        </p>
-    </div>
-    <div class="flex justify-end p-6">
-        <span class="font-serif font-bold">- 2 corintios 8:1-2,14</span>
-    </div>
-      </div>
-
-      <div
-        class="bg-white shadow-[0_0_6px_0_rgba(0,0,0,0.15)] rounded-2xl space-y-4 w-full md:w-[50%] py-8 px-8"
-      >
-        <div class=" items-center justify-center font-semibold pb-2">
+<section class="relative bg-teal-50/60 py-4 px-4">    
+    <Container>
+        <div class="p-4 mt-4">
+            <h2 class="text-4xl font-serif font-bold text-center">Siguiendo el Ejemplo de la Iglesia Primitiva</h2>
+            <div
+                style="background:#2bbbad"
+                class="bg-secondary w-24 h-1.5 mx-auto mt-4 mb-12 rounded-full"
+            >
+            </div>
+            <div class="flex justify-center items-center">
+                <p class="text-gray-600 max-w-2xl">Así como la iglesia primitiva fue movida por la gracia de Dios para apoyarse y fortalecerse mutuamente
+                    a través de fronteras culturales y geográficas, la iglesia global de hoy continúa este patrón divino.
+                    A través del ánimo mutuo, el compartir de recursos y el ministerio colaborativo, somos testigos del
+                    amor de Dios unificando a Su pueblo en la misión de hacer Su palabra accesible para todos. 
+                </p>
+            </div>
         </div>
-        <div class=" justify-center">
-          <p class="px-4 text-teal-700 text-md font-serif">
-            "Así que los creyentes de Antioquía decidieron enviar una ayuda a los hermanos de Judea, y cada uno
-            dio lo que podía. Así lo hicieron, y confiaron sus ofrendas a Bernabé y a Saulo para que las llevaran
-            a los ancianos de la iglesia de Jerusalén."
-          </p>
-        </div>
-        <div class="flex justify-end p-6">
-        <span class="font-serif font-bold">- Hechos 11:29</span>
-        </div>
-      </div>
-    </div>
-</Container>
+        <div class="flex gap-8 md:flex-row flex-col mt-8">
+            <div class="bg-white shadow-[0_0_6px_0_rgba(0,0,0,0.15)] rounded-2xl space-y-4 w-full md:w-[50%] py-8 px-8 border-1 border-teal-200">
+                <div class="justify-center">
+                    <p class="px-4 text-teal-700 text-md font-serif">
+                        "Ahora, hermanos, queremos que se enteren de la gracia que Dios ha dado a las iglesias de Macedonia.
+                        En medio de las pruebas más difíciles, su desbordante alegría y su extrema pobreza abundaron en rica generosidad 
+                        ... Sino que en este tiempo, con igualdad, la abundancia vuestra supla la escasez de ellos, para que también 
+                        la abundancia de ellos supla la necesidad vuestra, para que haya igualdad." 
+                    </p>
+                </div>
+                <div class="flex justify-end p-6">
+                    <span class="font-serif font-bold text-sm">- 2 corintios 8:1-2,14</span>
+                </div>
+            </div>
+            <div class="bg-white shadow-[0_0_6px_0_rgba(0,0,0,0.15)] rounded-2xl space-y-4 w-full md:w-[50%] py-8 px-8 border-1 border-teal-200">
+                <div class=" justify-center">
+                    <p class="px-4 text-teal-700 text-md font-serif">
+                        "Así que los creyentes de Antioquía decidieron enviar una ayuda a los hermanos de Judea, y cada uno
+                        dio lo que podía. Así lo hicieron, y confiaron sus ofrendas a Bernabé y a Saulo para que las llevaran
+                        a los ancianos de la iglesia de Jerusalén."
+                    </p>
+                </div>
+                <div class="flex justify-end p-6">
+                    <span class="font-serif font-bold text-sm">- Hechos 11:29</span>
+                </div>
+            </div>
+        </div>    
+    </Container>
 </section>
