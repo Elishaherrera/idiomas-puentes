@@ -2,6 +2,12 @@
 import { Image } from "astro:assets";
 import logo from "../assets/LogoIp.png";
 import { HandHelping, Menu, X } from "@lucide/astro";
+const {pathname} =Astro.url
+const classActivo =" text-blue-900 border-secondary"
+const classInactivo ="text-gray-900 border-transparent"
+function usarClase(pathActual:string){ 
+  return pathname===pathActual?classActivo:classInactivo
+}
 ---
 
 <nav
@@ -30,15 +36,15 @@ import { HandHelping, Menu, X } from "@lucide/astro";
           <li class="p-2 text-2xl font-bold">
             <a
               href="/"
-              class="text-blue-950 text-md md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"
-              >Inicio</a
-            >
+              class={"text-blue-950 text-md md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"}>
+              Inicio
+              </a>
           </li>
           <li class="p-2 text-2xl font-bold">
             <a
               href="/Nosotros"
-              class="text-blue-950 text-md md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"
-              >Nosotros</a
+              class={"text-blue-950 text-md md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"}>
+              Nosotros</a
             >
           </li>
           <li class="p-2 text-2xl font-bold">
@@ -95,49 +101,49 @@ import { HandHelping, Menu, X } from "@lucide/astro";
     <li class="mx-6">
       <a
         href="/"
-        class="text-gray-900 text-sm md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"
+        class={`text-sm md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 ${usarClase("/")} hover:border-secondary`}
         >Inicio</a
       >
     </li>
     <li class="mx-6">
       <a
         href="/Nosotros"
-        class="text-gray-900 text-sm md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"
+        class={`text-sm md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 ${usarClase("/Nosotros")} hover:border-secondary`}
         >Nosotros</a
       >
     </li>
     <li class="mx-6">
       <a
         href="/Proyectos"
-        class="text-gray-900 text-sm md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"
+        class={`text-sm md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 ${usarClase("/Proyectos")} hover:border-secondary`}
         >Proyectos</a
       >
     </li>
     <li class="mx-6">
       <a
         href="/Historias"
-        class="text-gray-900 text-sm md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"
+        class={`text-sm md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 ${usarClase("/Historias")} hover:border-secondary`}
         >Historias</a
       >
     </li>
     <li class="mx-6">
       <a
         href="/Recursos"
-        class="text-gray-900 text-sm md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"
+        class={`text-sm md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 ${usarClase("/Recursos")} hover:border-secondary`}
         >Recursos</a
       >
     </li>
     <li class="mx-6">
       <a
         href="/Involucrate"
-        class="text-gray-900 text-sm md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"
+        class={`text-sm md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 ${usarClase("/Involucrate")} hover:border-secondary`}
         >Involúcrate</a
       >
     </li>
     <li class="mx-6">
       <a
         href="/Contacto"
-        class="text-gray-900 text-sm md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 border-transparent hover:border-secondary"
+        class={`text-sm md:text-base transition duration-300 hover:text-blue-900 inline-block pb-1 border-b-3 ${usarClase("/Contacto")} hover:border-secondary`}
         >Contacto</a
       >
     </li>
