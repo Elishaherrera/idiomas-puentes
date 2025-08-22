@@ -6,7 +6,7 @@ const {pathname} =Astro.url
 const classActivo =" text-blue-900 border-secondary"
 const classInactivo ="text-gray-900 border-transparent"
 function usarClase(pathActual:string){ 
-  return pathname.toLowerCase()===pathActual.toLowerCase()?classActivo:classInactivo
+  return pathname.toLowerCase().replaceAll("/","")===pathActual.toLowerCase().replaceAll("/","")?classActivo:classInactivo
 }
 ---
 
